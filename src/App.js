@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import InputBar from './InputBar.js';
+import Translator from './Translator.js';
+import Output from './Output.js';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <InputBar />
+        <Translator />
+        <Output />
       </div>
     );
   }

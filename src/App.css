@@ -5,9 +5,8 @@ body{
 #root{
      width: 75em;
      margin: 0 auto;
-     background-color:red;
  }
-#inputbar{
+#translator{
 	width: 50em;
     margin: 0 auto;
     text-align: center;
@@ -15,10 +14,9 @@ body{
 .images{
 	position: relative;
 	top: 2em;
-	background-color: blue;
 }
 .images span{
-	font-family: "Arial", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 2em;
 	display: inline-block;
 	vertical-align: middle;
@@ -28,7 +26,7 @@ body{
 }
 
 input{
-	width:10em;
+	width:20em;
 	display: inline-block;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
@@ -37,7 +35,7 @@ input{
     border: .125em solid rgba(255,255,255,1);
     -webkit-border-radius: .25em;
     border-radius: .25em;
-    font: normal 16px/0 Arial, Helvetica, sans-serif;
+    font: normal 16px/0 'Open Sans', Helvetica, sans-serif;
     color: rgba(0,0,0,1);
     -o-text-overflow: clip;
     text-overflow: clip;
