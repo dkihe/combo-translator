@@ -5,12 +5,22 @@ body{
 #root{
      width: 75em;
      margin: 0 auto;
+     background-color:yellow;
  }
 #translator{
 	width: 50em;
     margin: 0 auto;
     text-align: center;
+    background-color:red;
 }
+#output{
+    width: 50em;
+    margin: 0 auto;
+    text-align: center;
+    background-color:blue;
+}
+
+/*INPUT IMAGES*/
 .images{
 	position: relative;
 	top: 2em;
@@ -25,6 +35,8 @@ body{
     vertical-align: middle;
 }
 
+
+/*INPUT BAR*/
 input{
 	width:20em;
 	display: inline-block;

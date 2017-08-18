@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
+const list = require("./list.json")
 
 class Output extends Component{
-	constructor(props){
-		super(props)
-
-		this.state = {
-			game: ''
-		}
-	}
-
 	render(){
 		return(
-			<div>
-				{this.props.game}
+			<div id="output">
+				<button onClick={this.props.imageProp}>
+					Translate!
+				</button>
+				<div className="images">
+				</div>
 			</div>
 		)
 	}
