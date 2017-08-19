@@ -1,36 +1,84 @@
 {
 	"streetfighter":{
 		"punch":{
-			"term":["p"],
+			"term":["p","P"],
 			"image":["./img/streetfighter/sf_button_p.svg"]
 		},
 		"light-punch":{
-			"term":["lp","jab"],
+			"term":["lp","LP","st.lp","jab"],
 			"image":["./img/streetfighter/sf_button_lp.svg"]
 		},
 		"medium-punch":{
-			"term":["mp","strong"],
+			"term":["mp","MP","st.mp","strong"],
 			"image":["./img/streetfighter/sf_button_mp.svg"]
 		},
 		"heavy-punch":{
-			"term":["hp","fierce"],
+			"term":["hp","HP","st.hp","fierce"],
 			"image":["./img/streetfighter/sf_button_hp.svg"]
 		},
+		"crouching-light-punch":{
+			"term":["cr.lp","cr.jab"],
+			"image":["./img/streetfighter/sf_button_crlp.svg"]
+		},
+		"crouching-medium-punch":{
+			"term":["cr.mp","cr.strong"],
+			"image":["./img/streetfighter/sf_button_crmp.svg"]
+		},
+		"crouching-heavy-punch":{
+			"term":["cr.hp","cr.fierce"],
+			"image":["./img/streetfighter/sf_button_crhp.svg"]
+		},
+		"jumping-light-punch":{
+			"term":["j.lp","j.jab"],
+			"image":["./img/streetfighter/sf_button_jlp.svg"]
+		},
+		"jumping-medium-punch":{
+			"term":["j.mp","j.strong"],
+			"image":["./img/streetfighter/sf_button_jmp.svg"]
+		},
+		"jumping-heavy-punch":{
+			"term":["j.hp","j.fierce"],
+			"image":["./img/streetfighter/sf_button_jhp.svg"]
+		},
 		"kick":{
-			"term":["k","short"],
+			"term":["k","K"],
 			"image":["./img/streetfighter/sf_button_k.svg"]
 		},
 		"light-kick":{
-			"term":["lk","forward"],
+			"term":["lk","LK","st.lk","short"],
 			"image":["./img/streetfighter/sf_button_lk.svg"]
 		},
 		"medium-kick":{
-			"term":["mk","roundhouse"],
+			"term":["mk","MK","st.mk","forward"],
 			"image":["./img/streetfighter/sf_button_mk.svg"]
 		},
 		"heavy-kick":{
-			"term":["hk"],
+			"term":["hk","HK","st.hk","roundhouse"],
 			"image":["./img/streetfighter/sf_button_hk.svg"]
+		},
+		"crouching-light-kick":{
+			"term":["cr.lk","cr.short"],
+			"image":["./img/streetfighter/sf_button_crlk.svg"]
+		},
+		"crouching-medium-kick":{
+			"term":["cr.mk","cr.forward"],
+			"image":["./img/streetfighter/sf_button_crmk.svg"]
+		},
+		"crouching-heavy-kick":{
+			"term":["cr.hk","cr.roundhouse"],
+			"image":["./img/streetfighter/sf_button_crhk.svg"]
+		},
+		"jumping-light-kick":{
+			"term":["j.lk","j.short"],
+			"image":["./img/streetfighter/sf_button_jlk.svg"]
+		},
+		"jumping-medium-kick":{
+			"term":["j.mk","j.forward"],
+			"image":["./img/streetfighter/sf_button_jmk.svg"]
+		},
+		"jumping-heavy-kick":{
+			"term":["j.hk","j.roundhouse"],
+			"image":["./img/streetfighter/sf_button_jhk.svg"]
 		},
 		"forward":{
 			"term":["f","6"],
@@ -95,8 +143,15 @@
 		"full-circle-back":{
 			"term":["fcb"],
 			"image":["./img/streetfighter/sf_arrow_fcb.svg"]
+		},
+		"quarter-circle-forward-punch":{
+			"term":["hadouken","Hadouken","qcf+p","qcp"],
+			"image":["./img/streetfighter/sf_arrow_qcf.svg","./img/streetfighter/sf_button_p.svg"]
+		},
+		"separate":{
+			"term":[",",">","xx"],
+			"image":["./img/streetfighter/sf_sep_blk.svg"]
 		}
-
 	},
 	"tekken":{
 		"forward":{

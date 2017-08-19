@@ -5,42 +5,42 @@ body{
 #root{
      width: 75em;
      margin: 0 auto;
-     background-color:yellow;
+     /*background-color:yellow;*/
  }
  #games{
-    width: 50em;
+    width: 75em;
     margin: 0 auto;
     text-align: center;
-    background-color:green;
+    /*background-color:green;*/
 }
 #translator{
-	width: 50em;
+	width: 75em;
     margin: 0 auto;
     text-align: center;
-    background-color:red;
+    /*background-color:red;*/
 }
 #output{
-    width: 50em;
+    width: 75em;
     margin: 0 auto;
     text-align: center;
-    background-color:blue;
+    /*background-color:blue;*/
 }
 
 /*INPUT IMAGES*/
 .images{
 	position: relative;
-	top: 2em;
+	top: 3em;
 }
 .images span{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 2em;
+	font-size: 3em;
 	display: inline-block;
 	vertical-align: middle;
 }
 .images img{
     vertical-align: middle;
-    width: 2em;
-    height: 2em;
+    width: 3em;
+    height: 3em;
 }
 
 
