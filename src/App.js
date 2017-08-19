@@ -10,11 +10,10 @@ class App extends Component {
         super(props)
 
         this.state={
-            term:''
+            term:'',
+            game: "streetfighter"
         }
-        this.updateState = this.updateState.bind(this)
     }
-
     createArr(){
         let item = this.state.term.split(/(\[(.*?)\]|\((.*?)\)|\~|\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d|\s|\+|\_|\,)/)
         let arr = []
@@ -22,9 +21,9 @@ class App extends Component {
             if(/(\[(.*?)\]|\((.*?)\))/g.test(item[i])){
                 arr.push(item[i])
             }
-            for (var key in list.tekken.input){
-                for(var j=0;j<list.tekken.input[key].term.length;j++){
-                    if (list.tekken.input[key].term[j] === item[i]){
+            for (var key in list[this.state.game]){
+                for(var j=0;j<list[this.state.game][key].term.length;j++){
+                    if (list[this.state.game][key].term[j] === item[i]){
                         arr.push(item[i])
                     }
                 }
@@ -42,12 +41,12 @@ class App extends Component {
                 note.innerHTML = String(text)
                 document.querySelector(".images").appendChild(note)
             }
-            for (var key in list.tekken.input){
-                for(var j=0;j<list.tekken.input[key].term.length;j++){
-                    if (list.tekken.input[key].term[j] === arr[i]){
-                        for (var imgNum=0;imgNum<list.tekken.input[key].image.length;imgNum++){
+            for (var key in list[this.state.game]){
+                for(var j=0;j<list[this.state.game][key].term.length;j++){
+                    if (list[this.state.game][key].term[j] === arr[i]){
+                        for (var imgNum=0;imgNum<list[this.state.game][key].image.length;imgNum++){
                             let img = document.createElement("img")
-                            img.setAttribute("src",list.tekken.input[key].image[imgNum])
+                            img.setAttribute("src",list[this.state.game][key].image[imgNum])
                             document.querySelector(".images").appendChild(img)
                         }
                     }
@@ -55,31 +54,30 @@ class App extends Component {
             }
         }
     }
-
-    testFunc(){
-        console.log()
-    }
-
-    updateState(event){
-        this.setState({term: event.target.value})
-    }
-
+    
     render() {
         return (
             <div>
-                <Games />
+                <Games 
+                    gameProp={event => this.setState({game: event.target.value})}
+                />
                 <Translator 
                     valueProp={this.state.term}
-                    inputProp={event => this.updateState(event)}
+                    inputProp={event => this.setState({term: event.target.value})}
                     testProp={console.log(this.createArr())}
+                    arrayProp={this.createArr()}
                 />
                 <Output 
                     imageProp={event => this.createImage(this.createArr())}
                 />
-                
+                <div>
+                    {console.log(this.state.game)}
+                </div>
             </div>
         );
     }
 }
 
 export default App
+
+

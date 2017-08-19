@@ -7,6 +7,12 @@ body{
      margin: 0 auto;
      background-color:yellow;
  }
+ #games{
+    width: 50em;
+    margin: 0 auto;
+    text-align: center;
+    background-color:green;
+}
 #translator{
 	width: 50em;
     margin: 0 auto;
@@ -33,6 +39,8 @@ body{
 }
 .images img{
     vertical-align: middle;
+    width: 2em;
+    height: 2em;
 }
 
 
@@ -47,7 +55,7 @@ input{
     border: .125em solid rgba(255,255,255,1);
     -webkit-border-radius: .25em;
     border-radius: .25em;
-    font: normal 16px/0 'Open Sans', Helvetica, sans-serif;
+    font: normal 1em/0 'Open Sans', Helvetica, sans-serif;
     color: rgba(0,0,0,1);
     -o-text-overflow: clip;
     text-overflow: clip;
@@ -60,4 +68,23 @@ input{
 
 input:focus{
 	border: .125em solid rgba(0,255,255,1);
+}
+
+/*TRANSLATE BUTTON*/
+.btn {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  background: #3498db;
+  padding: 8px 16px 8px 16px;
+  text-decoration: none;
+  border: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  text-decoration: none;
 }

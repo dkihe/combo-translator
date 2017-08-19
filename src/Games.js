@@ -12,6 +12,10 @@ class Games extends Component {
     render() {
         return(
             <div id="games">
+                <select onChange={this.props.gameProp}>
+                    <option value="streetfighter">Street Fighter</option>
+                    <option value="tekken">Tekken</option>
+                </select>
             </div>
         );
     }

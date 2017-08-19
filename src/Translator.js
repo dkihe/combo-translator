@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-const list = require("./list.json")
 
 
 class Translator extends Component{
@@ -13,7 +12,7 @@ class Translator extends Component{
                    	onChange={this.props.inputProp}
 				/>
 				<div>
-					{this.props.valueProp}
+					{this.props.arrayProp}
 				</div>
 				<div>
 					{this.props.testProp}
