@@ -15,9 +15,19 @@ class App extends Component {
         }
     }
     createArr(){
-        let item = this.state.term.split(/(\[(.*?)\]|\((.*?)\)|\~|\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d|\s|\+|\_|\,)/)
+        let tekken_re = /(\[(.*?)\]|\((.*?)\)|\~|\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d|\s|\+|\_|\,)/
+        let sf_re = /(\[(.*?)\]|\((.*?)\)|^\w+( \w+)*$|\s|\~|\+|\_|\,)/
+        let userinput = this.state.term
         let arr = []
-        for(var i=0;i<item.length;i++){
+        //Iterate through array and JSON; push if terms match
+        //Use upper and lower case if game is tekken
+        if (this.state.game === "tekken"){    
+            var item = userinput.split(tekken_re);
+        } else {
+            var item = userinput.toLowerCase().split(sf_re);
+        }
+            for(var i=0;i<item.length;i++){
+            //If text is "[]" or "()" push to array
             if(/(\[(.*?)\]|\((.*?)\))/g.test(item[i])){
                 arr.push(item[i])
             }
@@ -35,18 +45,21 @@ class App extends Component {
     createImage(arr){
         document.querySelector(".images").innerHTML = " "
         for(var i=0;i<arr.length;i++){
+            //Create notes using "[]" or "()"
             if(/(\[(.*?)\]|\((.*?)\))/g.test(arr[i])){
                 let text = arr[i]
                 let note = document.createElement("span")
                 note.innerHTML = String(text)
                 document.querySelector(".images").appendChild(note)
             }
+            //Create images by coparing to array
             for (var key in list[this.state.game]){
                 for(var j=0;j<list[this.state.game][key].term.length;j++){
                     if (list[this.state.game][key].term[j] === arr[i]){
                         for (var imgNum=0;imgNum<list[this.state.game][key].image.length;imgNum++){
                             let img = document.createElement("img")
-                            img.setAttribute("src",list[this.state.game][key].image[imgNum])
+                            img.src = String(list[this.state.game][key].image[imgNum])
+                            //img.id = String(i)
                             document.querySelector(".images").appendChild(img)
                         }
                     }
