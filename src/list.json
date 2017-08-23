@@ -4,39 +4,40 @@
 			"term":["p"],
 			"image":["./img/streetfighter/sf_button_p.svg"]
 		},
-		"light-punch":{
+		"light_punch":{
 			"term":["lp","st.lp","jab"],
-			"image":["./img/streetfighter/sf_button_lp.svg"]
+			"image":["./img/streetfighter/sf_button_lp.svg"],
+			"type":"button"
 		},
-		"medium-punch":{
+		"medium_punch":{
 			"term":["mp","st.mp","strong"],
 			"image":["./img/streetfighter/sf_button_mp.svg"]
 		},
-		"heavy-punch":{
+		"heavy_punch":{
 			"term":["hp","st.hp","fierce"],
 			"image":["./img/streetfighter/sf_button_hp.svg"]
 		},
-		"crouching-light-punch":{
+		"crouching_light_punch":{
 			"term":["cr.lp","cr.jab"],
 			"image":["./img/streetfighter/sf_button_crlp.svg"]
 		},
-		"crouching-medium-punch":{
+		"crouching_medium_punch":{
 			"term":["cr.mp","cr.strong"],
 			"image":["./img/streetfighter/sf_button_crmp.svg"]
 		},
-		"crouching-heavy-punch":{
+		"crouching_heavy_punch":{
 			"term":["cr.hp","cr.fierce"],
 			"image":["./img/streetfighter/sf_button_crhp.svg"]
 		},
-		"jumping-light-punch":{
+		"jumping_light_punch":{
 			"term":["j.lp","j.jab"],
 			"image":["./img/streetfighter/sf_button_jlp.svg"]
 		},
-		"jumping-medium-punch":{
+		"jumping_medium_punch":{
 			"term":["j.mp","j.strong"],
 			"image":["./img/streetfighter/sf_button_jmp.svg"]
 		},
-		"jumping-heavy-punch":{
+		"jumping_heavy_punch":{
 			"term":["j.hp","j.fierce"],
 			"image":["./img/streetfighter/sf_button_jhp.svg"]
 		},
@@ -44,48 +45,48 @@
 			"term":["k"],
 			"image":["./img/streetfighter/sf_button_k.svg"]
 		},
-		"light-kick":{
+		"light_kick":{
 			"term":["lk","st.lk","short"],
 			"image":["./img/streetfighter/sf_button_lk.svg"]
 		},
-		"medium-kick":{
+		"medium_kick":{
 			"term":["mk","st.mk","forward"],
 			"image":["./img/streetfighter/sf_button_mk.svg"]
 		},
-		"heavy-kick":{
+		"heavy_kick":{
 			"term":["hk","st.hk","roundhouse"],
 			"image":["./img/streetfighter/sf_button_hk.svg"]
 		},
-		"crouching-light-kick":{
+		"crouching_light_kick":{
 			"term":["cr.lk","cr.short"],
 			"image":["./img/streetfighter/sf_button_crlk.svg"]
 		},
-		"crouching-medium-kick":{
+		"crouching_medium_kick":{
 			"term":["cr.mk","cr.forward"],
 			"image":["./img/streetfighter/sf_button_crmk.svg"]
 		},
-		"crouching-heavy-kick":{
+		"crouching_heavy_kick":{
 			"term":["cr.hk","cr.roundhouse"],
 			"image":["./img/streetfighter/sf_button_crhk.svg"]
 		},
-		"jumping-light-kick":{
+		"jumping_light_kick":{
 			"term":["j.lk","j.short"],
 			"image":["./img/streetfighter/sf_button_jlk.svg"]
 		},
-		"jumping-medium-kick":{
+		"jumping_medium_kick":{
 			"term":["j.mk","j.forward"],
 			"image":["./img/streetfighter/sf_button_jmk.svg"]
 		},
-		"jumping-heavy-kick":{
+		"jumping_heavy_kick":{
 			"term":["j.hk","j.roundhouse"],
 			"image":["./img/streetfighter/sf_button_jhk.svg"]
 		},
 		"forward":{
-			"term":["f","6"],
+			"term":["f","f.","6"],
 			"image":["./img/streetfighter/sf_arrow_f.svg"]
 		},
 		"back":{
-			"term":["b","4"],
+			"term":["b","b.","4"],
 			"image":["./img/streetfighter/sf_arrow_b.svg"]
 		},
 		"up":{
@@ -96,93 +97,137 @@
 			"term":["d","2"],
 			"image":["./img/streetfighter/sf_arrow_d.svg"]
 		},
-		"hold-forward":{
+		"hold_forward":{
 			"term":["hf"],
 			"image":["./img/streetfighter/sf_arrow_hf.svg"]
 		},
-		"hold-back":{
+		"hold_back":{
 			"term":["hb"],
 			"image":["./img/streetfighter/sf_arrow_hb.svg"]
 		},
-		"hold-up":{
+		"hold_up":{
 			"term":["hu"],
 			"image":["./img/streetfighter/sf_arrow_hu.svg"]
 		},
-		"hold-down":{
+		"hold_down":{
 			"term":["hd"],
 			"image":["./img/streetfighter/sf_arrow_hd.svg"]
 		},
-		"quarter-circle-forward":{
+		"quarter_circle_forward":{
 			"term":["qcf","236"],
 			"image":["./img/streetfighter/sf_arrow_qcf.svg"]
 		},
-		"quarter-circle-back":{
+		"quarter_circle_back":{
 			"term":["qcb","214"],
 			"image":["./img/streetfighter/sf_arrow_qcb.svg"]
 		},
-		"dp-motion-forward":{
+		"dp_motion_forward":{
 			"term":["fqcf","dpf","623"],
 			"image":["./img/streetfighter/sf_arrow_dpf.svg"]
 		},
-		"dp-motion-back":{
+		"dp_motion_back":{
 			"term":["bqcb","dpb","421"],
 			"image":["./img/streetfighter/sf_arrow_dpb.svg"]
 		},
-		"half-circle-forward":{
+		"half_circle_forward":{
 			"term":["hcf","41236"],
 			"image":["./img/streetfighter/sf_arrow_hcf.svg"]
 		},
-		"half-circle-back":{
+		"half_circle_back":{
 			"term":["hcb","63214"],
 			"image":["./img/streetfighter/sf_arrow_hcb.svg"]
 		},
-		"full-circle-forward":{
+		"full_circle_forward":{
 			"term":["fcf","360"],
 			"image":["./img/streetfighter/sf_arrow_fcf.svg"]
 		},
-		"full-circle-back":{
+		"full_circle_back":{
 			"term":["fcb"],
 			"image":["./img/streetfighter/sf_arrow_fcb.svg"]
 		},
-		"charge-back-forward":{
+		"charge_back_forward":{
 			"term":["cbf"],
 			"image":["./img/streetfighter/sf_arrow_cb.svg","./img/streetfighter/sf_arrow_f.svg"]
 		},
-		"charge-down-up":{
+		"charge_down_up":{
 			"term":["cdu"],
 			"image":["./img/streetfighter/sf_arrow_cd.svg","./img/streetfighter/sf_arrow_u.svg"]
 		},
-		"quarter-circle-forward-punch":{
-			"term":["hadoken","bull head","switch claw","shooting peach","spinning mixer","guren ken","bolt charge","yoga fire","flash chop","kunai","metallic sphere","parabellum"],
+		"quarter_circle_forward_punch":{
+			"term":["fireball","hadoken","bull head","switch claw","shooting peach","spinning mixer","guren ken","bolt charge","yoga fire","flash chop","kunai","metallic sphere","parabellum"],
 			"image":["./img/streetfighter/sf_arrow_qcf.svg","./img/streetfighter/sf_button_p.svg"]
 		},
-		"quarter-circle-back-punch":{
+		"quarter_circle_back_punch":{
 			"term":["psycho inferno","aurora spin edge","ressenha","thunder clap","frost touch"],
 			"image":["./img/streetfighter/sf_arrow_qcb.svg","./img/streetfighter/sf_button_p.svg"]
 		},
-		"dp-motion-forward-punch":{
+		"dp_motion_forward_punch":{
 			"term":["shoryuken","tragedy assault","cannon spike","raging light","tensenrin","hailstorm"],
 			"image":["./img/streetfighter/sf_arrow_dpf.svg","./img/streetfighter/sf_button_p.svg"]
 		},
-		"half-circle-forward-punch":{
+		"half_circle_forward_punch":{
 			"term":["hooligan combination"],
 			"image":["./img/streetfighter/sf_arrow_hcf.svg","./img/streetfighter/sf_button_p.svg"]
 		},
-		"half-circle-back-punch":{
+		"half_circle_back_punch":{
 			"term":["killing head","grand izuna drop","rainbow typhoon","sunset wheel","yoga flame","power bomb","raida"],
 			"image":["./img/streetfighter/sf_arrow_hcb.svg","./img/streetfighter/sf_button_p.svg"]
 		},
-		"full-circle-forward-punch":{
+		"full_circle_forward_punch":{
 			"term":["screw pile driver"],
 			"image":["./img/streetfighter/sf_arrow_fcf.svg","./img/streetfighter/sf_button_p.svg"]
 		},
-		"charge-back-forward-punch":{
+		"charge_back_forward_punch":{
 			"term":["kikoken","psycho blast","disc guidance","sotoja","sonic boom","dash straight","chariot tackle"],
 			"image":["./img/streetfighter/sf_arrow_cb.svg","./img/streetfighter/sf_arrow_f.svg","./img/streetfighter/sf_button_p.svg"]
 		},
-		"charge-down-up-punch":{
+		"charge_down_up_punch":{
 			"term":["nishikyu","head crush","dangerous headbutt"],
 			"image":["./img/streetfighter/sf_arrow_cd.svg","./img/streetfighter/sf_arrow_u.svg","./img/streetfighter/sf_button_p.svg"]
+		},
+		"tap_punch":{
+			"term":["psycho flicker"],
+			"image":["./img/streetfighter/sf_button_tapp.svg"]
+		},
+		"three_p":{
+			"term":["double lariat"],
+			"image":["./img/streetfighter/sf_button_p.svg","./img/streetfighter/sf_button_p.svg","./img/streetfighter/sf_button_p.svg"]
+		},
+		"quarter_circle_forward_kick":{
+			"term":["hyakurtsu","hyakurtsukyaku","moonsault slash", "spiral arrow","hanging chain","valiant rebellion","crimson terror","wingless airplane","whirlwind shot","seppo","kasumigake","fuharenkyaku"],
+			"image":["./img/streetfighter/sf_arrow_qcf.svg","./img/streetfighter/sf_button_k.svg"]
+		},
+		"quarter_circle_back_kick":{
+			"term":["tatsu","tatsumaki","sonic scythe","eagle spike","mujinkyaku","ryodansatsu","vanity step"],
+			"image":["./img/streetfighter/sf_arrow_qcb.svg","./img/streetfighter/sf_button_k.svg"]
+		},
+		"dp_motion_forward_kick":{
+			"term":["nikankyaku","air knee smash","kazekiri","screw smash"],
+			"image":["./img/streetfighter/sf_arrow_dpf.svg","./img/streetfighter/sf_button_k.svg"]
+		},
+		"half_circle_forward_kick":{
+			"term":["demon flip"],
+			"image":["./img/streetfighter/sf_arrow_hcf.svg","./img/streetfighter/sf_button_k.svg"]
+		},
+		"half_circle_back_kick":{
+			"term":["bull revenger","mask of tlalli","brimstone","siberian express","kunai hoju"],
+			"image":["./img/streetfighter/sf_arrow_hcb.svg","./img/streetfighter/sf_button_k.svg"]
+		},
+		"charge_back_forward_kick":{
+			"term":["double knee press","ryubenda","slash elbow","dash grand blow"],
+			"image":["./img/streetfighter/sf_arrow_cb.svg","./img/streetfighter/sf_arrow_f.svg","./img/streetfighter/sf_button_k.svg"]
+		},
+		"charge_down_up_kick":{
+			"term":["spinning bird kick","head press","air stampede","flash kick","violence knee drop"],
+			"image":["./img/streetfighter/sf_arrow_cd.svg","./img/streetfighter/sf_arrow_u.svg","./img/streetfighter/sf_button_k.svg"]
+		},
+		"hold_button":{
+			"term":["bull horn"],
+			"image":["./img/streetfighter/sf_button_hold.svg"]
+		},
+		"hold_button_2":{
+			"term":["turn punch"],
+			"image":["./img/streetfighter/sf_button_holdx2.svg"]
 		},
 		"separate":{
 			"term":[",",">","xx"],
@@ -206,55 +251,55 @@
 			"term":["d"],
 			"image":["./img/tekken/tek_arrow_d.svg"]
 		},
-		"down-forward":{
+		"down_forward":{
 			"term":["d/f","df"],
 			"image":["./img/tekken/tek_arrow_df.svg"]
 		},
-		"down-back":{
+		"down_back":{
 			"term":["d/b","db"],
 			"image":["./img/tekken/tek_arrow_db.svg"]
 		},
-		"up-forward":{
+		"up_forward":{
 			"term":["u/f","uf"],
 			"image":["./img/tekken/tek_arrow_uf.svg"]
 		},
-		"up-back":{
+		"up_back":{
 			"term":["u/b","ub"],
 			"image":["./img/tekken/tek_arrow_ub.svg"]
 		},
-		"hold-forward":{
+		"hold_forward":{
 			"term":["F","~f"],
 			"image":["./img/tekken/tek_arrow_hf.svg"]
 		},
-		"hold-back":{
+		"hold_back":{
 			"term":["B","~b"],
 			"image":["./img/tekken/tek_arrow_hb.svg"]
 		},
-		"hold-up":{
+		"hold_up":{
 			"term":["U","~u"],
 			"image":["./img/tekken/tek_arrow_hu.svg"]
 		},
-		"hold-down":{
+		"hold_down":{
 			"term":["D","~d"],
 			"image":["./img/tekken/tek_arrow_hd.svg"]
 		},
-		"hold-down-forward":{
+		"hold_down_forward":{
 			"term":["D/F","DF","~d/f","~df"],
 			"image":["./img/tekken/tek_arrow_hdf.svg"]
 		},
-		"hold-down-back":{
+		"hold_down_back":{
 			"term":["D/B","DB","~d/b","~db"],
 			"image":["./img/tekken/tek_arrow_hdb.svg"]
 		},
-		"hold-up-forward":{
+		"hold_up_forward":{
 			"term":["U/F","UF","~u/f","~uf"],
 			"image":["./img/tekken/tek_arrow_huf.svg"]
 		},
-		"hold-up-back":{
+		"hold_up_back":{
 			"term":["U/B","UB","~u/b","~ub"],
 			"image":["./img/tekken/tek_arrow_hub.svg"]
 		},
-		"forward-forward":{
+		"forward_forward":{
 			"term":["ff","dash"],
 			"image":["./img/tekken/tek_arrow_f.svg","./img/tekken/tek_arrow_f.svg"]
 		},
@@ -278,79 +323,79 @@
 			"term":["4"],
 			"image":["./img/tekken/tek_button_4.svg"]
 		},
-		"one-plus-two":{
+		"one_plus_two":{
 			"term":["1+2"],
 			"image":["./img/tekken/tek_button_12.svg"]
 		},
-		"one-plus-three":{
+		"one_plus_three":{
 			"term":["1+3"],
 			"image":["./img/tekken/tek_button_13.svg"]
 		},
-		"one-plus-four":{
+		"one_plus_four":{
 			"term":["1+4"],
 			"image":["./img/tekken/tek_button_14.svg"]
 		},
-		"two-plus-three":{
+		"two_plus_three":{
 			"term":["2+3"],
 			"image":["./img/tekken/tek_button_23.svg"]
 		},
-		"two-plus-four":{
+		"two_plus_four":{
 			"term":["2+4"],
 			"image":["./img/tekken/tek_button_24.svg"]
 		},
-		"three-plus-four":{
+		"three_plus_four":{
 			"term":["3+4"],
 			"image":["./img/tekken/tek_button_34.svg"]
 		},
-		"one-plus-two-plus-three":{
+		"one_plus_two_plus_three":{
 			"term":["1+2+3"],
 			"image":["./img/tekken/tek_button_123.svg"]
 		},
-		"one-plus-two-plus-four":{
+		"one_plus_two_plus_four":{
 			"term":["1+2+4"],
 			"image":["./img/tekken/tek_button_124.svg"]
 		},
-		"one-plus-three-plus-four":{
+		"one_plus_three_plus_four":{
 			"term":["1+3+4"],
 			"image":["./img/tekken/tek_button_134.svg"]
 		},
-		"two-plus-three-plus-four":{
+		"two_plus_three_plus_four":{
 			"term":["2+3+4"],
 			"image":["./img/tekken/tek_button_234.svg"]
 		},
-		"one-plus-two-plus-three-plus-four":{
+		"one_plus_two_plus_three_plus_four":{
 			"term":["1+2+3+4"],
 			"image":["./img/tekken/tek_button_1234.svg"]
 		},
-		"quarter-circle-forward":{
+		"quarter_circle_forward":{
 			"term":["qcf"],
 			"image":["./img/tekken/tek_arrow_d.svg","./img/tekken/tek_arrow_df.svg","./img/tekken/tek_arrow_f.svg"]
 		},
-		"quarter-circle-back":{
+		"quarter_circle_back":{
 			"term":["qcb"],
 			"image":["./img/tekken/tek_arrow_d.svg","./img/tekken/tek_arrow_db.svg","./img/tekken/tek_arrow_b.svg"]
 		},
-		"half-circle-forward":{
+		"half_circle_forward":{
 			"term":["hcf"],
 			"image":["./img/tekken/tek_arrow_b.svg","../img/tekken/tek_arrow_db.svg","./img/tekken/tek_arrow_d.svg","./img/tekken/tek_arrow_df.svg","./img/tekken/tek_arrow_f.svg"]
 		},
-		"half-circle-back":{
+		"half_circle_back":{
 			"term":["hcb"],
 			"image":["./img/tekken/tek_arrow_f.svg","./img/tekken/tek_arrow_df.svg","./img/tekken/tek_arrow_d.svg","./img/tekken/tek_arrow_db.svg","./img/tekken/tek_arrow_b.svg"]
 		},
-		"hold-forward-forward":{
+		"hold_forward_forward":{
 			"term":["fF","~ff"],
 			"image":["./img/tekken/tek_arrow_f.svg","./img/tekken/tek_arrow_hf.svg"]
 		},
-		"electric-wind-god-fist/electric-wind-hook-fist":{
+		"electric_wind_god_fist/electric_wind_hook_fist":{
 			"term":["ewgf","EWGF","ewhf","EWHF"],
 			"image":["./img/tekken/tek_arrow_f.svg","./img/tekken/tek_arrow_n.svg","./img/tekken/tek_arrow_d.svg","./img/tekken/tek_arrow_df.svg","./img/tekken/tek_button_2.svg"]
 		},
-		"crouch-dash":{
+		"crouch_dash":{
 			"term":["cd","CD"],
 			"image":["./img/tekken/tek_arrow_f.svg","./img/tekken/tek_arrow_n.svg","./img/tekken/tek_arrow_d.svg","./img/tekken/tek_arrow_df.svg"]
 		},
-		"crouching-demon-stance":{
+		"crouching_demon_stance":{
 			"term":["cds","CDS"],
 			"image":["./img/tekken/tek_arrow_b.svg","./img/tekken/tek_button_1.svg"]
 		},
