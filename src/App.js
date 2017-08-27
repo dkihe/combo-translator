@@ -15,11 +15,11 @@ class App extends Component {
         }
     }
     createArr(){
-        let tekken_re = /(\[(.*?)\]|\((.*?)\)|\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d|\s|\+|\_|\,)/
-        let sf_re = /(\[(.*?)\]|\((.*?)\)|^\w+( \w+)*$|\s|\.|\+|\_|\,)/
+
+        let tekken_re = /(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d|\s|\+|\_|\,)/
+        let sf_re = /(?:(,)\s+|\s+(xx)\s+)|\+|(,)/
         let userinput = this.state.term
         let arr = []
-        let replaceArr = []
         //Iterate through array and JSON; push if terms match
         //Use upper and lower case if game is tekken
         if (this.state.game === "tekken"){    
@@ -29,7 +29,7 @@ class App extends Component {
         }
         for(var i=0;i<item.length;i++){
             //If text is "[]" or "()" push to array
-            if(/(\[(.*?)\]|\((.*?)\))/g.test(item[i])){
+            if(/(\[(.*?)\]|\((.*?)\))/g.test(item[i]) && this.state.game === "tekken"){
                 arr.push(item[i])
             }
             for (var key in list[this.state.game]){
@@ -47,7 +47,7 @@ class App extends Component {
         document.querySelector(".images").innerHTML = " "
         for(var i=0;i<arr.length;i++){ //go through user input array
             //Create notes using "[]" or "()"
-            if(/(\[(.*?)\]|\((.*?)\))/g.test(arr[i])){
+            if(/(\[(.*?)\]|\((.*?)\))/g.test(arr[i]) && this.state.game === "tekken"){
                 let text = arr[i]
                 let note = document.createElement("span")
                 note.innerHTML = String(text)
@@ -68,18 +68,27 @@ class App extends Component {
         }
     }
 
-    replaceArr(arr){
-        let temp = []
-        for (var i=0;i<arr.length;i++){
-            for (var key in list[this.state.game]){
-                if (list[this.state.game][key].term[i] === arr[i] && list[this.state.game][key].type === "motion"){
-                    if (list[this.state.game][key].term[i] === arr[i-1] && list[this.state.game][key].type === "button")
-                        return true
+    createAnnotation(arr){
+        //document.querySelector(".annotation").innerHTML = " "
+        let noteArr = []
+        for(var i=0;i<arr.length;i++){ //go through user input array
+            //Create images by comparing to array
+            for (var key in list[this.state.game]){ //go through list for game
+                for(var j=0;j<list[this.state.game][key].term.length;j++){ //go through each term
+                    if (list[this.state.game][key].term[j] === arr[i]){ //compare user input array to term in game list
+                        for (var noteNum=0;noteNum<list[this.state.game][key].annotation.length;noteNum++){ //create each image in list image array
+                            noteArr.push(list[this.state.game][key].annotation[noteNum])
+                            /*let note = document.createElement("img")
+                            note.src = String(list[this.state.game][key].annotation[noteNum])*/
+                            //document.querySelector(".annotation").appendChild(img).className = String(i)
+                        }
+                    }
                 }
             }
         }
+        return noteArr
     }
-    
+
     render() {
         return (
             <div>
@@ -94,12 +103,6 @@ class App extends Component {
                 <Output 
                     imageProp={event => this.createImage(this.createArr())}
                 />
-                <div>
-                    {console.log(this.createArr())}
-                </div>
-                <div>
-                    {console.log(this.replaceArr(this.createArr()))}
-                </div>
             </div>
         );
     }
