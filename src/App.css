@@ -3,28 +3,52 @@ body{
 	font-size: 100%;
 }
 #root{
-     width: 75em;
+     width: 100%;
      margin: 0 auto;
-     /*background-color:yellow;*/
  }
  #games{
-    width: 75em;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
-    /*background-color:green;*/
 }
+.select-field{
+  display:inline-block;
+  position:relative;  
+  width:100%;
+  max-width:25%;
+  height:2em;
+  background-color: #3d4655;
+  border-radius: .5em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.select-field > select{
+  float:left;
+  width:100%;
+  background-color: transparent;
+  border:0em;
+  padding:.5em;
+  font-size: 1em;
+  color:white;
+  background: url("./menu_arrow.svg") no-repeat 95% 50%;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  appearance:none;
+}
+
 #translator{
-	width: 75em;
-    margin: 0 auto;
-    text-align: center;
-    top: 3em;
-    /*background-color:red;*/
+	width: 100%;
+  max-width: 30em;
+  margin: 0 auto;
+  text-align: center;
+  top: 3em;
 }
 #output{
-    width: 75em;
+    width: 100%;
+    max-width:60em;
     margin: 0 auto;
     text-align: center;
-    /*background-color:blue;*/
 }
 
 /*INPUT IMAGES*/
@@ -47,7 +71,7 @@ body{
 
 /*INPUT BAR*/
 input{
-	width:20em;
+	width:100%;
 	display: inline-block;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
@@ -70,8 +94,10 @@ input{
 input:focus{
 	border: .125em solid rgba(0,255,255,1);
 }
+/**************************************************************************************
+************smartphones, portrait iPhone, portrait 480x320 phones (Android) **********
+**************************************************************************************/
 
-/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 @media only screen and (max-device-width:480px)  {
 
   body{
@@ -83,21 +109,49 @@ input:focus{
        margin: 0 auto;
        /*background-color:yellow;*/
    }
-  #games{
-    width: 100%;
+   #games{
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      /*background-color:green;*/
+  }
+  .select-field{
+    display:inline-block;
+    position:relative;  
+    width:100%;
+    max-width: 50%;
+    height:2em;
+    background-color: #3d4655;
+    border-radius: .5em;
     margin: 0 auto;
     text-align: center;
-    background-color:green;
+  }
+
+  .select-field > select{
+    float:left;
+    width:100%;
+    background-color: transparent;
+    border:0em;
+    padding:.5em;
+    font-size: 1em;
+    color:white;
+    background: url("./menu_arrow.svg") no-repeat 95% 50%;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
   }
 
   #translator{
     width: 100%;
+    max-width: 75%;
     margin: 0 auto;
     text-align: center;
+    top: 2em;
       /*background-color:red;*/
   }
   #output{
       width: 100%;
+      max-width: 90%;
       margin: 0 auto;
       text-align: center;
       /*background-color:blue;*/
@@ -106,24 +160,24 @@ input:focus{
   /*INPUT IMAGES*/
   .images{
     position: relative;
-    top: 1em;
+    top: 2em;
   }
   .images span{
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
     display: inline-block;
     vertical-align: middle;
   }
   .images img{
       vertical-align: middle;
-      width: 1em;
-      height: 1em;
+      width: 1.5em;
+      height: 1.5em;
   }
 
 
   /*INPUT BAR*/
   input{
-    width:20em;
+    width:100%;
     display: inline-block;
       -webkit-box-sizing: content-box;
       -moz-box-sizing: content-box;
@@ -141,5 +195,9 @@ input:focus{
       -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
       -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
       transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  }
+
+  input:focus{
+    border: .125em solid rgba(0,255,255,1);
   }
 }
