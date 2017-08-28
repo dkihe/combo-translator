@@ -4,9 +4,9 @@ class Output extends Component{
 	render(){
 		return(
 			<div id="output">
-				<button className="btn" onClick={this.props.imageProp}>
-					Translate!
-				</button>
+				<div>
+					{this.props.imageProp}
+				</div>
 				<div className="images">
 				</div>
 			</div>

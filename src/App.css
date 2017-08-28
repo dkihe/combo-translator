@@ -17,6 +17,7 @@ body{
 	width: 75em;
     margin: 0 auto;
     text-align: center;
+    top: 3em;
     /*background-color:red;*/
 }
 #output{
@@ -70,21 +71,75 @@ input:focus{
 	border: .125em solid rgba(0,255,255,1);
 }
 
-/*TRANSLATE BUTTON*/
-.btn {
-  -webkit-border-radius: 4;
-  -moz-border-radius: 4;
-  border-radius: 4px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 16px;
-  background: #3498db;
-  padding: 8px 16px 8px 16px;
-  text-decoration: none;
-  border: none;
-}
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+@media only screen and (max-device-width:480px)  {
 
-.btn:hover {
-  background: #3cb0fd;
-  text-decoration: none;
+  body{
+    background-color: #587284;
+    font-size: 100%;
+  }
+  #root{
+       width: 100%;
+       margin: 0 auto;
+       /*background-color:yellow;*/
+   }
+  #games{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color:green;
+  }
+
+  #translator{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+      /*background-color:red;*/
+  }
+  #output{
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      /*background-color:blue;*/
+  }
+
+  /*INPUT IMAGES*/
+  .images{
+    position: relative;
+    top: 1em;
+  }
+  .images span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .images img{
+      vertical-align: middle;
+      width: 1em;
+      height: 1em;
+  }
+
+
+  /*INPUT BAR*/
+  input{
+    width:20em;
+    display: inline-block;
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      padding: .25em;
+      border: .125em solid rgba(255,255,255,1);
+      -webkit-border-radius: .25em;
+      border-radius: .25em;
+      font: normal 1em/0 'Open Sans', Helvetica, sans-serif;
+      color: rgba(0,0,0,1);
+      -o-text-overflow: clip;
+      text-overflow: clip;
+      background: rgba(255,255,255,1);
+      -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+      -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+      -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+      transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  }
 }

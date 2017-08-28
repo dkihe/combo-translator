@@ -343,7 +343,7 @@
 			"image":["./img/tekken/tek_arrow_hub.svg"]
 		},
 		"forward_forward":{
-			"term":["ff","dash"],
+			"term":["ff"],
 			"image":["./img/tekken/tek_arrow_f.svg","./img/tekken/tek_arrow_f.svg"]
 		},
 		"neutral":{
@@ -427,7 +427,7 @@
 			"image":["./img/tekken/tek_arrow_f.svg","./img/tekken/tek_arrow_df.svg","./img/tekken/tek_arrow_d.svg","./img/tekken/tek_arrow_db.svg","./img/tekken/tek_arrow_b.svg"]
 		},
 		"hold_forward_forward":{
-			"term":["fF","~ff"],
+			"term":["fF","~ff","dash"],
 			"image":["./img/tekken/tek_arrow_f.svg","./img/tekken/tek_arrow_hf.svg"]
 		},
 		"electric_wind_god_fist/electric_wind_hook_fist":{
@@ -441,6 +441,34 @@
 		"crouching_demon_stance":{
 			"term":["cds","CDS"],
 			"image":["./img/tekken/tek_arrow_b.svg","./img/tekken/tek_button_1.svg"]
+		},
+		"while_standing":{
+			"term":["ws","WS"],
+			"image":["./img/tekken/tek_state_ws.svg"]
+		},
+		"instant_while_standing":{
+			"term":["iws","iWS"],
+			"image":["./img/tekken/tek_state_iws.svg"]
+		},
+		"while_running":{
+			"term":["wr","WR"],
+			"image":["./img/tekken/tek_state_wr.svg"]
+		},
+		"instant_while_running":{
+			"term":["iwr","iWR"],
+			"image":["./img/tekken/tek_state_iwr.svg"]
+		},
+		"wall_splat":{
+			"term":["w!","W!"],
+			"image":["./img/tekken/tek_state_w.svg"]
+		},
+		"screw":{
+			"term":["s!","S!"],
+			"image":["./img/tekken/tek_state_s.svg"]
+		},
+		"counter_hit":{
+			"term":["ch","CH"],
+			"image":["./img/tekken/tek_state_ch.svg"]
 		},
 		"separate":{
 			"term":[",","_"],
