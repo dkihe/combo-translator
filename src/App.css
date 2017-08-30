@@ -1,26 +1,37 @@
 body{
-	background-color: #587284;
+	background-color: #036B75;
 	font-size: 100%;
 }
 #root{
-     width: 100%;
-     margin: 0 auto;
- }
+    width: 100%;
+    top:20%;
+    left:50%;
+    margin-left:-50%;
+    margin-right: -50%;
+    position: absolute;
+}
+#title{
+    width: 100%;
+    max-width: 25%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size:3em;
+    /*background-color:#4D5E5F;*/
+    color:#fff;
+}
  #games{
     width: 100%;
+    max-width: 25%;
     margin: 0 auto;
     text-align: center;
 }
 .select-field{
   display:inline-block;
-  position:relative;  
-  width:100%;
-  max-width:25%;
-  height:2em;
-  background-color: #3d4655;
+  width: 100%;
+  background-color: white;
   border-radius: .5em;
   margin: 0 auto;
-  text-align: center;
 }
 
 .select-field > select{
@@ -30,7 +41,7 @@ body{
   border:0em;
   padding:.5em;
   font-size: 1em;
-  color:white;
+  color:black;
   background: url("./menu_arrow.svg") no-repeat 95% 50%;
   -moz-appearance:none;
   -webkit-appearance:none;
@@ -39,14 +50,40 @@ body{
 
 #translator{
 	width: 100%;
-  max-width: 30em;
+  max-width: 25%;
   margin: 0 auto;
-  text-align: center;
-  top: 3em;
 }
+#translator > input{
+  width:100%;
+  display: inline-block;
+  padding: .5em;
+  border: 0em;
+  -webkit-border-radius: .5em;
+  border-radius: .5em;
+  font: normal 1em/0 'Open Sans', Helvetica, sans-serif;
+  background: rgba(255,255,255,1);
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+#text{
+    height:2em;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    color:#e0e0e0;
+    font-size:2em;
+}
+input:focus{
+  border: .125em solid rgba(0,255,255,1);
+}
+
 #output{
     width: 100%;
-    max-width:60em;
+    max-width:95%;
     margin: 0 auto;
     text-align: center;
 }
@@ -57,7 +94,7 @@ body{
 	top: 3em;
 }
 .images span{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', Helvetica, sans-serif;
 	font-size: 3em;
 	display: inline-block;
 	vertical-align: middle;
@@ -69,31 +106,6 @@ body{
 }
 
 
-/*INPUT BAR*/
-input{
-	width:100%;
-	display: inline-block;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    padding: .25em;
-    border: .125em solid rgba(255,255,255,1);
-    -webkit-border-radius: .25em;
-    border-radius: .25em;
-    font: normal 1em/0 'Open Sans', Helvetica, sans-serif;
-    color: rgba(0,0,0,1);
-    -o-text-overflow: clip;
-    text-overflow: clip;
-    background: rgba(255,255,255,1);
-    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-}
-
-input:focus{
-	border: .125em solid rgba(0,255,255,1);
-}
 /**************************************************************************************
 ************smartphones, portrait iPhone, portrait 480x320 phones (Android) **********
 **************************************************************************************/
@@ -101,30 +113,40 @@ input:focus{
 @media only screen and (max-device-width:480px)  {
 
   body{
-    background-color: #587284;
+    background-color: #036B75;
     font-size: 100%;
   }
   #root{
-       width: 100%;
-       margin: 0 auto;
-       /*background-color:yellow;*/
-   }
+    width: 100%;
+    top:20%;
+    left:50%;
+    margin-left:-50%;
+    margin-right: -50%;
+    position: absolute;
+  }
+
+  #title{
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size:3em;
+    /*background-color:#4D5E5F;*/
+    color:#fff;
+}
    #games{
       width: 100%;
+      max-width: 90%;
       margin: 0 auto;
       text-align: center;
-      /*background-color:green;*/
   }
   .select-field{
     display:inline-block;
-    position:relative;  
-    width:100%;
-    max-width: 50%;
-    height:2em;
-    background-color: #3d4655;
+    width: 100%;
+    background-color: white;
     border-radius: .5em;
     margin: 0 auto;
-    text-align: center;
   }
 
   .select-field > select{
@@ -134,7 +156,7 @@ input:focus{
     border:0em;
     padding:.5em;
     font-size: 1em;
-    color:white;
+    color:black;
     background: url("./menu_arrow.svg") no-repeat 95% 50%;
     -moz-appearance:none;
     -webkit-appearance:none;
@@ -143,24 +165,41 @@ input:focus{
 
   #translator{
     width: 100%;
-    max-width: 75%;
+    max-width: 90%;
     margin: 0 auto;
-    text-align: center;
-    top: 2em;
-      /*background-color:red;*/
   }
-  #output{
+  #translator > input{
+    width:100%;
+    display: inline-block;
+    padding: .5em;
+    border: 0em;
+    -webkit-border-radius: .5em;
+    border-radius: .5em;
+    font: normal 1em/0 'Open Sans', Helvetica, sans-serif;
+    background: rgba(255,255,255,1);
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  #text{
+      height:.5em;
       width: 100%;
-      max-width: 90%;
+      position: relative;
       margin: 0 auto;
       text-align: center;
-      /*background-color:blue;*/
+      font-family: 'Open Sans', Helvetica, sans-serif;
+      color:#e0e0e0;
+      font-size:1em;
+  }
+  input:focus{
+    border: .125em solid rgba(0,255,255,1);
   }
 
   /*INPUT IMAGES*/
   .images{
     position: relative;
-    top: 2em;
+    top: 3em;
   }
   .images span{
     font-family: 'Open Sans', sans-serif;
@@ -173,31 +212,7 @@ input:focus{
       width: 1.5em;
       height: 1.5em;
   }
-
-
-  /*INPUT BAR*/
-  input{
-    width:100%;
-    display: inline-block;
-      -webkit-box-sizing: content-box;
-      -moz-box-sizing: content-box;
-      box-sizing: content-box;
-      padding: .25em;
-      border: .125em solid rgba(255,255,255,1);
-      -webkit-border-radius: .25em;
-      border-radius: .25em;
-      font: normal 1em/0 'Open Sans', Helvetica, sans-serif;
-      color: rgba(0,0,0,1);
-      -o-text-overflow: clip;
-      text-overflow: clip;
-      background: rgba(255,255,255,1);
-      -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-      -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-      -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-      transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-  }
-
-  input:focus{
-    border: .125em solid rgba(0,255,255,1);
-  }
 }
+
+
+  
