@@ -15,8 +15,8 @@ class App extends Component {
     }
     createImage(){
         let altImg = document.getElementsByTagName("img")
-        let tekken_re = /(\(.*?\)|\[.*?\])|\s|(,)\s+|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/
-        let sf_re = /((,)\s+|\s+(xx)\s+)|\+|(,)|\.|(\(.*?\)|\[.*?\])|\s/
+        let tekken_re = /(\(.*?\)|\[.*?\])|\s|(,)\s*|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/
+        let sf_re = /((,)\s+|\s+(xx)\s+)|\+|(,)|\.|(\(.*?\)|\[.*?\])\s*|\./
         let userinput = this.state.term
         let regex = /(\(.*?\)|\[.*?\])/
         //Iterate through array and JSON; push if terms match
