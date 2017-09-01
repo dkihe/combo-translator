@@ -12,7 +12,7 @@ body{
 }
 #title{
     width: 100%;
-    max-width: 25%;
+    max-width: 50%;
     margin: 0 auto;
     text-align: center;
     font-family: 'Open Sans', Helvetica, sans-serif;
@@ -29,7 +29,7 @@ body{
 .select-field{
   display:inline-block;
   width: 100%;
-  background-color: white;
+  background-color: #004046;
   border-radius: .5em;
   margin: 0 auto;
 }
@@ -41,7 +41,7 @@ body{
   border:0em;
   padding:.5em;
   font-size: 1em;
-  color:black;
+  color:white;
   background: url("./menu_arrow.svg") no-repeat 95% 50%;
   -moz-appearance:none;
   -webkit-appearance:none;
@@ -95,14 +95,20 @@ input:focus{
 }
 .images span{
 	font-family: 'Open Sans', Helvetica, sans-serif;
-	font-size: 3em;
+	font-size: 2em;
 	display: inline-block;
 	vertical-align: middle;
+  margin-left:.5em;
+  margin-right:.5em;
+  color:white;
 }
 .images img{
     vertical-align: middle;
     width: 3em;
     height: 3em;
+}
+img:hover{
+   background-color:#2E8E97;
 }
 
 
@@ -131,7 +137,7 @@ input:focus{
     margin: 0 auto;
     text-align: center;
     font-family: 'Open Sans', Helvetica, sans-serif;
-    font-size:3em;
+    font-size:2em;
     /*background-color:#4D5E5F;*/
     color:#fff;
 }
@@ -144,7 +150,7 @@ input:focus{
   .select-field{
     display:inline-block;
     width: 100%;
-    background-color: white;
+    background-color: #004046;;
     border-radius: .5em;
     margin: 0 auto;
   }
@@ -156,7 +162,7 @@ input:focus{
     border:0em;
     padding:.5em;
     font-size: 1em;
-    color:black;
+    color:#fff;
     background: url("./menu_arrow.svg") no-repeat 95% 50%;
     -moz-appearance:none;
     -webkit-appearance:none;
@@ -202,15 +208,18 @@ input:focus{
     top: 3em;
   }
   .images span{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5em;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 1em;
     display: inline-block;
     vertical-align: middle;
+    margin-left:.25em;
+    margin-right:.25em;
+    color:white;
   }
   .images img{
-      vertical-align: middle;
-      width: 1.5em;
-      height: 1.5em;
+    vertical-align: middle;
+    width: 1.5em;
+    height: 1.5em;
   }
 }
 

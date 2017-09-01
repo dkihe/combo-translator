@@ -13,11 +13,12 @@ class App extends Component {
             game: "streetfighter"
         }
     }
-    createArr(){
+    createImage(){
         let altImg = document.getElementsByTagName("img")
-        let tekken_re = /(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d|\s|\+|\_|\,)/
-        let sf_re = /(?:(,)\s+|\s+(xx)\s+)|\+|(,)/
+        let tekken_re = /(\(.*?\)|\[.*?\])|\s|(,)\s+|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/
+        let sf_re = /((,)\s+|\s+(xx)\s+)|\+|(,)|\.|(\(.*?\)|\[.*?\])|\s/
         let userinput = this.state.term
+        let regex = /(\(.*?\)|\[.*?\])/
         //Iterate through array and JSON; push if terms match
         //Use upper and lower case if game is tekken
         if (this.state.game === "tekken"){    
@@ -29,7 +30,7 @@ class App extends Component {
           document.querySelector(".images").innerHTML = ""
             for(var i=0;i<item.length;i++){
                 //If text is "[]" or "()" push to array
-                if(/(\[(.*?)\]|\((.*?)\))/g.test(item[i]) && this.state.game === "tekken"){
+                if(regex.test(item[i])){
                     let text = item[i]
                     let note = document.createElement("span")
                     note.innerHTML = String(text)
@@ -52,19 +53,20 @@ class App extends Component {
             }
         }
         if (altImg){
-            for (var i = 0; i < altImg.length;i++){
-                altImg[i].addEventListener('click',function show(){
+            for (var j = 0; j < altImg.length;j++){
+                altImg[j].addEventListener('click',function show(){
                     var myAlt = this.alt;
                     document.querySelector("#text").innerHTML = myAlt;
                 })
             }
         }
+        console.log(item)
     }
 
     render() {
         return (
             <div>
-                <div id="title">fg translator</div>
+                <div id="title">combo translator</div>
                 <Games 
                     gameProp={event => this.setState({game: event.target.value})}
                 />
@@ -75,7 +77,7 @@ class App extends Component {
                 />
                 <div id="text">click an image to see a translation</div>
                 <Output
-                    imageProp={this.createArr()}
+                    imageProp={this.createImage()}
                 />
             </div>
         );
