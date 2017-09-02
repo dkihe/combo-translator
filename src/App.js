@@ -15,10 +15,10 @@ class App extends Component {
     }
     createImage(){
         let altImg = document.getElementsByTagName("img")
-        let tekken_re = /(\(.*?\)|\[.*?\])|\s|(,)\s*|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/
-        let sf_re = /\s*(\,|\>)\s*|\s+(xx)\s+|\+|\.|(\(.*?\)|\[.*?\])\s*|\.|\-/
+        let tekken_re = /(\(.*?\))|\s|(,)\s*|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/
+        let sf_re = /\s*(\,|\>)\s*|\s+(xx)\s+|\+|\.|(\(.*?\))\s*|\.|\-|\s/
         let userinput = this.state.term
-        let regex = /(\(.*?\)|\[.*?\])/
+        let regex = /(\(.*?\))/
         //Iterate through array and JSON; push if terms match
         //Use upper and lower case if game is tekken
         if (this.state.game === "tekken"){    

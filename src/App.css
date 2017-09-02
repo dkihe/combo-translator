@@ -91,7 +91,7 @@
   }
   .images{
   	position: relative;
-  	top: 3em;
+  	top: 0;
   }
   .images span{
   	font-family: 'Open Sans', Helvetica, sans-serif;
@@ -216,7 +216,7 @@
   }
   .images{
     position: relative;
-    top: 3em;
+    top: 0;
   }
   .images span{
     font-family: 'Open Sans', Helvetica, sans-serif;
@@ -341,7 +341,7 @@
   }
   .images{
     position: relative;
-    top: 3em;
+    top: 0;
   }
   .images span{
     font-family: 'Open Sans', Helvetica, sans-serif;
