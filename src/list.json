@@ -356,7 +356,7 @@
 			"alt":["Hold Back","Forward","Medium Punch"]
 		},
 		"charge_back_forward_hp":{
-			"term":["lp kikoken","lp psycho blast","lp disc guidance","lp sotoja","lp sonic boom","lp dash straight","lp chariot tackle","lp straight","lp lunge","lp tackle"],
+			"term":["hp kikoken","hp psycho blast","hp disc guidance","hp sotoja","hp sonic boom","hp dash straight","hp chariot tackle","hp straight","hp lunge","hp tackle"],
 			"image":["./img/streetfighter/sf_arrow_cb.svg","./img/streetfighter/sf_arrow_f.svg","./img/streetfighter/sf_button_hp.svg"],
 			"alt":["Hold Back","Forward","Heavy Punch"]
 		},
