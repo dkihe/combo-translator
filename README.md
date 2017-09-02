@@ -37,11 +37,11 @@
 <a name="general"></a>
 ### General
 <a name="gcomments"></a>
-- ##### Comments
+#### Comments
  Use parentheses to add comments to your combo
  > `(comment using parentheses)`
  <a name="ginputs"></a>
-- ##### Inputs
+#### Inputs
  Generally, commas are used to separate inputs
  > `mp,mp, qcf+p`
  
@@ -57,7 +57,7 @@
  <a name="streetfighter"></a>
  ## Street Fighter 5
  <a name="sseparators"></a>
-- ##### Separators
+#### Separators
 Use `,` to separate inputs
 > `mp, mp, hp`
 
@@ -67,7 +67,7 @@ Use `>` to show a chain
 When using `xx` to notate a `cancel` be sure to surround it with `space`
 > `c.mk xx qcf+p`
 <a name="sbuttons"></a>
--  ##### Buttons
+-  #### Buttons
 Punch
 > ` lp, mp, hp, st.lp, st.mp, st.hp, jab, strong, fierce`
 
@@ -80,7 +80,7 @@ Crouching/Jumping/Standing (add `cr.`, `c.`, `j,`, `st.` or `s.` ) to beginning
 V-trigger/V-skill
 `vtrigger, v trigger, vskill, v skill`
 <a name="smotions"></a>
-- ##### Motions
+#### Motions
 Direction (No up-back/7 or up-forward/9)
 > `db, d, df, b, f, u, 1, 2, 3, 4, 6, 8`
 
@@ -111,12 +111,12 @@ Hold [n] Button
 Tap Punch
 > `tapp`
 <a name="scommand-normals"></a>
-- ##### Command Normals
+#### Command Normals
 Type a `direction` `+` `button strength`
 >`Correct -> f+mp` 
 `Incorrect -> f mp`
 <a name="sspecial-moves"></a>
-- ##### Special Moves
+#### Special Moves
 Most special moves are supported by writing the full name
 > `hadoken -> Outputs qcf+p`
 
@@ -125,7 +125,7 @@ To add a button strength type a `button stength` followed by a `space` and then 
 `hk spinning bird kick -> Outputs "[2]8+hk"`
 `ex spd -> Outputs "360+pp"`
 <a name="scritical-arts"></a>
-- ##### Critical Arts
+#### Critical Arts
 Use two motions in a row + a button
 > `qcfqcf+p`
 For charge supers...
@@ -135,18 +135,18 @@ For charge supers...
 ### Tekken 7
 
 <a name="tseparators"></a>
-- ##### Separators
+#### Separators
 Use `,` to separate inputs
 > `f, 1, 2, b`
 
 <a name="tbuttons"></a>
-- ##### Buttons
+#### Buttons
 Use `1`, `2`, `3`, or `4` for face buttons.  Use `+` to combine inputs.
 > `1 2 -> Outputs "1" "2"`
 `1+2 -> Outputs "1+2"`
 
 <a name="tmotions"></a>
-- ##### Motions
+#### Motions
 Directions
 Capitalize input to indicate that the button must be held
 
@@ -157,14 +157,14 @@ Capitalize input to indicate that the button must be held
 `qcf` and `qcb` (Quarter Circle Forward/Back) are also accepted
 
 <a name="tspecial-moves"></a>
-- ##### Special Moves
+#### Special Moves
 > `Work in progress`
 
 Some special moves are accepted (Currently only `ewgf`/`ewhf` and `CDS`)
 >`ewgf -> Outputs "f n d/f f 2"`
 
 <a name="tspecial-states"></a>
-- ##### Special States
+#### Special States
 (instant)While Standing
 >`iws, iWS, ws, WS`
 
