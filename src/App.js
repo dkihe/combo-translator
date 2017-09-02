@@ -66,7 +66,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <div id="title">combo translator</div>
+                <div id="title">Combo Translator</div>
                 <Games 
                     gameProp={event => this.setState({game: event.target.value})}
                 />

@@ -1,148 +1,27 @@
-body{
-	background-color: #036B75;
-	font-size: 100%;
-}
-#root{
-    width: 100%;
-    top:20%;
-    left:50%;
-    margin-left:-50%;
-    margin-right: -50%;
-    position: absolute;
-}
-#title{
-    width: 100%;
-    max-width: 50%;
-    margin: 0 auto;
-    text-align: center;
-    font-family: 'Open Sans', Helvetica, sans-serif;
-    font-size:3em;
-    /*background-color:#4D5E5F;*/
-    color:#fff;
-}
- #games{
-    width: 100%;
-    max-width: 25%;
-    margin: 0 auto;
-    text-align: center;
-}
-.select-field{
-  display:inline-block;
-  width: 100%;
-  background-color: #004046;
-  border-radius: .5em;
-  margin: 0 auto;
-}
-
-.select-field > select{
-  float:left;
-  width:100%;
-  background-color: transparent;
-  border:0em;
-  padding:.5em;
-  font-size: 1em;
-  color:white;
-  background: url("./menu_arrow.svg") no-repeat 95% 50%;
-  -moz-appearance:none;
-  -webkit-appearance:none;
-  appearance:none;
-}
-
-#translator{
-	width: 100%;
-  max-width: 25%;
-  margin: 0 auto;
-}
-#translator > input{
-  width:100%;
-  display: inline-block;
-  padding: .5em;
-  border: 0em;
-  -webkit-border-radius: .5em;
-  border-radius: .5em;
-  font: normal 1em/0 'Open Sans', Helvetica, sans-serif;
-  background: rgba(255,255,255,1);
-  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-}
-#text{
-    height:2em;
-    width: 100%;
-    position: relative;
-    margin: 0 auto;
-    text-align: center;
-    font-family: 'Open Sans', Helvetica, sans-serif;
-    color:#e0e0e0;
-    font-size:2em;
-}
-input:focus{
-  border: .125em solid rgba(0,255,255,1);
-}
-
-#output{
-    width: 100%;
-    max-width:95%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/*INPUT IMAGES*/
-.images{
-	position: relative;
-	top: 3em;
-}
-.images span{
-	font-family: 'Open Sans', Helvetica, sans-serif;
-	font-size: 2em;
-	display: inline-block;
-	vertical-align: middle;
-  margin-left:.5em;
-  margin-right:.5em;
-  color:white;
-}
-.images img{
-    vertical-align: middle;
-    width: 3em;
-    height: 3em;
-    margin-left:.25em;
-    margin-right:.25em;;
-}
-img:hover{
-   background-color:#2E8E97;
-}
-
-
-/**************************************************************************************
-************smartphones, portrait iPhone, portrait 480x320 phones (Android) **********
-**************************************************************************************/
-
-@media only screen and (max-device-width:480px)  {
-
+@media (min-width:320px){
   body{
-    background-color: #036B75;
-    font-size: 100%;
+  	background-color: #036B75;
+  	font-size: 100%;
   }
   #root{
-    width: 100%;
-    top:20%;
-    left:50%;
-    margin-left:-50%;
-    margin-right: -50%;
-    position: absolute;
+      width: 100%;
+      top:20%;
+      left:50%;
+      margin-left:-50%;
+      margin-right: -50%;
+      position: absolute;
   }
-
   #title{
-    width: 100%;
-    max-width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    font-family: 'Open Sans', Helvetica, sans-serif;
-    font-size:2em;
-    /*background-color:#4D5E5F;*/
-    color:#fff;
-}
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      font-family: 'Open Sans', Helvetica, sans-serif;
+      font-size:2em;
+      color:#fff;
+      letter-spacing: .125em;
+      margin-bottom: .5em;
+  }
    #games{
       width: 100%;
       max-width: 90%;
@@ -152,7 +31,7 @@ img:hover{
   .select-field{
     display:inline-block;
     width: 100%;
-    background-color: #004046;;
+    background-color: #004046;
     border-radius: .5em;
     margin: 0 auto;
   }
@@ -164,8 +43,133 @@ img:hover{
     border:0em;
     padding:.5em;
     font-size: 1em;
-    color:#fff;
+    color:white;
     background: url("./menu_arrow.svg") no-repeat 95% 50%;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+  }
+
+  #translator{
+  	width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  #translator > input{
+    width:100%;
+    display: inline-block;
+    padding: .5em;
+    border: 0em;
+    -webkit-border-radius: .5em;
+    border-radius: .5em;
+    font: normal 1em/0 'Open Sans', Helvetica, sans-serif;
+    background: rgba(255,255,255,1);
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  #text{
+      height:2em;
+      width: 100%;
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      font-family: 'Open Sans', Helvetica, sans-serif;
+      color:#e0e0e0;
+      font-size:1em;
+  }
+  input:focus{
+    border: .125em solid rgba(0,255,255,1);
+  }
+
+  #output{
+      width: 100%;
+      max-width:95%;
+      margin: 0 auto;
+      text-align: center;
+  }
+  .images{
+  	position: relative;
+  	top: 3em;
+  }
+  .images span{
+  	font-family: 'Open Sans', Helvetica, sans-serif;
+  	font-size: 1em;
+  	display: inline-block;
+  	vertical-align: middle;
+    margin-left:0;
+    margin-right:0;
+    color:white;
+  }
+  .images img{
+      vertical-align: middle;
+      width: 1.5em;
+      height: 1.5em;
+      margin-left:0;
+      margin-right:0;
+  }
+  img:hover{
+     background-color:#2E8E97;
+  }
+} 
+
+
+
+
+
+
+
+
+
+
+@media (min-width:600px){
+  body{
+    background-color: #036B75;
+    font-size: 100%;
+  }
+  #root{
+      width: 100%;
+      top:20%;
+      left:50%;
+      margin-left:-50%;
+      margin-right: -50%;
+      position: absolute;
+  }
+  #title{
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      font-family: 'Open Sans', Helvetica, sans-serif;
+      font-size:2.5em;
+      color:#fff;
+      letter-spacing: .125em;
+      margin-bottom: .5em;
+  }
+   #games{
+      width: 100%;
+      max-width: 90%;
+      margin: 0 auto;
+      text-align: center;
+  }
+  .select-field{
+    display:inline-block;
+    width: 100%;
+    background-color: #004046;
+    border-radius: .5em;
+    margin: 0 auto;
+  }
+
+  .select-field > select{
+    float:left;
+    width:100%;
+    background-color: transparent;
+    border:0em;
+    padding:.5em;
+    font-size: 1em;
+    color:white;
+    background: url("./menu_arrow.svg") no-repeat 97% 50%;
     -moz-appearance:none;
     -webkit-appearance:none;
     appearance:none;
@@ -191,39 +195,171 @@ img:hover{
     transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   }
   #text{
-      height:.5em;
+      height:2em;
       width: 100%;
       position: relative;
       margin: 0 auto;
       text-align: center;
       font-family: 'Open Sans', Helvetica, sans-serif;
       color:#e0e0e0;
-      font-size:1em;
+      font-size:1.5em;
   }
   input:focus{
     border: .125em solid rgba(0,255,255,1);
   }
 
-  /*INPUT IMAGES*/
+  #output{
+      width: 100%;
+      max-width:95%;
+      margin: 0 auto;
+      text-align: center;
+  }
   .images{
     position: relative;
     top: 3em;
   }
   .images span{
     font-family: 'Open Sans', Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
     display: inline-block;
     vertical-align: middle;
-    margin-left:.25em;
-    margin-right:.25em;
+    margin-left:0;
+    margin-right:0;
     color:white;
   }
   .images img{
-    vertical-align: middle;
-    width: 1.5em;
-    height: 1.5em;
+      vertical-align: middle;
+      width: 2em;
+      height: 2em;
+      margin-left:0;
+      margin-right:0;
+  }
+  img:hover{
+     background-color:#2E8E97;
   }
 }
 
 
-  
+
+
+
+
+
+
+
+
+@media (min-width:1281px){
+  body{
+    background-color: #036B75;
+    font-size: 100%;
+  }
+  #root{
+      width: 100%;
+      top:20%;
+      left:50%;
+      margin-left:-50%;
+      margin-right: -50%;
+      position: absolute;
+  }
+  #title{
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      font-family: 'Open Sans', Helvetica, sans-serif;
+      font-size:3em;
+      color:#fff;
+      letter-spacing: .125em;
+      margin-bottom: .5em;
+  }
+   #games{
+      width: 100%;
+      max-width: 50%;
+      margin: 0 auto;
+      text-align: center;
+  }
+  .select-field{
+    display:inline-block;
+    width: 100%;
+    background-color: #004046;
+    border-radius: .5em;
+    margin: 0 auto;
+  }
+
+  .select-field > select{
+    float:left;
+    width:100%;
+    background-color: transparent;
+    border:0em;
+    padding:.5em;
+    font-size: 1em;
+    color:white;
+    background: url("./menu_arrow.svg") no-repeat 98% 50%;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+  }
+
+  #translator{
+    width: 100%;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  #translator > input{
+    width:100%;
+    display: inline-block;
+    padding: .5em;
+    border: 0em;
+    -webkit-border-radius: .5em;
+    border-radius: .5em;
+    font: normal 1em/0 'Open Sans', Helvetica, sans-serif;
+    background: rgba(255,255,255,1);
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  #text{
+      height:2em;
+      width: 100%;
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      font-family: 'Open Sans', Helvetica, sans-serif;
+      color:#e0e0e0;
+      font-size:2em;
+  }
+  input:focus{
+    border: .125em solid rgba(0,255,255,1);
+  }
+
+  #output{
+      width: 100%;
+      max-width:95%;
+      margin: 0 auto;
+      text-align: center;
+  }
+  .images{
+    position: relative;
+    top: 3em;
+  }
+  .images span{
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 2em;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left:.125em;
+    margin-right:.125em;
+    color:white;
+  }
+  .images img{
+      vertical-align: middle;
+      width: 3em;
+      height: 3em;
+      margin-left:.125em;
+      margin-right:.125em;
+  }
+  img:hover{
+     background-color:#2E8E97;
+  }
+}
