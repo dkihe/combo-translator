@@ -597,13 +597,13 @@
 		},
 		"v_trigger":{
 			"term":["vtrigger", "v trigger"],
-			"image":["./img/streetfighter/sf_button_v.svg","./img/streetfighter/sf_text_trigger.svg"],
-			"alt":["NONE","NONE"]
+			"image":["./img/streetfighter/sf_button_vtrigger.svg"],
+			"alt":["V-Trigger (Heavy Punch+Kick)"]
 		},
 		"v_skill":{
 			"term":["vskill", "v skill"],
-			"image":["./img/streetfighter/sf_button_v.svg","./img/streetfighter/sf_text_skill.svg"],
-			"alt":["NONE","NONE"]
+			"image":["./img/streetfighter/sf_button_vskill.svg"],
+			"alt":["V-Skill (Medium Punch+Kick)"]
 		},
 		"separate":{
 			"term":[",",">","xx"],
@@ -850,6 +850,16 @@
 			"term":["ch","CH"],
 			"image":["./img/tekken/tek_state_ch.svg"],
 			"alt":["Counter Hit"]
+		},
+		"wall_break":{
+			"term":["wb!","WB!"],
+			"image":["./img/tekken/tek_state_wb.svg"],
+			"alt":["Wall Break"]
+		},
+		"floor_break":{
+			"term":["f!","F!","fb!","FB!"],
+			"image":["./img/tekken/tek_state_f.svg"],
+			"alt":["Floor Break"]
 		},
 		"separate":{
 			"term":[",","_"],

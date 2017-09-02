@@ -106,6 +106,8 @@ input:focus{
     vertical-align: middle;
     width: 3em;
     height: 3em;
+    margin-left:.25em;
+    margin-right:.25em;;
 }
 img:hover{
    background-color:#2E8E97;
