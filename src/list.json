@@ -6,32 +6,32 @@
 			"alt":["Punch"]
 		},
 		"light_punch":{
-			"term":["lp","st.lp","jab","st.jab"],
+			"term":["lp","st.lp","s.lp","jab","st.jab"],
 			"image":["./img/streetfighter/sf_button_lp.svg"],
 			"alt":["Light Punch"]
 		},
 		"medium_punch":{
-			"term":["mp","st.mp","strong","st.strong"],
+			"term":["mp","st.mp","s.mp","strong","st.strong"],
 			"image":["./img/streetfighter/sf_button_mp.svg"],
 			"alt":["Medium Punch"]
 		},
 		"heavy_punch":{
-			"term":["hp","st.hp","fierce","st.fierce"],
+			"term":["hp","st.hp","s.hp","fierce","st.fierce"],
 			"image":["./img/streetfighter/sf_button_hp.svg"],
 			"alt":["Heavy Punch"]
 		},
 		"crouching_light_punch":{
-			"term":["cr.lp","cr.jab"],
+			"term":["cr.lp","c.lp","cr.jab"],
 			"image":["./img/streetfighter/sf_button_crlp.svg"],
 			"alt":["Crouching Light Punch"]
 		},
 		"crouching_medium_punch":{
-			"term":["cr.mp","cr.strong"],
+			"term":["cr.mp","c.mp","cr.strong"],
 			"image":["./img/streetfighter/sf_button_crmp.svg"],
 			"alt":["Crouching Medium Punch"]
 		},
 		"crouching_heavy_punch":{
-			"term":["cr.hp","cr.fierce"],
+			"term":["cr.hp","c.hp","cr.fierce"],
 			"image":["./img/streetfighter/sf_button_crhp.svg"],
 			"alt":["Crouching Heavy Punch"]
 		},
@@ -56,32 +56,32 @@
 			"alt":["Kick"]
 		},
 		"light_kick":{
-			"term":["lk","st.lk","short","st.short"],
+			"term":["lk","st.lk","s.lk","short","st.short"],
 			"image":["./img/streetfighter/sf_button_lk.svg"],
 			"alt":["Light Kick"]
 		},
 		"medium_kick":{
-			"term":["mk","st.mk","forward","st.forward"],
+			"term":["mk","st.mk","s.mk","forward","st.forward"],
 			"image":["./img/streetfighter/sf_button_mk.svg"],
 			"alt":["Medium Kick"]
 		},
 		"heavy_kick":{
-			"term":["hk","st.hk","roundhouse","st.roundhouse"],
+			"term":["hk","st.hk","s.hk","roundhouse","st.roundhouse"],
 			"image":["./img/streetfighter/sf_button_hk.svg"],
 			"alt":["Heavy Kick"]
 		},
 		"crouching_light_kick":{
-			"term":["cr.lk","cr.short"],
+			"term":["cr.lk","c.lk","cr.short"],
 			"image":["./img/streetfighter/sf_button_crlk.svg"],
 			"alt":["Crouching Light Kick"]
 		},
 		"crouching_medium_kick":{
-			"term":["cr.mk","cr.forward"],
+			"term":["cr.mk","c.mk","cr.forward"],
 			"image":["./img/streetfighter/sf_button_crmk.svg"],
 			"alt":["Crouching Medium Kick"]
 		},
 		"crouching_heavy_kick":{
-			"term":["cr.hk","cr.roundhouse"],
+			"term":["cr.hk","c.hk","cr.roundhouse"],
 			"image":["./img/streetfighter/sf_button_crhk.svg"],
 			"alt":["Crouching Heavy Kick"]
 		},
@@ -366,7 +366,7 @@
 			"alt":["Hold Back","Forward","Punch","Punch"]
 		},
 		"tap_punch":{
-			"term":["psycho flicker"],
+			"term":["tapp","psycho flicker"],
 			"image":["./img/streetfighter/sf_button_tapp.svg"],
 			"alt":["Tap Punch"]
 		},
@@ -560,18 +560,18 @@
 			"image":["./img/streetfighter/sf_button_k.svg","./img/streetfighter/sf_button_k.svg"],
 			"alt":["Kick","Kick"]
 		},
-		"two_k":{
+		"three_k":{
 			"term":["kkk","3k","psycho rising"],
 			"image":["./img/streetfighter/sf_button_k.svg","./img/streetfighter/sf_button_k.svg","./img/streetfighter/sf_button_k.svg"],
 			"alt":["Kick","Kick","Kick"]
 		},
 		"hold_button":{
-			"term":["bull horn","bullhead"],
+			"term":["h1b","bull horn","bullhead"],
 			"image":["./img/streetfighter/sf_button_hold.svg"],
 			"alt":["Hold Button"]
 		},
 		"hold_button_2":{
-			"term":["turn punch","tap"],
+			"term":["h2b","turn punch","tap"],
 			"image":["./img/streetfighter/sf_button_holdx2.svg"],
 			"alt":["Hold 2 Buttons"]
 		},
@@ -595,6 +595,11 @@
 			"image":["./img/streetfighter/sf_arrow_cb.svg","./img/streetfighter/sf_arrow_f.svg","./img/streetfighter/sf_arrow_b.svg","./img/streetfighter/sf_arrow_f.svg"],
 			"alt":["Hold Back","Forward","Back","Forward"]
 		},
+		"karin_tenko":{
+			"term":["tenko","jfl"],
+			"image":["./img/streetfighter/sf_arrow_qcf.svg","./img/streetfighter/sf_button_k.svg","./img/streetfighter/sf_sep_link.svg","./img/streetfighter/sf_button_p.svg"],
+			"alt":["Quarter Circle Forward","Kick","Punch"]
+		},
 		"v_trigger":{
 			"term":["vtrigger", "v trigger"],
 			"image":["./img/streetfighter/sf_button_vtrigger.svg"],
@@ -605,8 +610,12 @@
 			"image":["./img/streetfighter/sf_button_vskill.svg"],
 			"alt":["V-Skill (Medium Punch+Kick)"]
 		},
+		"link":{
+			"term":[">","~"],
+			"image":["./img/streetfighter/sf_sep_blk.svg"]
+		},
 		"separate":{
-			"term":[",",">","xx"],
+			"term":[",","xx"],
 			"image":["./img/streetfighter/sf_sep_blk.svg"]
 		}
 	},
