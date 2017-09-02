@@ -1,8 +1,8 @@
 {
-  "name": "fg-nt",
+  "name": "combo-translator",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nanu00.github.io/fg-nt",
+  "homepage": "https://nanu00.github.io/combo-translator",
   "dependencies": {
     "gh-pages": "^1.0.0",
     "react": "^15.6.1",
