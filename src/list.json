@@ -130,6 +130,16 @@
 			"image":["./img/streetfighter/sf_arrow_db.svg"],
 			"alt":["Diagonal Down Back"]
 		},
+		"up-forward":{
+			"term":["uf","9"],
+			"image":["./img/streetfighter/sf_arrow_uf.svg"],
+			"alt":["Diagonal Down Forward"]
+		},
+		"ub-back":{
+			"term":["ub","7"],
+			"image":["./img/streetfighter/sf_arrow_ub.svg"],
+			"alt":["Diagonal Down Back"]
+		},
 		"hold_back":{
 			"term":["hb"],
 			"image":["./img/streetfighter/sf_arrow_hb.svg"],
