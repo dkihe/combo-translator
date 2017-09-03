@@ -140,6 +140,11 @@
 			"image":["./img/streetfighter/sf_arrow_ub.svg"],
 			"alt":["Diagonal Up Back"]
 		},
+		"neutral":{
+			"term":["n","5"],
+			"image":["./img/streetfighter/sf_arrow_n.svg"],
+			"alt":["Neutral"]
+		},
 		"hold_back":{
 			"term":["hb"],
 			"image":["./img/streetfighter/sf_arrow_hb.svg"],
