@@ -625,6 +625,16 @@
 			"image":["./img/streetfighter/sf_button_vskill.svg"],
 			"alt":["V-Skill (Medium Punch+Kick)"]
 		},
+		"crush_counter":{
+			"term":["cc"],
+			"image":["./img/streetfighter/sf_state_cc.svg"],
+			"alt":["Crush Counter"]
+		},
+		"counter_hit":{
+			"term":["ch"],
+			"image":["./img/streetfighter/sf_state_ch.svg"],
+			"alt":["Counter Hit"]
+		},
 		"link":{
 			"term":[">","~"],
 			"image":["./img/streetfighter/sf_sep_blk.svg"]
