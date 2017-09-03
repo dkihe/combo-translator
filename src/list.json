@@ -133,12 +133,12 @@
 		"up-forward":{
 			"term":["uf","9"],
 			"image":["./img/streetfighter/sf_arrow_uf.svg"],
-			"alt":["Diagonal Down Forward"]
+			"alt":["Diagonal Up Forward"]
 		},
 		"ub-back":{
 			"term":["ub","7"],
 			"image":["./img/streetfighter/sf_arrow_ub.svg"],
-			"alt":["Diagonal Down Back"]
+			"alt":["Diagonal Up Back"]
 		},
 		"hold_back":{
 			"term":["hb"],
