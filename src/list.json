@@ -731,10 +731,15 @@
 			"image":["./img/tekken/tek_arrow_hub.svg"],
 			"alt":["Hold Diagonal Up Back"]
 		},
-		"forward_forward":{
+		"forwardx2":{
 			"term":["ff"],
 			"image":["./img/tekken/tek_arrow_f.svg","./img/tekken/tek_arrow_f.svg"],
 			"alt":["Forward", "Forward"]
+		},
+		"forwardx3":{
+			"term":["fff"],
+			"image":["./img/tekken/tek_arrow_f.svg","./img/tekken/tek_arrow_f.svg","./img/tekken/tek_arrow_f.svg"],
+			"alt":["Forward", "Forward", "Forward"]
 		},
 		"neutral":{
 			"term":["n","N"],
