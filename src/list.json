@@ -637,10 +637,16 @@
 		},
 		"link":{
 			"term":[">","~"],
-			"image":["./img/streetfighter/sf_sep_blk.svg"]
+			"image":["./img/streetfighter/sf_sep_link.svg"],
+			"alt":["Link"]
+		},
+		"cancel":{
+			"term":["xx"],
+			"image":["./img/streetfighter/sf_sep_cancel.svg"],
+			"alt":["Cancel"]
 		},
 		"separate":{
-			"term":[",","xx"],
+			"term":[","],
 			"image":["./img/streetfighter/sf_sep_blk.svg"]
 		}
 	},
