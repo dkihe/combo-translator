@@ -45,7 +45,7 @@ class App extends Component {
                                 if(list[this.state.game][key].hasOwnProperty('alt')){
                                     img.alt = String(list[this.state.game][key].alt[imgNum])
                                 }
-                                document.querySelector(".images").appendChild(img).className = String(i)
+                                document.querySelector(".images").appendChild(img).className = String(list[this.state.game][key].size[imgNum])
                             }
                         }
                     }
