@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import html2canvas from 'html2canvas';
+//import FileSaver from 'filesaver.js';
 import Games from './Games.js';
 import Translator from './Translator.js';
 import Output from './Output.js';
+import ScreenShot from './ScreenShot.js';
 import './App.css';
 const list = require("./list.json")
+
 class App extends Component {
     constructor(props){
         super(props)
@@ -16,20 +20,19 @@ class App extends Component {
     createImage(){
         let altImg = document.getElementsByTagName("img")
         let tekken_re = /(\(.*?\))|\s|(,)\s*|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/
-        let sf_re = /\s*(\,|\>|xx)\s*|\+|(\(.*?\))\s*|\-/
+        let sf_re = /\s*(\,|\>|xx)\s*|\+|(\(.*?\))\s*|\-|\./
         let userinput = this.state.term
         let regex = /(\(.*?\))/
-        //Iterate through array and JSON; push if terms match
-        //Use upper and lower case if game is tekken
         if (this.state.game === "tekken"){    
             var item = userinput.split(tekken_re);
-        } else {
+        } else if (this.state.game === "streetfighter"){
             var item = userinput.toLowerCase().split(sf_re);
+        } else if (this.state.game === "mvci"){
+            var item = userinput.split(sf_re);
         }
         if (document.querySelector(".images")){
           document.querySelector(".images").innerHTML = ""
             for(var i=0;i<item.length;i++){
-                //If text is "[]" or "()" push to array
                 if(regex.test(item[i])){
                     let text = item[i]
                     let note = document.createElement("span")
@@ -60,8 +63,36 @@ class App extends Component {
                 })
             }
         }
-        console.log(item)
     }
+
+    /*captureCombo(){
+        let canvas = document.querySelector("#canvas")
+        let ctx = canvas.getContext("2d")
+        let imgDiv = document.querySelector(".images")
+        let imgEl = document.getElementsByTagName("img")
+        let spanEl = document.getElementsByTagName("span")
+        let divEl = imgDiv.hasChildNodes()
+        let prevX = 0
+        canvas.height = 64
+        if (divEl){
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.imageSmoothingEnabled = false;
+            for(var n=0; n<imgDiv.children.length; n++){
+                if (imgDiv.children[n].nodeName === "IMG"){
+                    ctx.drawImage(imgDiv.children[n], prevX ,0)
+                    prevX += imgDiv.children[n].width
+                    console.log(imgDiv.children[n].width)
+                }
+            }
+            var imagedata = ctx.getImageData(0,0,canvas.width,canvas.height)
+            canvas.width = prevX
+            ctx.putImageData(imagedata,0,0)
+        }
+        //console.log(canvas.width)
+        //console.log(canvas.height)
+        //console.log(imagedata)
+       // console.log(ctx.measureText(imgDiv.children[n]).width)
+    }*/
 
     render() {
         return (

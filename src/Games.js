@@ -8,6 +8,7 @@ class Games extends Component {
                     <select onChange={this.props.gameProp}>
                         <option value="streetfighter">Street Fighter 5</option>
                         <option value="tekken">Tekken 7</option>
+                        <option value="mvci">Marvel vs Capcom: Infinite</option>
                     </select>
                 </div>
             </div>

@@ -4,7 +4,9 @@
   "private": true,
   "homepage": "https://nanu00.github.io/combo-translator",
   "dependencies": {
+    "filesaver.js": "^0.2.0",
     "gh-pages": "^1.0.0",
+    "html2canvas": "^0.5.0-beta4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-scripts": "1.0.11"
