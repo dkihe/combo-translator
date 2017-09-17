@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import html2canvas from 'html2canvas';
-//import FileSaver from 'filesaver.js';
 import Games from './Games.js';
 import Translator from './Translator.js';
 import Output from './Output.js';
@@ -28,6 +26,8 @@ class App extends Component {
         } else if (this.state.game === "streetfighter"){
             var item = userinput.toLowerCase().split(sf_re);
         } else if (this.state.game === "mvci"){
+            var item = userinput.split(sf_re);
+        } else if (this.state.game === "dbfz"){
             var item = userinput.split(sf_re);
         }
         if (document.querySelector(".images")){
@@ -65,34 +65,54 @@ class App extends Component {
         }
     }
 
-    /*captureCombo(){
+    captureCombo(){
         let canvas = document.querySelector("#canvas")
         let ctx = canvas.getContext("2d")
         let imgDiv = document.querySelector(".images")
         let imgEl = document.getElementsByTagName("img")
         let spanEl = document.getElementsByTagName("span")
         let divEl = imgDiv.hasChildNodes()
+        let modal = document.querySelector(".modal")
         let prevX = 0
+        let span = document.getElementsByClassName("close")[0];
+        var btn = document.getElementById("captureBtn");
         canvas.height = 64
+
         if (divEl){
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             ctx.imageSmoothingEnabled = false;
             for(var n=0; n<imgDiv.children.length; n++){
                 if (imgDiv.children[n].nodeName === "IMG"){
-                    ctx.drawImage(imgDiv.children[n], prevX ,0)
-                    prevX += imgDiv.children[n].width
-                    console.log(imgDiv.children[n].width)
+                    ctx.drawImage(imgDiv.children[n], prevX ,0,imgDiv.children[n].width,imgDiv.children[n].height)
+                    prevX += imgDiv.children[n].clientWidth
+                    console.log(imgDiv.children[n].clientWidth)
                 }
             }
             var imagedata = ctx.getImageData(0,0,canvas.width,canvas.height)
             canvas.width = prevX
             ctx.putImageData(imagedata,0,0)
+            var dataurl = canvas.toDataURL('image/png')
+            console.log(dataurl)
+            modal.style.display = "block";
         }
         //console.log(canvas.width)
         //console.log(canvas.height)
         //console.log(imagedata)
        // console.log(ctx.measureText(imgDiv.children[n]).width)
-    }*/
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    }
 
     render() {
         return (
@@ -109,6 +129,9 @@ class App extends Component {
                 <div id="text">click an image to see a translation</div>
                 <Output
                     imageProp={this.createImage()}
+                />
+                <ScreenShot
+                    captureProp={event => this.captureCombo()}
                 />
             </div>
         );

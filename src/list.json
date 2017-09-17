@@ -1142,7 +1142,7 @@
 			"alt":["Floor Break"]
 		},
 		"stance_switch":{
-			"term":["stance"],
+			"term":["stance","DES","chainsaw","STB","STR","HSP"],
 			"image":["./img/tekken/tek_state_stance.svg"],
 			"size":["large"],
 			"alt":["Stance Switch"]
@@ -1519,6 +1519,102 @@
 			"image":["./img/mvci/mvc_state_release.svg"],
 			"size":["large"],
 			"alt":["Release"]
+		},
+		"link":{
+			"term":[">"],
+			"image":["./img/mvci/mvc_sep_link.svg"],
+			"size":["small"]
+		},
+		"separate":{
+			"term":[","],
+			"image":["./img/mvci/mvc_sep_wht.svg"],
+			"size":["small"]
+		}
+	},
+	"dbfz":{
+		"light":{
+			"term":["l","L","A"],
+			"image":["./img/dbfz/db_button_l.svg"],
+			"size":["small"],
+			"alt":["Light Attack"]
+		},
+		"medium":{
+			"term":["m","M","B"],
+			"image":["./img/dbfz/db_button_m.svg"],
+			"size":["small"],
+			"alt":["Medium Attack"]
+		},
+		"heavy":{
+			"term":["h","H","C"],
+			"image":["./img/dbfz/db_button_h.svg"],
+			"size":["small"],
+			"alt":["Heavy Attack"]
+		},
+		"special":{
+			"term":["s","S"],
+			"image":["./img/dbfz/db_button_s.svg"],
+			"size":["small"],
+			"alt":["Special Attack"]
+		},
+		"assist_1":{
+			"term":["a1","A1"],
+			"image":["./img/dbfz/db_button_a1.svg"],
+			"size":["small"],
+			"alt":["Assist 1"]
+		},
+		"assist_2":{
+			"term":["a2","A2"],
+			"image":["./img/dbfz/db_button_a2.svg"],
+			"size":["small"],
+			"alt":["Assist 2"]
+		},
+		"quarter_circle_back":{
+			"term":["qcb","214"],
+			"image":["./img/streetfighter/sf_arrow_qcb.svg"],
+			"size":["medium"],
+			"alt":["Quarter Circle Back"]
+		},
+		"quarter_circle_forward":{
+			"term":["qcf","236"],
+			"image":["./img/streetfighter/sf_arrow_qcf.svg"],
+			"size":["medium"],
+			"alt":["Quarter Circle Forward"]
+		},
+		"quarter_circle_back":{
+			"term":["qcb","214"],
+			"image":["./img/streetfighter/sf_arrow_qcb.svg"],
+			"size":["medium"],
+			"alt":["Quarter Circle Back"]
+		},
+		"dash":{
+			"term":["dash"],
+			"image":["./img/mvci/mvc_state_dash.svg"],
+			"size":["large"],
+			"alt":["Dash"]
+		},
+		"super_dash":{
+			"term":["super dash","sd"],
+			"image":["./img/dbfz/db_state_sdash.svg"],
+			"size":["large"],
+			"alt":["Super Dash"]
+		},
+		"dragon_rush":{
+			"term":["rush"],
+			"image":["./img/dbfz/db_state_rush.svg"],
+			"size":["large"],
+			"alt":["Dragon Rush"]
+		},
+		"sparking_blast":{
+			"term":["sparking","sb","spark"],
+			"image":["./img/dbfz/db_state_sparking.svg"],
+			"size":["large"],
+			"alt":["Sparking Blast"]
+		},
+		"jump":{
+			"term":["j"],
+			"image":["./img/mvci/mvc_state_j.svg"],
+			"size":["large"],
+			"alt":["Jump"]
 		},
 		"link":{
 			"term":[">"],
