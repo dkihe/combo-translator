@@ -750,6 +750,12 @@
 			"size":["medium"],
 			"alt":["V-Skill (Medium Punch+Kick)"]
 		},
+		"tiger_knee":{
+			"term":["tk"],
+			"image":["./img/streetfighter/sf_arrow_tk.svg"],
+			"size":["large"],
+			"alt":["Tiger Kneee"]
+		},
 		"crush_counter":{
 			"term":["cc"],
 			"image":["./img/streetfighter/sf_state_cc.svg"],

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Games from './Games.js';
 import Translator from './Translator.js';
 import Output from './Output.js';
-import ScreenShot from './ScreenShot.js';
 import './App.css';
 const list = require("./list.json")
 
@@ -17,10 +16,12 @@ class App extends Component {
     }
     createImage(){
         let altImg = document.getElementsByTagName("img")
-        let tekken_re = /(\(.*?\))|\s|(,)\s*|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/
-        let sf_re = /\s*(\,|\>|xx)\s*|\+|(\(.*?\))\s*|\-|\./
+        //let tekken_re = /(\(.*?\))|\s|(,)\s*|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/
+        //let sf_re = /(tk)\s*|\s*(\,|\>|xx)\s*|\+|(\(.*?\))\s*|\-|\./
+        let tekken_re = /\s|(,)\s*|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/
+        let sf_re = /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./
         let userinput = this.state.term
-        let regex = /(\(.*?\))/
+        //let regex = /(\(.*?\))/
         if (this.state.game === "tekken"){    
             var item = userinput.split(tekken_re);
         } else if (this.state.game === "streetfighter"){
@@ -33,12 +34,12 @@ class App extends Component {
         if (document.querySelector(".images")){
           document.querySelector(".images").innerHTML = ""
             for(var i=0;i<item.length;i++){
-                if(regex.test(item[i])){
+                /*if(regex.test(item[i])){
                     let text = item[i]
                     let note = document.createElement("span")
                     note.innerHTML = String(text)
                     document.querySelector(".images").appendChild(note)
-                }
+                }*/
                 for (var key in list[this.state.game]){
                     for(var j=0;j<list[this.state.game][key].term.length;j++){
                         if (list[this.state.game][key].term[j] === item[i]){
@@ -85,7 +86,7 @@ class App extends Component {
                 if (imgDiv.children[n].nodeName === "IMG"){
                     ctx.drawImage(imgDiv.children[n], prevX ,0,imgDiv.children[n].width,imgDiv.children[n].height)
                     prevX += imgDiv.children[n].clientWidth
-                    console.log(imgDiv.children[n].clientWidth)
+                    console.log(prevX)
                 }
             }
             var imagedata = ctx.getImageData(0,0,canvas.width,canvas.height)
@@ -101,10 +102,6 @@ class App extends Component {
        // console.log(ctx.measureText(imgDiv.children[n]).width)
         btn.onclick = function() {
             modal.style.display = "block";
-        }
-
-        span.onclick = function() {
-            modal.style.display = "none";
         }
 
         window.onclick = function(event) {
@@ -129,9 +126,6 @@ class App extends Component {
                 <div id="text">click an image to see a translation</div>
                 <Output
                     imageProp={this.createImage()}
-                />
-                <ScreenShot
-                    captureProp={event => this.captureCombo()}
                 />
             </div>
         );

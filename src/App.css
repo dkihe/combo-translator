@@ -1,43 +1,41 @@
-#canvas{
-  image-rendering: pixelated;
+#canvas-container{
+  width: 100%;
+  text-align:center;
+      max-width: 100%;
+      margin: 0 auto;
+      position: absolute;
+      top:50%;
+}  
+canvas {
+   display: inline;
+   image-rendering: pixelated;
 }
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,.9); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
 }
-
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+#captureBtn{
+    box-shadow: 0px 0px 15px #666;
+    border-radius: .5em;
 }
 
 @media (min-width:320px){
@@ -85,11 +83,15 @@
     border:0em;
     padding:.5em;
     font-size: 1em;
-    color:black;
+    color:#fff;
     background: url("./menu_arrow.svg") no-repeat 97% 50%;
     -moz-appearance:none;
     -webkit-appearance:none;
     appearance:none;
+  }
+
+  .select-field > select > option{
+    color:black;
   }
 
   #translator{
@@ -224,11 +226,15 @@
     border:0em;
     padding:.5em;
     font-size: 1em;
-    color:black;
+    color:#fff;
     background: url("./menu_arrow.svg") no-repeat 97% 50%;
     -moz-appearance:none;
     -webkit-appearance:none;
     appearance:none;
+  }
+
+  .select-field > select > option{
+    color:black;
   }
 
   #translator{
@@ -363,11 +369,15 @@
     border:0em;
     padding:.5em;
     font-size: 1em;
-    color:black;
+    color:#fff;
     background: url("./menu_arrow.svg") no-repeat 97% 50%;
     -moz-appearance:none;
     -webkit-appearance:none;
     appearance:none;
+  }
+
+  .select-field > select > option{
+    color:black;
   }
 
   #translator{
