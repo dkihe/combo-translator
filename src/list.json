@@ -153,25 +153,25 @@
 		"quarter_circle_forward":{
 			"term":["qcf","236"],
 			"image":["./img/streetfighter/sf_arrow_qcf.svg"],
-			"size":["medium"],
+			"size":["small"],
 			"alt":["Quarter Circle Forward"]
 		},
 		"quarter_circle_back":{
 			"term":["qcb","214"],
 			"image":["./img/streetfighter/sf_arrow_qcb.svg"],
-			"size":["medium"],
+			"size":["small"],
 			"alt":["Quarter Circle Back"]
 		},
 		"dp_motion_forward":{
 			"term":["dp","fqcf","dpf","623"],
 			"image":["./img/streetfighter/sf_arrow_dpf.svg"],
-			"size":["medium"],
+			"size":["small"],
 			"alt":["Dragon Punch Motion Forward"]
 		},
 		"dp_motion_back":{
 			"term":["rdp","bqcb","dpb","421"],
 			"image":["./img/streetfighter/sf_arrow_dpb.svg"],
-			"size":["medium"],
+			"size":["small"],
 			"alt":["Dragon Punch Motion Back"]
 		},
 		"half_circle_forward":{
@@ -189,13 +189,13 @@
 		"full_circle_forward":{
 			"term":["fcf","360","63214789"],
 			"image":["./img/streetfighter/sf_arrow_fcf.svg"],
-			"size":["medium"],
+			"size":["small"],
 			"alt":["Full Circle Forward"]
 		},
 		"full_circle_back":{
 			"term":["fcb","41236987"],
 			"image":["./img/streetfighter/sf_arrow_fcb.svg"],
-			"size":["medium"],
+			"size":["small"],
 			"alt":["Full Circle Back"]
 		},
 		"charge_back_forward":{
@@ -213,91 +213,91 @@
 		"quarter_circle_forward_punch":{
 			"term":["hadoken","bull head","switch claw","shooting peach","spinning mixer","guren ken","bolt charge","yoga fire","flash chop","kunai","metallic sphere","parabellum","fireball","bolt","chop","hands","mixer","soul sphere","abigail punch"],
 			"image":["./img/streetfighter/sf_arrow_qcf.svg","./img/streetfighter/sf_button_p.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Quarter Circle Forward","Punch"]
 		},
 		"lp_quarter_circle_forward_punch":{
 			"term":["lp hadoken","lp bull head","lp switch claw","lp shooting peach","lp spinning mixer","lp bolt charge","lp yoga fire","lp flash chop","lp kunai","lp metallic sphere","lp parabellum","lp fireball","lp bolt","lp chop","lp hands","lp mixer","lp soul sphere","lp abigail punch"],
 			"image":["./img/streetfighter/sf_arrow_qcf.svg","./img/streetfighter/sf_button_lp.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Quarter Circle Forward","Light Punch"]
 		},
 		"mp_quarter_circle_forward_punch":{
 			"term":["mp hadoken","mp bull head","mp switch claw","mp shooting peach","mp spinning mixer","mp bolt charge","mp yoga fire","mp flash chop","mp kunai","mp metallic sphere","mp parabellum","mp fireball","mp bolt","mp chop","mp hands","mp mixer","mp soul sphere","mp abigail punch"],
 			"image":["./img/streetfighter/sf_arrow_qcf.svg","./img/streetfighter/sf_button_mp.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Quarter Circle Forward","Medium Punch"]
 		},
 		"hp_quarter_circle_forward_punch":{
 			"term":["hp hadoken","hp bull head","hp switch claw","hp shooting peach","hp spinning mixer","hp bolt charge","hp yoga fire","hp flash chop","hp kunai","hp metallic sphere","hp parabellum","hp fireball","hp bolt","hp chop","hp hands","hp mixer","hp soul sphere","hp abigail punch"],
 			"image":["./img/streetfighter/sf_arrow_qcf.svg","./img/streetfighter/sf_button_hp.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Quarter Circle Forward","Heavy Punch"]
 		},
 		"ex_quarter_circle_forward_punch":{
 			"term":["ex hadoken","ex bull head","ex switch claw","ex shooting peach","ex spinning mixer","ex bolt charge","ex yoga fire","ex flash chop","ex kunai","ex metallic sphere","ex parabellum","ex fireball","ex bolt","ex chop","ex hands","ex mixer","ex soul sphere","ex abigail punch"],
 			"image":["./img/streetfighter/sf_arrow_qcf.svg","./img/streetfighter/sf_button_px2.svg"],
-			"size":["medium","medium"],
+			"size":["small","medium"],
 			"alt":["Quarter Circle Forward","2 Punches"]
 		},
 		"quarter_circle_back_punch":{
 			"term":["psycho inferno","aurora spin edge","ressenha","thunder clap","frost touch","sekia goshoha","clap","inferno","ase"],
 			"image":["./img/streetfighter/sf_arrow_qcb.svg","./img/streetfighter/sf_button_p.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Quarter Circle Back","Punch"]
 		},
 		"quarter_circle_back_lp":{
 			"term":["lp psycho inferno","lp aurora spin edge","lp ressenha","lp thunder clap","lp frost touch","lp sekia goshoha","lp clap","lp inferno","lp ase"],
 			"image":["./img/streetfighter/sf_arrow_qcb.svg","./img/streetfighter/sf_button_lp.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Quarter Circle Back","Light Punch"]
 		},
 		"quarter_circle_back_mp":{
 			"term":["mp psycho inferno","mp aurora spin edge","mp ressenha","mp thunder clap","mp frost touch","mp sekia goshoha","mp clap","mp inferno","mp ase"],
 			"image":["./img/streetfighter/sf_arrow_qcb.svg","./img/streetfighter/sf_button_mp.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Quarter Circle Back","Medium Punch"]
 		},
 		"quarter_circle_back_punch_hp":{
 			"term":["hp psycho inferno","hp aurora spin edge","hp ressenha","hp thunder clap","hp frost touch","hp sekia goshoha","hp clap","hp inferno","hp ase"],
 			"image":["./img/streetfighter/sf_arrow_qcb.svg","./img/streetfighter/sf_button_hp.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Quarter Circle Back","Heavy Punch"]
 		},
 		"quarter_circle_back_punch_punch_ex":{
 			"term":["ex psycho inferno","ex aurora spin edge","ex ressenha","ex thunder clap","ex frost touch","ex sekia goshoha","ex clap","ex inferno","ex ase"],
 			"image":["./img/streetfighter/sf_arrow_qcb.svg","./img/streetfighter/sf_button_px2.svg"],
-			"size":["medium","medium"],
+			"size":["small","medium"],
 			"alt":["Quarter Circle Back","2 Punches"]
 		},
 		"dp_motion_forward_punch":{
 			"term":["shoryuken","tragedy assault","raging light","tensenrin","hailstorm","pinwheel","ta","guardian of the sun","gots"],
 			"image":["./img/streetfighter/sf_arrow_dpf.svg","./img/streetfighter/sf_button_p.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Dragon Punch Motion Forward","Punch"]
 		},
 		"dp_motion_forward_lp":{
 			"term":["lp shoryuken","lp tragedy assault","lp raging light","lp tensenrin","lp hailstorm","lp pinwheel","lp ta","lp guardian of the sun","lp gots"],
 			"image":["./img/streetfighter/sf_arrow_dpf.svg","./img/streetfighter/sf_button_lp.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Dragon Punch Motion Forward","Light Punch"]
 		},
 		"dp_motion_forward_mp":{
 			"term":["mp shoryuken","mp tragedy assault","mp raging light","mp tensenrin","mp hailstorm","mp pinwheel","mp ta","mp guardian of the sun","mp gots"],
 			"image":["./img/streetfighter/sf_arrow_dpf.svg","./img/streetfighter/sf_button_mp.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Dragon Punch Motion Forward","Medium Punch"]
 		},
 		"dp_motion_forward_hp":{
 			"term":["hp shoryuken","hp tragedy assault","hp raging light","hp tensenrin","hp hailstorm","hp pinwheel","hp ta","hp guardian of the sun","hp gots"],
 			"image":["./img/streetfighter/sf_arrow_dpf.svg","./img/streetfighter/sf_button_hp.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Dragon Punch Motion Forward"," Heavy Punch"]
 		},
 		"dp_motion_forward_punch_ex":{
 			"term":["ex shoryuken","ex tragedy assault","ex raging light","ex tensenrin","ex hailstorm","ex pinwheel","ex ta","ex guardian of the sun","ex gots"],
 			"image":["./img/streetfighter/sf_arrow_dpf.svg","./img/streetfighter/sf_button_px2.svg"],
-			"size":["medium","medium"],
+			"size":["small","medium"],
 			"alt":["Dragon Punch Motion Forward","2 Punches"]
 		},
 		"half_circle_forward_punch":{
@@ -363,31 +363,31 @@
 		"full_circle_forward_punch":{
 			"term":["screw pile driver", "borscht dynamite", "spd", "air spd"],
 			"image":["./img/streetfighter/sf_arrow_fcf.svg","./img/streetfighter/sf_button_p.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Full Circle Forward","Punch"]
 		},
 		"full_circle_forward_lp":{
 			"term":["lp screw pile driver", "lp borscht dynamite", "lp spd", "lp air spd"],
 			"image":["./img/streetfighter/sf_arrow_fcf.svg","./img/streetfighter/sf_button_lp.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Full Circle Forward","Light Punch"]
 		},
 		"full_circle_forward_mp":{
 			"term":["mp screw pile driver", "mp borscht dynamite", "mp spd", "mp air spd"],
 			"image":["./img/streetfighter/sf_arrow_fcf.svg","./img/streetfighter/sf_button_mp.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Full Circle Forward","Medium Punch"]
 		},
 		"full_circle_forward_hp":{
 			"term":["hp screw pile driver", "hp borscht dynamite", "hp spd", "hp air spd"],
 			"image":["./img/streetfighter/sf_arrow_fcf.svg","./img/streetfighter/sf_button_hp.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Full Circle Forward","Heavy Punch"]
 		},
 		"full_circle_forward_punch_ex":{
 			"term":["ex screw pile driver", "ex borscht dynamite", "ex spd", "ex air spd"],
 			"image":["./img/streetfighter/sf_arrow_fcf.svg","./img/streetfighter/sf_button_px2.svg"],
-			"size":["medium","medium"],
+			"size":["small","medium"],
 			"alt":["Full Circle Forward","2 Punches"]
 		},
 		"charge_back_forward_punch":{
@@ -471,91 +471,91 @@
 		"quarter_circle_forward_kick":{
 			"term":["hyakuretsu","hyakuretsukyaku","hanging chain","moonsault slash", "spiral arrow","hanging chain","valiant rebellion","crimson terror","wingless airplane","whirlwind shot","seppo","kasumigake","fuharenkyaku","arrow","upper","chain","legs","dash","fuha","moonsault","ms","stomp","wingless","wws","ct"],
 			"image":["./img/streetfighter/sf_arrow_qcf.svg","./img/streetfighter/sf_button_k.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Quarter Circle Forward","Kick"]
 		},
 		"quarter_circle_forward_lk":{
 			"term":["lk hyakuretsu","lk hyakuretsukyaku","lk hanging chain","lk moonsault slash", "lk spiral arrow","lk hanging chain","lk valiant rebellion","lk crimson terror","lk wingless airplane","lk whirlwind shot","lk seppo","lk kasumigake","lk fuharenkyaku","lk arrow","lk upper","lk chain","lk legs","lk dash","lk fuha","lk moonsault","lk ms","lk stomp","lk wingless","lk wws","lk ct"],
 			"image":["./img/streetfighter/sf_arrow_qcf.svg","./img/streetfighter/sf_button_lk.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Quarter Circle Forward","Light Kick"]
 		},
 		"quarter_circle_forward_mk":{
 			"term":["mk hyakuretsu","mk hyakuretsukyaku","mk hanging chain","mk moonsault slash", "mk spiral arrow","mk hanging chain","mk valiant rebellion","mk crimson terror","mk wingless airplane","mk whirlwind shot","mk seppo","mk kasumigake","mk fuharenkyaku","mk arrow","mk upper","mk chain","mk legs","mk dash","mk fuha","mk moonsault","mk ms","mk stomp","mk wingless","mk wws","mk ct"],
 			"image":["./img/streetfighter/sf_arrow_qcf.svg","./img/streetfighter/sf_button_mk.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Quarter Circle Forward","Light Kick"]
 		},
 		"quarter_circle_forward_hk":{
 			"term":["hk hyakuretsu","hk hyakuretsukyaku","hk hanging chain","hk moonsault slash", "hk spiral arrow","hk hanging chain","hk valiant rebellion","hk crimson terror","hk wingless airplane","hk whirlwind shot","hk seppo","hk kasumigake","hk fuharenkyaku","hk arrow","hk upper","hk chain","hk legs","hk dash","hk fuha","hk moonsault","hk ms","hk stomp","hk wingless","hk wws","hk ct"],
 			"image":["./img/streetfighter/sf_arrow_qcf.svg","./img/streetfighter/sf_button_hk.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Quarter Circle Forward","Heavy Kick"]
 		},
 		"quarter_circle_forward_kick_ex":{
 			"term":["ex hyakuretsu","ex hyakuretsukyaku","ex hanging chain","ex moonsault slash", "ex spiral arrow","ex hanging chain","ex valiant rebellion","ex crimson terror","ex wingless airplane","ex whirlwind shot","ex seppo","ex kasumigake","ex fuharenkyaku","ex arrow","ex upper","ex chain","ex legs","ex dash","ex fuha","ex moonsault","ex ms","ex stomp","ex wingless","ex wws","ex ct"],
 			"image":["./img/streetfighter/sf_arrow_qcf.svg","./img/streetfighter/sf_button_kx2.svg"],
-			"size":["medium","medium"],
+			"size":["small","medium"],
 			"alt":["Quarter Circle Forward","2 Kicks"]
 		},
 		"quarter_circle_back_kick":{
 			"term":["tatsu","tatsumaki","sonic scythe","eagle spike","mujinkyaku","ryodansatsu","vanity step","mujin","scythe","es","cannon strike"],
 			"image":["./img/streetfighter/sf_arrow_qcb.svg","./img/streetfighter/sf_button_k.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Quarter Circle Back","Kick"]
 		},
 		"quarter_circle_back_lk":{
 			"term":["lk tatsu","lk tatsumaki","lk sonic scythe","lk eagle spike","lk mujinkyaku","lk ryodansatsu","lk vanity step","lk mujin","lk scythe","lk es","lk cannon strike"],
 			"image":["./img/streetfighter/sf_arrow_qcb.svg","./img/streetfighter/sf_button_lk.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Quarter Circle Back","Light Kick"]
 		},
 		"quarter_circle_back_mk":{
 			"term":["mk tatsu","mk tatsumaki","mk sonic scythe","mk eagle spike","mk mujinkyaku","mk ryodansatsu","mk vanity step","mk mujin","mk scythe","mk es","mk cannon strike"],
 			"image":["./img/streetfighter/sf_arrow_qcb.svg","./img/streetfighter/sf_button_mk.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Quarter Circle Back","Medium Kick"]
 		},
 		"quarter_circle_back_hk":{
 			"term":["hk tatsu","hk tatsumaki","hk sonic scythe","hk eagle spike","hk mujinkyaku","hk ryodansatsu","hk vanity step","hk mujin","hk scythe","hk es","hk cannon strike"],
 			"image":["./img/streetfighter/sf_arrow_qcb.svg","./img/streetfighter/sf_button_hk.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Quarter Circle Back","Heavy Kick"]
 		},
 		"quarter_circle_back_kick_ex":{
 			"term":["ex tatsu","ex tatsumaki","ex sonic scythe","ex eagle spike","ex mujinkyaku","ex ryodansatsu","ex vanity step","ex mujin","ex scythe","ex es","ex cannon strike"],
 			"image":["./img/streetfighter/sf_arrow_qcb.svg","./img/streetfighter/sf_button_kx2.svg"],
-			"size":["medium","medium"],
+			"size":["small","medium"],
 			"alt":["Quarter Circle Back","2 Kicks"]
 		},
 		"dp_motion_forward_kick":{
 			"term":["nikankyaku","cannon spike", "air knee smash","kazekiri","screw smash","barcelona","izuna drop","aks","fba","upper","id"],
 			"image":["./img/streetfighter/sf_arrow_dpf.svg","./img/streetfighter/sf_button_k.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Dragon Punch Motion Forward","Kick"]
 		},
 		"dp_motion_forward_lk":{
 			"term":["lk nikankyaku","lk cannon spike", "lk air knee smash","lk kazekiri","lk screw smash","lk barcelona","lk izuna drop","lk aks","lk fba","lk upper","lk id"],
 			"image":["./img/streetfighter/sf_arrow_dpf.svg","./img/streetfighter/sf_button_lk.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Dragon Punch Motion Forward","Light Kick"]
 		},
 		"dp_motion_forward_mk":{
 			"term":["mk nikankyaku","mk cannon spike", "mk air knee smash","mk kazekiri","mk screw smash","mk barcelona","mk izuna drop","mk aks","mk fba","mk upper","mk id"],
 			"image":["./img/streetfighter/sf_arrow_dpf.svg","./img/streetfighter/sf_button_mk.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Dragon Punch Motion Forward","Medium Kick"]
 		},
 		"dp_motion_forward_hk":{
 			"term":["hk nikankyaku","hk cannon spike", "hk air knee smash","hk kazekiri","hk screw smash","hk barcelona","hk izuna drop","hk aks","hk fba","hk upper","hk id"],
 			"image":["./img/streetfighter/sf_arrow_dpf.svg","./img/streetfighter/sf_button_hk.svg"],
-			"size":["medium","small"],
+			"size":["small","small"],
 			"alt":["Dragon Punch Motion Forward","Heavy Kick"]
 		},
 		"dp_motion_forward_kick_ex":{
 			"term":["ex nikankyaku","ex cannon spike", "ex air knee smash","ex kazekiri","ex screw smash","ex barcelona","ex izuna drop","ex aks","ex fba","ex upper","ex id"],
 			"image":["./img/streetfighter/sf_arrow_dpf.svg","./img/streetfighter/sf_button_kx2.svg"],
-			"size":["medium","medium"],
+			"size":["small","medium"],
 			"alt":["Dragon Punch Motion Forward","2 Kicks"]
 		},
 		"half_circle_forward_kick":{
@@ -711,19 +711,19 @@
 		"super_quarter_circle_forward":{
 			"term":["qcfqcf","236236"],
 			"image":["./img/streetfighter/sf_arrow_qcf.svg","./img/streetfighter/sf_arrow_qcf.svg"],
-			"size":["medium","medium"],
+			"size":["small","small"],
 			"alt":["Quarter Circle Forward","Quarter Circle Forward"]
 		},
 		"super_quarter_circle_back":{
 			"term":["qcbqcb","214214"],
 			"image":["./img/streetfighter/sf_arrow_qcb.svg","./img/streetfighter/sf_arrow_qcb.svg"],
-			"size":["medium","medium"],
+			"size":["small","small"],
 			"alt":["Quarter Circle Back","Quarter Circle Back"]
 		},
 		"super_full_circle_forward":{
 			"term":["fcffcf","720","6321478963214789"],
 			"image":["./img/streetfighter/sf_arrow_fcf.svg","./img/streetfighter/sf_arrow_fcf.svg"],
-			"size":["medium","medium"],
+			"size":["small","small"],
 			"alt":["Full Circle Forward","Full Circle Forward"]
 		},
 		"super_charge_back_forward":{

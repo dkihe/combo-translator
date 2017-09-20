@@ -2,7 +2,7 @@
   "name": "combo-translator",
   "version": "0.1.0",
   "private": true,
-  "homepage": "combotranslator.com",
+  "homepage": "http://combotranslator.com",
   "dependencies": {
     "canvas-toBlob": "^1.0.0",
     "filesaver.js": "^0.2.0",
