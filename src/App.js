@@ -24,12 +24,10 @@ class App extends Component {
         //let regex = /(\(.*?\))/
         if (this.state.game === "tekken"){    
             var item = userinput.split(tekken_re);
-        } else if (this.state.game === "streetfighter"){
-            var item = userinput.toLowerCase().split(sf_re);
-        } else if (this.state.game === "mvci"){
-            var item = userinput.split(sf_re);
         } else if (this.state.game === "dbfz"){
             var item = userinput.split(sf_re);
+        }else{
+            var item = userinput.toLowerCase().split(sf_re);
         }
         if (document.querySelector(".images")){
           document.querySelector(".images").innerHTML = ""

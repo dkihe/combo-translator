@@ -127,25 +127,25 @@
 			"alt":["Hold Down"]
 		},
 		"hold_down_forward":{
-			"term":["hdf","[3]"],
+			"term":["hdf","hd/f","[3]"],
 			"image":["./img/streetfighter/sf_arrow_hdf.svg"],
 			"size":["small"],
 			"alt":["Hold Diagonal Down Forward"]
 		},
 		"hold_down_back":{
-			"term":["hb","[1]"],
+			"term":["hb","hd/b","[1]"],
 			"image":["./img/streetfighter/sf_arrow_hdb.svg"],
 			"size":["small"],
 			"alt":["Hold Diagonal Down Back"]
 		},
 		"hold_up_forward":{
-			"term":["hu","[9]"],
+			"term":["hu","hu/f","[9]"],
 			"image":["./img/streetfighter/sf_arrow_huf.svg"],
 			"size":["small"],
 			"alt":["Hold Diagonal Up Forward"]
 		},
 		"hold_up_back":{
-			"term":["hd","[7]"],
+			"term":["hd","hu/b","[7]"],
 			"image":["./img/streetfighter/sf_arrow_hub.svg"],
 			"size":["small"],
 			"alt":["Hold Diagonal Up Back"]
@@ -754,7 +754,7 @@
 			"term":["tk"],
 			"image":["./img/streetfighter/sf_arrow_tk.svg"],
 			"size":["large"],
-			"alt":["Tiger Kneee"]
+			"alt":["Tiger Knee"]
 		},
 		"crush_counter":{
 			"term":["cc"],
@@ -779,6 +779,12 @@
 			"image":["./img/mvci/mvc_state_j.svg"],
 			"size":["large"],
 			"alt":["Jump"]
+		},
+		"hold":{
+			"term":["hold","h"],
+			"image":["./img/mvci/mvc_state_hold.svg"],
+			"size":["large"],
+			"alt":["Hold"]
 		},
 		"link":{
 			"term":[">","~"],
@@ -1124,13 +1130,13 @@
 			"alt":["Counter Hit"]
 		},
 		"rage_drive":{
-			"term":["rage drive","Rage Drive","rd","RD"],
+			"term":["drive","Drive","rd","RD"],
 			"image":["./img/tekken/tek_state_rd.svg"],
 			"size":["large"],
 			"alt":["Rage Drive"]
 		},
 		"rage_art":{
-			"term":["rage art","Rage Art","ra","RA"],
+			"term":["art","Art","ra","RA"],
 			"image":["./img/tekken/tek_state_ra.svg"],
 			"size":["large"],
 			"alt":["Rage Art"]
@@ -1191,19 +1197,19 @@
 			"alt":["Punch"]
 		},
 		"light_punch":{
-			"term":["A","lp","st.lp","s.lp","jab","st.jab"],
+			"term":["lp","st.lp","s.lp","jab","st.jab","s.jab"],
 			"image":["./img/mvci/mvc_button_lp.svg"],
 			"size":["small"],
 			"alt":["Light Punch"]
 		},
 		"heavy_punch":{
-			"term":["C","hp","st.hp","s.hp","fierce","st.fierce"],
+			"term":["hp","st.hp","s.hp","fierce","st.fierce","s.fierce"],
 			"image":["./img/mvci/mvc_button_hp.svg"],
 			"size":["small"],
 			"alt":["Heavy Punch"]
 		},
 		"light_heavy_punch":{
-			"term":["AC","lphp","jab+fierce"],
+			"term":["lphp"],
 			"image":["./img/mvci/mvc_button_lphp.svg"],
 			"size":["medium"],
 			"alt":["Light Punch + Heavy Punch"]
@@ -1215,19 +1221,19 @@
 			"alt":["Kick"]
 		},
 		"light_kick":{
-			"term":["B","lk","st.lk","s.lk","short","st.short"],
+			"term":["lk","st.lk","s.lk","short","st.short","s.short"],
 			"image":["./img/mvci/mvc_button_lk.svg"],
 			"size":["small"],
 			"alt":["Light Kick"]
 		},
 		"heavy_kick":{
-			"term":["D","hk","st.hk","s.hk","roundhouse","st.roundhouse"],
+			"term":["hk","st.hk","s.hk","roundhouse","st.roundhouse","s.roundhouse"],
 			"image":["./img/mvci/mvc_button_hk.svg"],
 			"size":["small"],
 			"alt":["Heavy Kick"]
 		},
 		"light_heavy_kick":{
-			"term":["BD","lkhk","short+roundhouse"],
+			"term":["lkhk"],
 			"image":["./img/mvci/mvc_button_lkhk.svg"],
 			"size":["medium"],
 			"alt":["Light kick + Heavy kick"]
@@ -1239,13 +1245,13 @@
 			"alt":["Hold","Punch"]
 		},
 		"hold_light_punch":{
-			"term":["[A]","[lp]","[st.lp]","[s.lp]","[jab]","[st.jab]"],
+			"term":["[lp]","[st.lp]","[s.lp]","[jab]","[st.jab]","[s.jab]"],
 			"image":["./img/mvci/mvc_state_hold.svg","./img/mvci/mvc_button_lp.svg"],
 			"size":["large","small"],
 			"alt":["Hold","Light Punch"]
 		},
 		"hold_heavy_punch":{
-			"term":["[C]","[hp]","[st.hp]","[s.hp]","[fierce]","[st.fierce]"],
+			"term":["[hp]","[st.hp]","[s.hp]","[fierce]","[st.fierce]","[s.fierce]"],
 			"image":["./img/mvci/mvc_state_hold.svg","./img/mvci/mvc_button_hp.svg"],
 			"size":["large","small"],
 			"alt":["Hold","Heavy Punch"]
@@ -1257,13 +1263,13 @@
 			"alt":["Hold","Kick"]
 		},
 		"hold_light_kick":{
-			"term":["[B]","[lk]","[st.lk]","[s.lk]","[short]","[st.short]"],
+			"term":["[lk]","[st.lk]","[s.lk]","[short]","[st.short]","[s.short]"],
 			"image":["./img/mvci/mvc_state_hold.svg","./img/mvci/mvc_button_lk.svg"],
 			"size":["large","small"],
 			"alt":["Hold","Light Kick"]
 		},
 		"hold_heavy_kick":{
-			"term":["[D]","[hk]","[st.hk]","[s.hk]","[roundhouse]","[st.roundhouse]"],
+			"term":["[hk]","[st.hk]","[s.hk]","[roundhouse]","[st.roundhouse]","[s.roundhouse]"],
 			"image":["./img/mvci/mvc_state_hold.svg","./img/mvci/mvc_button_hk.svg"],
 			"size":["large","small"],
 			"alt":["Hold","Heavy Kick"]
@@ -1394,42 +1400,6 @@
 			"size":["medium"],
 			"alt":["Dragon Punch Motion Back"]
 		},
-		"half_circle_forward":{
-			"term":["hcf","41236"],
-			"image":["./img/streetfighter/sf_arrow_hcf.svg"],
-			"size":["medium"],
-			"alt":["Half Circle Forward"]
-		},
-		"half_circle_back":{
-			"term":["hcb","63214"],
-			"image":["./img/streetfighter/sf_arrow_hcb.svg"],
-			"size":["medium"],
-			"alt":["Half Circle Back"]
-		},
-		"full_circle_forward":{
-			"term":["fcf","360","63214789"],
-			"image":["./img/streetfighter/sf_arrow_fcf.svg"],
-			"size":["medium"],
-			"alt":["Full Circle Forward"]
-		},
-		"full_circle_back":{
-			"term":["fcb","41236987"],
-			"image":["./img/streetfighter/sf_arrow_fcb.svg"],
-			"size":["medium"],
-			"alt":["Full Circle Back"]
-		},
-		"charge_back_forward":{
-			"term":["cbf","[4]6"],
-			"image":["./img/streetfighter/sf_arrow_hb.svg","./img/streetfighter/sf_arrow_f.svg"],
-			"size":["small","small"],
-			"alt":["Hold Back","Forward"]
-		},
-		"charge_down_up":{
-			"term":["cdu","[2]8"],
-			"image":["./img/streetfighter/sf_arrow_hd.svg","./img/streetfighter/sf_arrow_u.svg"],
-			"size":["small","small"],
-			"alt":["Hold Down","Up"]
-		},
 		"down_down":{
 			"term":["dd","22"],
 			"image":["./img/streetfighter/sf_arrow_d.svg","./img/streetfighter/sf_arrow_d.svg"],
@@ -1508,6 +1478,12 @@
 			"size":["large"],
 			"alt":["Super Jump"]
 		},
+		"tiger_knee":{
+			"term":["tk"],
+			"image":["./img/streetfighter/sf_arrow_tk.svg"],
+			"size":["large"],
+			"alt":["Tiger Knee"]
+		},
 		"dash":{
 			"term":["dash"],
 			"image":["./img/mvci/mvc_state_dash.svg"],
@@ -1526,8 +1502,14 @@
 			"size":["large"],
 			"alt":["Release"]
 		},
+		"cancel":{
+			"term":["xx"],
+			"image":["./img/mvci/mvc_sep_cancel.svg"],
+			"size":["small"],
+			"alt":["Cancel"]
+		},
 		"link":{
-			"term":[">"],
+			"term":[">,~"],
 			"image":["./img/mvci/mvc_sep_link.svg"],
 			"size":["small"]
 		},
@@ -1573,6 +1555,60 @@
 			"image":["./img/dbfz/db_button_a2.svg"],
 			"size":["small"],
 			"alt":["Assist 2"]
+		},
+		"forward":{
+			"term":["f","6"],
+			"image":["./img/streetfighter/sf_arrow_f.svg"],
+			"size":["small"],
+			"alt":["Forward"]
+		},
+		"back":{
+			"term":["b","4"],
+			"image":["./img/streetfighter/sf_arrow_b.svg"],
+			"size":["small"],
+			"alt":["Back"]
+		},
+		"up":{
+			"term":["u","8"],
+			"image":["./img/streetfighter/sf_arrow_u.svg"],
+			"size":["small"],
+			"alt":["Up"]
+		},
+		"down":{
+			"term":["d","2"],
+			"image":["./img/streetfighter/sf_arrow_d.svg"],
+			"size":["small"],
+			"alt":["Down"]
+		},
+		"down-forward":{
+			"term":["df","d/f","3"],
+			"image":["./img/streetfighter/sf_arrow_df.svg"],
+			"size":["small"],
+			"alt":["Diagonal Down Forward"]
+		},
+		"down-back":{
+			"term":["db","d/b","1"],
+			"image":["./img/streetfighter/sf_arrow_db.svg"],
+			"size":["small"],
+			"alt":["Diagonal Down Back"]
+		},
+		"up-forward":{
+			"term":["uf","u/f","9"],
+			"image":["./img/streetfighter/sf_arrow_uf.svg"],
+			"size":["small"],
+			"alt":["Diagonal Up Forward"]
+		},
+		"ub-back":{
+			"term":["ub","u/b","7"],
+			"image":["./img/streetfighter/sf_arrow_ub.svg"],
+			"size":["small"],
+			"alt":["Diagonal Up Back"]
+		},
+		"neutral":{
+			"term":["n","5"],
+			"image":["./img/streetfighter/sf_arrow_n.svg"],
+			"size":["small"],
+			"alt":["Neutral"]
 		},
 		"quarter_circle_back":{
 			"term":["qcb","214"],
@@ -1622,9 +1658,26 @@
 			"size":["large"],
 			"alt":["Jump"]
 		},
+		"super jump":{
+			"term":["sj"],
+			"image":["./img/mvci/mvc_state_sj.svg"],
+			"size":["large"],
+			"alt":["Super Jump"]
+		},
+		"tiger_knee":{
+			"term":["tk"],
+			"image":["./img/streetfighter/sf_arrow_tk.svg"],
+			"size":["large"],
+			"alt":["Tiger Knee"]
+		},
 		"link":{
 			"term":[">"],
 			"image":["./img/mvci/mvc_sep_link.svg"],
+			"size":["small"]
+		},
+		"cancel":{
+			"term":["xx"],
+			"image":["./img/mvci/mvc_sep_cancel.svg"],
 			"size":["small"]
 		},
 		"separate":{
