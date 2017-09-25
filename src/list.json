@@ -1400,6 +1400,18 @@
 			"size":["medium"],
 			"alt":["Dragon Punch Motion Back"]
 		},
+		"half_circle_forward":{
+			"term":["hcf","41236"],
+			"image":["./img/streetfighter/sf_arrow_hcf.svg"],
+			"size":["medium"],
+			"alt":["Half Circle Forward"]
+		},
+		"half_circle_back":{
+			"term":["hcb","63214"],
+			"image":["./img/streetfighter/sf_arrow_hcb.svg"],
+			"size":["medium"],
+			"alt":["Half Circle Back"]
+		},
 		"down_down":{
 			"term":["dd","22"],
 			"image":["./img/streetfighter/sf_arrow_d.svg","./img/streetfighter/sf_arrow_d.svg"],
@@ -1471,6 +1483,12 @@
 			"image":["./img/mvci/mvc_state_j.svg"],
 			"size":["large"],
 			"alt":["Jump"]
+		},
+		"air":{
+			"term":["a","air"],
+			"image":["./img/mvci/mvc_state_air.svg"],
+			"size":["large"],
+			"alt":["Air"]
 		},
 		"super_jump":{
 			"term":["sj"],
