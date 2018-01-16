@@ -6,7 +6,7 @@ class Translator extends Component{
 			<div id="translator">
 				<input 
 					type="search" 
-					placeholder="translate . . ."
+					placeholder="Example: cr.mk,qcf+p"
 					value={this.props.valueProp}
                    	onChange={this.props.inputProp}
 				/>
