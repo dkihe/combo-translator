@@ -55,7 +55,7 @@
 			"alt":["Any Button"]
 		},
 		"any_buttonx2":{
-			"term":["anyx2","any2"],
+			"term":["any2"],
 			"image":["./img/streetfighter/sf_button_anyx2.svg"],
 			"size":["medium"],
 			"alt":["Any 2 Buttons"]
@@ -1718,6 +1718,12 @@
 			"image":["./img/mvci/mvc_state_sj.svg"],
 			"size":["large"],
 			"alt":["Super Jump"]
+		},
+		"vanish":{
+			"term":["vanish"],
+			"image":["./img/dbfz/db_state_vanish.svg"],
+			"size":["large"],
+			"alt":["Vanish"]
 		},
 		"crouch":{
 			"term":["cr"],
