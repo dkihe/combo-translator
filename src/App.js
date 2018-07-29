@@ -3,7 +3,32 @@ import Games from './Games.js';
 import Translator from './Translator.js';
 import Output from './Output.js';
 import './App.css';
-const list = require("./list.json")
+import list from "./list.json"
+
+
+const comboHash =()=>{
+    if (window && window.location.search){
+        const cParams = (new URL(document.location)).searchParams
+        const cHash = cParams.get("c")
+        const cOut = decodeURIComponent(cHash)
+        return cOut
+    }
+    else{
+        return ''
+    }
+}
+
+const gameHash =()=>{
+    if (window && window.location.search){
+        const gParams = (new URL(document.location)).searchParams
+        const gHash = gParams.get("g")
+        const gOut = decodeURIComponent(gHash)
+        return gOut
+    }
+    else{
+        return 'streetfighter'
+    }
+}
 
 class App extends Component {
     constructor(props){
@@ -11,9 +36,10 @@ class App extends Component {
 
         this.state={
             term:'',
-            game: "streetfighter"
+            game: 'streetfighter'
         }
     }
+
     createImage(){
         let altImg = document.getElementsByTagName("img")
         //let tekken_re = /(\(.*?\))|\s|(,)\s*|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/
@@ -22,22 +48,17 @@ class App extends Component {
         let sf_re = /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./
         let userinput = this.state.term
         //let regex = /(\(.*?\))/
+        let item;
         if (this.state.game === "tekken"){    
-            var item = userinput.split(tekken_re);
-        } else if (this.state.game === "dbfz"){
-            var item = userinput.split(sf_re);
+            item = userinput.split(tekken_re);
+        } else if (this.state.game === "dbfz" || this.state.game === "bbtag"){
+            item = userinput.split(sf_re);
         }else{
-            var item = userinput.toLowerCase().split(sf_re);
+            item = userinput.toLowerCase().split(sf_re);
         }
         if (document.querySelector(".images")){
-          document.querySelector(".images").innerHTML = ""
+        document.querySelector(".images").innerHTML = ""
             for(var i=0;i<item.length;i++){
-                /*if(regex.test(item[i])){
-                    let text = item[i]
-                    let note = document.createElement("span")
-                    note.innerHTML = String(text)
-                    document.querySelector(".images").appendChild(note)
-                }*/
                 for (var key in list[this.state.game]){
                     for(var j=0;j<list[this.state.game][key].term.length;j++){
                         if (list[this.state.game][key].term[j] === item[i]){
@@ -63,68 +84,28 @@ class App extends Component {
             }
         }
     }
-
-    captureCombo(){
-        let canvas = document.querySelector("#canvas")
-        let ctx = canvas.getContext("2d")
-        let imgDiv = document.querySelector(".images")
-        let imgEl = document.getElementsByTagName("img")
-        let spanEl = document.getElementsByTagName("span")
-        let divEl = imgDiv.hasChildNodes()
-        let modal = document.querySelector(".modal")
-        let prevX = 0
-        let span = document.getElementsByClassName("close")[0];
-        var btn = document.getElementById("captureBtn");
-        canvas.height = 64
-
-        if (divEl){
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            ctx.imageSmoothingEnabled = false;
-            for(var n=0; n<imgDiv.children.length; n++){
-                if (imgDiv.children[n].nodeName === "IMG"){
-                    ctx.drawImage(imgDiv.children[n], prevX ,0,imgDiv.children[n].width,imgDiv.children[n].height)
-                    prevX += imgDiv.children[n].clientWidth
-                    console.log(prevX)
-                }
-            }
-            var imagedata = ctx.getImageData(0,0,canvas.width,canvas.height)
-            canvas.width = prevX
-            ctx.putImageData(imagedata,0,0)
-            var dataurl = canvas.toDataURL('image/png')
-            console.log(dataurl)
-            modal.style.display = "block";
-        }
-        //console.log(canvas.width)
-        //console.log(canvas.height)
-        //console.log(imagedata)
-       // console.log(ctx.measureText(imgDiv.children[n]).width)
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
+    componentDidMount(){
+        this.setState({term: String(comboHash())})
+        this.setState({game: String(gameHash())})
+        console.log(gameHash())
     }
-
     render() {
         return (
             <div>
                 <div id="title">Combo Translator</div>
                 <Games 
                     gameProp={event => this.setState({game: event.target.value})}
+                    currgameProp={this.state.game}
                 />
                 <Translator 
                     valueProp={this.state.term}
                     inputProp={event => this.setState({term: event.target.value})}
-                    
                 />
                 <div id="text">click an image to see a translation</div>
                 <Output
                     imageProp={this.createImage()}
                 />
+                <p>URL: ?c={encodeURIComponent(this.state.term)}&g={encodeURIComponent(this.state.game)}</p>
             </div>
         );
     }

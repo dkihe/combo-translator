@@ -1404,37 +1404,37 @@
 		"quarter_circle_forward":{
 			"term":["qcf","236"],
 			"image":["./img/streetfighter/sf_arrow_qcf.svg"],
-			"size":["medium"],
+			"size":["small"],
 			"alt":["Quarter Circle Forward"]
 		},
 		"quarter_circle_back":{
 			"term":["qcb","214"],
 			"image":["./img/streetfighter/sf_arrow_qcb.svg"],
-			"size":["medium"],
+			"size":["small"],
 			"alt":["Quarter Circle Back"]
 		},
 		"dp_motion_forward":{
 			"term":["dp","fqcf","dpf","623"],
 			"image":["./img/streetfighter/sf_arrow_dpf.svg"],
-			"size":["medium"],
+			"size":["small"],
 			"alt":["Dragon Punch Motion Forward"]
 		},
 		"dp_motion_back":{
 			"term":["rdp","bqcb","dpb","421"],
 			"image":["./img/streetfighter/sf_arrow_dpb.svg"],
-			"size":["medium"],
+			"size":["small"],
 			"alt":["Dragon Punch Motion Back"]
 		},
 		"half_circle_forward":{
 			"term":["hcf","41236"],
 			"image":["./img/streetfighter/sf_arrow_hcf.svg"],
-			"size":["medium"],
+			"size":["small"],
 			"alt":["Half Circle Forward"]
 		},
 		"half_circle_back":{
 			"term":["hcb","63214"],
 			"image":["./img/streetfighter/sf_arrow_hcb.svg"],
-			"size":["medium"],
+			"size":["small"],
 			"alt":["Half Circle Back"]
 		},
 		"down_down":{
@@ -1751,6 +1751,116 @@
 			"term":[","],
 			"image":["./img/mvci/mvc_sep_wht.svg"],
 			"size":["small"]
+		}
+	},
+	"bbtag":{
+		"weak attack":{
+			"term":["A"],
+			"image":["./img/bbtag/bbt_button_a.svg"],
+			"size":["small"],
+			"alt":["Weak Attack"]
+		},
+		"strong attack":{
+			"term":["B"],
+			"image":["./img/bbtag/bbt_button_b.svg"],
+			"size":["small"],
+			"alt":["Strong Attack"]
+		},
+		"crash assault":{
+			"term":["C","crash"],
+			"image":["./img/bbtag/bbt_button_c.svg"],
+			"size":["small"],
+			"alt":["crash assault"]
+		},
+		"switch":{
+			"term":["D","switch","swap"],
+			"image":["./img/bbtag/bbt_button_d.svg"],
+			"size":["small"],
+			"alt":["Switch"]
+		},
+		"partner skill":{
+			"term":["P","assist"],
+			"image":["./img/bbtag/bbt_button_p.svg"],
+			"size":["small"],
+			"alt":["Partner Skill"]
+		},
+		"reversal":{
+			"term":["reversal","dp","AD"],
+			"image":["./img/bbtag/bbt_button_ad.svg"],
+			"size":["medium"],
+			"alt":["Reversal"]
+		},
+		"Ggrab/B+C":{
+			"term":["grab","BC"],
+			"image":["./img/bbtag/bbt_button_bc.svg"],
+			"size":["medium"],
+			"alt":["Grab/B+C"]
+		},
+		"forward":{
+			"term":["f","6"],
+			"image":["./img/streetfighter/sf_arrow_f.svg"],
+			"size":["small"],
+			"alt":["Forward"]
+		},
+		"back":{
+			"term":["b","4"],
+			"image":["./img/streetfighter/sf_arrow_b.svg"],
+			"size":["small"],
+			"alt":["Back"]
+		},
+		"up":{
+			"term":["u","8"],
+			"image":["./img/streetfighter/sf_arrow_u.svg"],
+			"size":["small"],
+			"alt":["Up"]
+		},
+		"down":{
+			"term":["d","2"],
+			"image":["./img/streetfighter/sf_arrow_d.svg"],
+			"size":["small"],
+			"alt":["Down"]
+		},
+		"down-forward":{
+			"term":["df","d/f","3"],
+			"image":["./img/streetfighter/sf_arrow_df.svg"],
+			"size":["small"],
+			"alt":["Diagonal Down Forward"]
+		},
+		"down-back":{
+			"term":["db","d/b","1"],
+			"image":["./img/streetfighter/sf_arrow_db.svg"],
+			"size":["small"],
+			"alt":["Diagonal Down Back"]
+		},
+		"up-forward":{
+			"term":["uf","u/f","9"],
+			"image":["./img/streetfighter/sf_arrow_uf.svg"],
+			"size":["small"],
+			"alt":["Diagonal Up Forward"]
+		},
+		"ub-back":{
+			"term":["ub","u/b","7"],
+			"image":["./img/streetfighter/sf_arrow_ub.svg"],
+			"size":["small"],
+			"alt":["Diagonal Up Back"]
+		},
+		"neutral":{
+			"term":["n","5"],
+			"image":["./img/streetfighter/sf_arrow_n.svg"],
+			"size":["small"],
+			"alt":["Neutral"]
+		},
+		"quarter_circle_forward":{
+			"term":["qcf","236"],
+			"image":["./img/streetfighter/sf_arrow_qcf.svg"],
+			"size":["small"],
+			"alt":["Quarter Circle Forward"]
+		},
+		"quarter_circle_back":{
+			"term":["qcb","214"],
+			"image":["./img/streetfighter/sf_arrow_qcb.svg"],
+			"size":["small"],
+			"alt":["Quarter Circle Back"]
 		}
 	}
 }

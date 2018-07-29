@@ -8,7 +8,7 @@ class Translator extends Component{
 					type="search" 
 					placeholder="Example: cr.mk,qcf+p"
 					value={this.props.valueProp}
-                   	onChange={this.props.inputProp}
+				   	onChange={this.props.inputProp}
 				/>
 			</div>
 		)
