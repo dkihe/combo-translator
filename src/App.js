@@ -105,7 +105,7 @@ class App extends Component {
                 <Output
                     imageProp={this.createImage()}
                 />
-                <p>URL: ?c={encodeURIComponent(this.state.term)}&g={encodeURIComponent(this.state.game)}</p>
+                <p>GET URL: ?c={encodeURIComponent(this.state.term)}&g={encodeURIComponent(this.state.game)}</p>
             </div>
         );
     }
