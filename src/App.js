@@ -4,6 +4,7 @@ import Translator from './Translator.js';
 import Output from './Output.js';
 import './App.css';
 import list from "./list.json"
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 
 const comboHash =()=>{
@@ -84,6 +85,17 @@ class App extends Component {
             }
         }
     }
+    copyURL(){
+        document.getElementById("urltext").select()
+        document.execCommand("copy")
+        alert("COPIED TEXT")
+    }
+    outputURL(){
+        let state = encodeURIComponent(this.state.term)
+        let game = encodeURIComponent(this.state.game)
+        return "?c="+state+"?g="+game
+    }
+
     componentDidMount(){
         this.setState({term: String(comboHash())})
         this.setState({game: String(gameHash())})
@@ -105,7 +117,9 @@ class App extends Component {
                 <Output
                     imageProp={this.createImage()}
                 />
-                <p>GET URL: ?c={encodeURIComponent(this.state.term)}&g={encodeURIComponent(this.state.game)}</p>
+                <CopyToClipboard text={this.outputURL()}> 
+                    <button>GET URL</button>
+                </CopyToClipboard>
             </div>
         );
     }
