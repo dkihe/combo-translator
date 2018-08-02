@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import charList from './charlist.json'
 
 class Games extends Component {
     render() {

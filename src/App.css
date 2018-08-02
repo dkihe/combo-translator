@@ -14,7 +14,9 @@ a:visited,a:link{
 a:hover{
   background-color: #c5c5c5;
 }
-
+/*#characters>#sfchar{
+  display:none;
+}*/
 @media (min-width:320px){
   body{
   	/*background-color: #009999;*/

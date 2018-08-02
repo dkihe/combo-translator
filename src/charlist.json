@@ -1,0 +1,24 @@
+{
+  "streetfighter": {
+      "Abigail":{
+        "name": ["Abigail"],
+        "image":[""]
+      },
+      "Akuma":{
+        "name": ["Akuma"],
+        "image":[""]
+      },
+      "Alex":{
+        "name": ["Alex"],
+        "image":[""]
+      },
+      "Balrog":{
+        "name": ["Balrog"],
+        "image":[""]
+      },
+      "Birdie":{
+        "name": ["Birdie"],
+        "image":[""]
+      }
+  }
+}
