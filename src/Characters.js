@@ -5,7 +5,10 @@ class Characters extends Component{
         return(
             <div id='characters'>
                 {this.props.listProp}
-                <div id='sfchar'>
+                <select id="charList" onChange={this.props.charProp} value={this.props.currcharProp}>
+                </select>
+                {/*<div id='sfchar'>
+                    {this.props.listProp}
                     <select onChange={this.props.charProp} value={this.props.currcharProp}>
                         <option value="abigail" label="Abigail">Abigail</option>
                         <option value="akuma" label="Akuma">Akuma</option>
@@ -22,7 +25,7 @@ class Characters extends Component{
                         <option value="bryan" label="Bryan">Bryan</option>
                         <option value="chloe" label="Chloe">Chloe</option>
                     </select>
-                </div>
+            </div>*/}
             </div>
         )
     }

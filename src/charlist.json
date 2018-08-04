@@ -1,24 +1,42 @@
 {
-  "streetfighter": {
-      "Abigail":{
-        "name": ["Abigail"],
-        "image":[""]
-      },
-      "Akuma":{
-        "name": ["Akuma"],
-        "image":[""]
-      },
-      "Alex":{
-        "name": ["Alex"],
-        "image":[""]
-      },
-      "Balrog":{
-        "name": ["Balrog"],
-        "image":[""]
-      },
-      "Birdie":{
-        "name": ["Birdie"],
-        "image":[""]
-      }
-  }
+  "streetfighter": [{
+      "name": ["Abigail"],
+      "image":[""]
+    },
+    {
+      "name": ["Akuma"],
+      "image":[""]
+    },
+    {
+      "name": ["Alex"],
+      "image":[""]
+    },
+    {
+      "name": ["Balrog"],
+      "image":[""]
+    },
+    {
+      "name": ["Birdie"],
+      "image":[""]
+  }],
+  "tekken": [{
+    "name": ["Akuma"],
+    "image":[""]
+  },
+  {
+    "name": ["Alisa"],
+    "image":[""]
+  },
+  {
+    "name": ["Bob"],
+    "image":[""]
+  },
+  {
+    "name": ["Bryan"],
+    "image":[""]
+  },
+  {
+    "name": ["Chloe"],
+    "image":[""]
+}]
 }

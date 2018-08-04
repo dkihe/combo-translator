@@ -4,7 +4,8 @@ import Translator from './Translator.js';
 import Output from './Output.js';
 import Characters from './Characters.js';
 import './App.css';
-import list from "./list.json"
+import list from "./list.json";
+import charlist from "./charlist.json"
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 
@@ -80,10 +81,10 @@ class App extends Component {
         this.state={
             term:'',
             game: 'streetfighter',
-            character:'',
+            character: '',
         }
     }
-
+    
     createImage(){
         let altImg = document.getElementsByTagName("img")
         //let tekken_re = /(\(.*?\))|\s|(,)\s*|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/
@@ -132,25 +133,24 @@ class App extends Component {
 
     charList(){
         let characters = document.querySelector('#characters')
-        let sfchar = document.querySelector('#sfchar')
-        let tekchar = document.querySelector('#tekchar')
-
-        switch(this.state.game){
-            case 'streetfighter':
-                if (characters){
-                    sfchar.style.display = 'block'
-                    tekchar.style.display = 'none'
+        let option
+        let select = document.querySelector('#charList')
+        const createOptions = (game) =>{
+            if (characters){
+                //this.state.character = charlist[this.state.game][0].name
+                // Clear options before creating new options
+                select.innerHTML = ""
+                // Create drop down values
+                for (var i = 0; i < charlist[game].length; i++){
+                    option = document.createElement("option")
+                    option.value = charlist[game][i].name
+                    option.label = charlist[game][i].name
+                    option.innerHTML = charlist[game][i].name
+                    select.appendChild(option)
                 }
-                break;
-            case 'tekken':
-                if (characters){
-                    sfchar.style.display = 'none'
-                    tekchar.style.display = 'block'
-                }
-                break;
-            // default:
-            //     tekchar.style.display = 'none' 
+            }
         }
+        createOptions(this.state.game)
     }
 
     outputURL(){
@@ -175,11 +175,10 @@ class App extends Component {
         return (
             <div>
                 {console.log(this.state.character)}
-                
                 <div id="title">Combo Translator</div>
                 <Games 
                     gameProp={event => this.setState({game: event.target.value})}
-                    //currgameProp={this.state.game}
+                    currgameProp={this.state.game}
                 />
                 <Characters
                     listProp={this.charList()}
