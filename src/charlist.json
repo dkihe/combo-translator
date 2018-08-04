@@ -1,42 +1,92 @@
 {
-  "streetfighter": [{
+  "streetfighter": {
+    "None": {
+      "name": ["None"],
+      "image":[""]
+    },
+    "Abigail": {
       "name": ["Abigail"],
-      "image":[""]
+      "image":["./img/streetfighter/char/sf_char_abigail.png"]
     },
-    {
+    "Akuma": {
       "name": ["Akuma"],
-      "image":[""]
+      "image":["./img/streetfighter/char/sf_char_akuma.png"]
     },
-    {
+    "Alex": {
       "name": ["Alex"],
-      "image":[""]
+      "image":["./img/streetfighter/char/sf_char_alex.png"]
     },
-    {
+    "Balrog": {
       "name": ["Balrog"],
+      "image":["./img/streetfighter/char/sf_char_balrog.png"]
+    },
+    "Birdie": {
+      "name": ["Birdie"],
+      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+    }
+  },
+  "tekken": {
+    "None": {
+      "name": ["None"],
       "image":[""]
     },
-    {
-      "name": ["Birdie"],
+    "Akuma": {
+      "name": ["Akuma"],
+      "image":["./img/tekken/char/tek_char_akuma.png"]
+    },
+    "Alisa": {
+      "name": ["Alisa"],
+      "image":["./img/tekken/char/tek_char_alisa.png"]
+    },
+    "Bob": {
+      "name": ["Bob"],
+      "image":["./img/tekken/char/tek_char_bob.png"]
+    },
+    "Bryan": {
+      "name": ["Bryan"],
+      "image":["./img/tekken/char/tek_char_bryan.png"]
+    },
+    "Claudio": {
+      "name": ["Claudio"],
+      "image":["./img/tekken/char/tek_char_claudio.png"]
+    }
+  },
+  "dbfz": {
+    "None": {
+      "name": ["None"],
       "image":[""]
-  }],
-  "tekken": [{
-    "name": ["Akuma"],
-    "image":[""]
-  },
-  {
-    "name": ["Alisa"],
-    "image":[""]
-  },
-  {
-    "name": ["Bob"],
-    "image":[""]
-  },
-  {
-    "name": ["Bryan"],
-    "image":[""]
-  },
-  {
-    "name": ["Chloe"],
-    "image":[""]
-}]
+    },
+    "Android 16": {
+      "name": ["Android 16"],
+      "image":["./img/dbfz/char/dbfz_char_android16.png"]
+    },
+    "Android 18": {
+      "name": ["Android 18"],
+      "image":["./img/dbfz/char/dbfz_char_android18.png"]
+    },
+    "Android 21": {
+      "name": ["Android 21"],
+      "image":["./img/dbfz/char/dbfz_char_android21.png"]
+    },
+    "Captain Ginyu": {
+      "name": ["Captain Ginyu"],
+      "image":["./img/dbfz/char/dbfz_char_cginyu.png"]
+    },
+    "Cell": {
+      "name": ["Cell"],
+      "image":["./img/dbfz/char/dbfz_char_cell.png"]
+    },
+    "Frieza": {
+      "name": ["Frieza"],
+      "image":["./img/dbfz/char/dbfz_char_frieza.png"]
+    },
+    "Gohan (Adult)":{
+      "name":["Gohan (Adult)"],
+      "image":["./img/dbfz/char/dbfz_char_agohan.png"]
+    },
+    "Gohan (Teen)": {
+      "name": ["Gohan (Teen)"],
+      "image":["./img/dbfz/char/dbfz_char_tgohan.png"]
+    }
+  }
 }

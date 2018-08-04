@@ -81,7 +81,9 @@ class App extends Component {
         this.state={
             term:'',
             game: 'streetfighter',
-            character: '',
+            character: 'None',
+            character2: 'None',
+            character3: 'None'
         }
     }
     
@@ -130,68 +132,108 @@ class App extends Component {
             }
         }
     }
-
+        
     charList(){
         let characters = document.querySelector('#characters')
         let option
-        let select = document.querySelector('#charList')
-        const createOptions = (game) =>{
+        let listA = document.querySelector('#charList1')
+        let listB = document.querySelector('#charList2')
+        let listC = document.querySelector('#charList3')
+        let arrList = []
+        const createList = (numList) =>{
             if (characters){
-                //this.state.character = charlist[this.state.game][0].name
-                // Clear options before creating new options
-                select.innerHTML = ""
-                // Create drop down values
-                for (var i = 0; i < charlist[game].length; i++){
-                    option = document.createElement("option")
-                    option.value = charlist[game][i].name
-                    option.label = charlist[game][i].name
-                    option.innerHTML = charlist[game][i].name
-                    select.appendChild(option)
+                for ( var i = 1; i <= numList; i++){
+                    // Clear options before creating new options
+                    document.querySelector('#charList'+String(i)).innerHTML = ""
+                
+                    // Create drop down values
+                    for (var char in charlist[this.state.game]){
+                        option = document.createElement('option')
+                        option.value = charlist[this.state.game][char].name
+                        option.label = charlist[this.state.game][char].name
+                        option.innerHTML = charlist[this.state.game][char].name
+                        document.querySelector('#charList'+String(i)).appendChild(option)
+                    }
                 }
             }
         }
-        createOptions(this.state.game)
+        if (characters){
+            switch(this.state.game){
+                case 'streetfighter':
+                    createList(1)
+                    listA.style.display = 'inline-block'
+                    listB.style.display = 'none'
+                    listC.style.display = 'none'
+                    break;
+                case 'tekken':
+                    createList(1)
+                    listA.style.display = 'inline-block'
+                    listB.style.display = 'none'
+                    listC.style.display = 'none'
+                    break;
+                case 'dbfz':
+                    createList(3)
+                    listA.style.display = 'inline-block'
+                    listB.style.display = 'inline-block'
+                    listC.style.display = 'inline-block'
+                    break;
+
+            }
+        }
     }
 
     outputURL(){
         let state = encodeURIComponent(this.state.term)
         let game = encodeURIComponent(this.state.game)
-        let char = encodeURIComponent(this.state.character)
-        return "?c="+state+"&g="+game+"&ch="+char
+        let charA = encodeURIComponent(this.state.character)
+        let charB = encodeURIComponent(this.state.character2)
+        let charC = encodeURIComponent(this.state.character3)
+        return "?c="+state+"&g="+game+"&cha="+charA+"&chb="+charB+"&chc="+charC
     }
 
     componentDidMount() {
         const newState = {
             term: hashFromParams('c'),
             game: hashFromParams('g', 'streetfighter'),
-            character: hashFromParams('ch')
+            character: hashFromParams('cha', 'None'),
+            character2: hashFromParams('chb', 'None'),
+            character3: hashFromParams('chc', 'None')
         }
-        // this.setState(...this.state, ...newState)
-        this.setState({ term: hashFromParams('c') })
-        this.setState({ game: hashFromParams('g', 'streetfighter') })
-        this.setState({ character: hashFromParams('ch') })
+        this.setState({...this.state, ...newState})
+        // this.setState({ term: hashFromParams('c') })
+        // this.setState({ game: hashFromParams('g', 'streetfighter') })
+        // this.setState({ character: hashFromParams('ch') })
     }
     render() {
         return (
             <div>
+                {console.log(this.state.game)}
                 {console.log(this.state.character)}
                 <div id="title">Combo Translator</div>
                 <Games 
-                    gameProp={event => this.setState({game: event.target.value})}
-                    currgameProp={this.state.game}
+                    gameProp = {event => this.setState({game: event.target.value,character: 'None',character2: 'None',character3: 'None'})}
+                    currgameProp = {this.state.game}
                 />
                 <Characters
-                    listProp={this.charList()}
-                    charProp={event => this.setState({character: event.target.value})}
-                    currcharProp={this.state.character}
+                    listProp = {this.charList()}
+                    charPropA = {event => this.setState({character: event.target.value})}
+                    charPropB = {event => this.setState({character2: event.target.value})}
+                    charPropC = {event => this.setState({character3: event.target.value})}
+                    currcharPropA = {this.state.character}
+                    currcharPropB = {this.state.character2}
+                    currcharPropC = {this.state.character3}
+                    setCharPropA = {charlist[this.state.game][this.state.character].image}
+                    setCharPropB = {charlist[this.state.game][this.state.character2].image}
+                    setCharPropC = {charlist[this.state.game][this.state.character3].image}
+
                 />
                 <Translator 
-                    valueProp={this.state.term}
-                    inputProp={event => this.setState({term: event.target.value})}
+                    valueProp = {this.state.term}
+                    inputProp = {event => this.setState({term: event.target.value})}
                 />
                 <div id="text">click an image to see a translation</div>
                 <Output
-                    imageProp={this.createImage()}
+                    imageProp = {this.createImage()}
                 />
                 <CopyToClipboard text={this.outputURL()}> 
                     <button>GET URL</button>

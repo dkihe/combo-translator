@@ -1,31 +1,22 @@
 import React, {Component} from 'react';
+import charlist from "./charlist.json"
 
 class Characters extends Component{
     render(){
         return(
             <div id='characters'>
                 {this.props.listProp}
-                <select id="charList" onChange={this.props.charProp} value={this.props.currcharProp}>
-                </select>
-                {/*<div id='sfchar'>
-                    {this.props.listProp}
-                    <select onChange={this.props.charProp} value={this.props.currcharProp}>
-                        <option value="abigail" label="Abigail">Abigail</option>
-                        <option value="akuma" label="Akuma">Akuma</option>
-                        <option value="alex" label="Alex">Alex</option>
-                        <option value="balrog" label="Balrog">Balrog</option>
-                        <option value="birdie" label="Birdie">Birdie</option>
-                    </select>
+                <div>
+                    <img id = "charImg1" src = {this.props.setCharPropA} />
+                    <img id = "charImg2" src = {this.props.setCharPropB} />
+                    <img id = "charImg3" src = {this.props.setCharPropC} />
                 </div>
-                <div id='tekchar'>
-                    <select onChange={this.props.charProp} value={this.props.currcharProp}>
-                        <option value="akuma" label="Akuma">Akuma</option>
-                        <option value="alisa" label="Alisa">Alisa</option>
-                        <option value="bob" label="Bob">Bob</option>
-                        <option value="bryan" label="Bryan">Bryan</option>
-                        <option value="chloe" label="Chloe">Chloe</option>
-                    </select>
-            </div>*/}
+                <select id="charList1" onChange={this.props.charPropA} value={this.props.currcharPropA}>
+                </select>
+                <select id="charList2" onChange={this.props.charPropB} value={this.props.currcharPropB}>
+                </select>
+                <select id="charList3" onChange={this.props.charPropC} value={this.props.currcharPropC}>
+                </select>
             </div>
         )
     }
