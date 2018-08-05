@@ -139,7 +139,6 @@ class App extends Component {
         let listA = document.querySelector('#charList1')
         let listB = document.querySelector('#charList2')
         let listC = document.querySelector('#charList3')
-        let arrList = []
         const createList = (numList) =>{
             if (characters){
                 for ( var i = 1; i <= numList; i++){
