@@ -176,14 +176,6 @@ class App extends Component {
                     gameProp = {event => this.setState({game: event.target.value,character: ['None','None','None']})}
                     currgameProp = {this.state.game}
                 />
-                {/*
-                <Characters
-                    charList = {this.charList()}
-                    charProp = {event => this.setState( {character: [event.target.value, this.state.character[1], this.state.character[2]]} )}
-                    currcharProp = {this.state.character[0]}
-                    imgCharProp = {charlist[this.state.game][this.state.character[0]].image}
-                />
-                */}
                 {CharactersComponent()}
                 <Translator 
                     valueProp = {this.state.term}
