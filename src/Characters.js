@@ -9,7 +9,7 @@ class Characters extends Component{
                 <div>
                     <img id = "charImg" src = {this.props.imgCharProp} />
                 </div>
-                <div className='select-field'>
+                <div>
                     <select onChange={this.props.charProp} value={this.props.currcharProp}>
                     </select>
                 </div>
