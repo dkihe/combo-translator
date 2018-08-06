@@ -140,9 +140,6 @@ class App extends Component {
             character: [hashFromParams('cha','None'),hashFromParams('chb','None'),hashFromParams('chc','None')]
         }
         this.setState({...this.state, ...newState})
-        // this.setState({ term: hashFromParams('c') })
-        // this.setState({ game: hashFromParams('g', 'streetfighter') })
-        // this.setState({ character: hashFromParams('ch') })
     }
 
     render() {
