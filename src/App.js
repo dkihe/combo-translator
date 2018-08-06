@@ -11,58 +11,27 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 const CONF = {
     'streetfighter': {
-        regex: /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./
+        regex: /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./,
+        team: 1
     },
     'tekken': {
-        regex: /\s|(,)\s*|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/
+        regex: /\s|(,)\s*|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/,
+        team: 1
     },
     'mvci': {
-        regex: /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./
+        regex: /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./,
+        team: 2
     },
     'dbfz': {
-        regex: /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./
+        regex: /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./,
+        team: 3
     },
     'bbtag': {
-        regex: /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./
+        regex: /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./,
+        team: 2
     }
 }
 
-
-// const comboHash =()=>{
-//     if (window && window.location.search){
-//         const cParams = (new URL(document.location)).searchParams
-//         const cHash = cParams.get("c")
-//         const cOut = decodeURIComponent(cHash)
-//         return cOut
-//     }
-//     else{
-//         return ''
-//     }
-// }
-
-// const gameHash =()=>{
-//     if (window && window.location.search){
-//         const gParams = (new URL(document.location)).searchParams
-//         const gHash = gParams.get("g")
-//         const gOut = decodeURIComponent(gHash)
-//         return gOut
-//     }
-//     else{
-//         return 'streetfighter'
-//     }
-// }
-
-// const charHash =()=>{
-//     if (window && window.location.search){
-//         const chParams = (new URL(document.location)).searchParams
-//         const chHash = chParams.get("ch")
-//         const chOut = decodeURIComponent(chHash)
-//         return chOut
-//     }
-//     else{
-//         return null
-//     }
-// }
 
 const hashFromParams = (param, defaultValue) => {
     if (window && window.location.search) {
@@ -81,9 +50,7 @@ class App extends Component {
         this.state={
             term:'',
             game: 'streetfighter',
-            character: 'None',
-            character2: 'None',
-            character3: 'None'
+            character: ['None','None','None']
         }
     }
     
@@ -134,59 +101,35 @@ class App extends Component {
     }
         
     charList(){
-        let characters = document.querySelector('#characters')
+        let characters = document.querySelector('.characters')
         let option
-        let listA = document.querySelector('#charList1')
-        let listB = document.querySelector('#charList2')
-        let listC = document.querySelector('#charList3')
-        const createList = (numList) =>{
-            if (characters){
-                for ( var i = 1; i <= numList; i++){
-                    // Clear options before creating new options
-                    document.querySelector('#charList'+String(i)).innerHTML = ""
-                
-                    // Create drop down values
-                    for (var char in charlist[this.state.game]){
-                        option = document.createElement('option')
-                        option.value = charlist[this.state.game][char].name
-                        option.label = charlist[this.state.game][char].name
-                        option.innerHTML = charlist[this.state.game][char].name
-                        document.querySelector('#charList'+String(i)).appendChild(option)
-                    }
-                }
-            }
-        }
         if (characters){
-            switch(this.state.game){
-                case 'streetfighter':
-                    createList(1)
-                    listA.style.display = 'inline-block'
-                    listB.style.display = 'none'
-                    listC.style.display = 'none'
-                    break;
-                case 'tekken':
-                    createList(1)
-                    listA.style.display = 'inline-block'
-                    listB.style.display = 'none'
-                    listC.style.display = 'none'
-                    break;
-                case 'dbfz':
-                    createList(3)
-                    listA.style.display = 'inline-block'
-                    listB.style.display = 'inline-block'
-                    listC.style.display = 'inline-block'
-                    break;
-
+            //characters.querySelector('select').id = 'charList' + String(listId)
+            characters.querySelector('select').id = 'charList'
+            // Clear options before creating new options
+            //document.querySelector('#charList' + String(listId)).innerHTML = ""
+            document.querySelector('#charList').innerHTML = ""
+        
+            // Create drop down values
+            for (var char in charlist[this.state.game]){
+                option = document.createElement('option')
+                option.value = charlist[this.state.game][char].name
+                option.label = charlist[this.state.game][char].name
+                option.innerHTML = charlist[this.state.game][char].name
+                //document.querySelector('#charList' + String(listId)).appendChild(option)
+                document.querySelector('#charList').appendChild(option)
             }
         }
+        
     }
 
     outputURL(){
         let state = encodeURIComponent(this.state.term)
         let game = encodeURIComponent(this.state.game)
-        let charA = encodeURIComponent(this.state.character)
-        let charB = encodeURIComponent(this.state.character2)
-        let charC = encodeURIComponent(this.state.character3)
+        let charA = encodeURIComponent(this.state.character[0])
+        let charB = encodeURIComponent(this.state.character[1])
+        let charC = encodeURIComponent(this.state.character[2])
+        
         return "?c="+state+"&g="+game+"&cha="+charA+"&chb="+charB+"&chc="+charC
     }
 
@@ -194,38 +137,57 @@ class App extends Component {
         const newState = {
             term: hashFromParams('c'),
             game: hashFromParams('g', 'streetfighter'),
-            character: hashFromParams('cha', 'None'),
-            character2: hashFromParams('chb', 'None'),
-            character3: hashFromParams('chc', 'None')
+            character: [hashFromParams('cha','None'),hashFromParams('chb','None'),hashFromParams('chc','None')]
         }
         this.setState({...this.state, ...newState})
         // this.setState({ term: hashFromParams('c') })
         // this.setState({ game: hashFromParams('g', 'streetfighter') })
         // this.setState({ character: hashFromParams('ch') })
     }
+
     render() {
+        let CharactersComponent = () =>{
+            return(
+                <div>
+                    <Characters 
+                        charList = {this.charList()}
+                        charProp = {event => this.setState( {character: [event.target.value, this.state.character[1], this.state.character[2]] })}
+                        currcharProp = {this.state.character[0]}
+                        imgCharProp = {charlist[this.state.game][this.state.character[0]].image}
+                    />
+                    <Characters 
+                        charList = {this.charList()}
+                        charProp = {event => this.setState( {character: [this.state.character[0], event.target.value, this.state.character[2]]} )}
+                        currcharProp = {this.state.character[1]}
+                        imgCharProp = {charlist[this.state.game][this.state.character[1]].image}
+                    />
+                    <Characters 
+                        charList = {this.charList()}
+                        charProp = {event => this.setState( {character: [this.state.character[0], this.state.character[1], event.target.value]} )}
+                        currcharProp = {this.state.character[2]}
+                        imgCharProp = {charlist[this.state.game][this.state.character[2]].image}
+                    />
+                </div>
+            )
+        }
         return (
             <div>
-                {console.log(this.state.game)}
                 {console.log(this.state.character)}
+                {console.log(charlist[this.state.game][this.state.character[0].image])}
                 <div id="title">Combo Translator</div>
                 <Games 
-                    gameProp = {event => this.setState({game: event.target.value,character: 'None',character2: 'None',character3: 'None'})}
+                    gameProp = {event => this.setState({game: event.target.value,character: ['None','None','None']})}
                     currgameProp = {this.state.game}
                 />
+                {/*
                 <Characters
-                    listProp = {this.charList()}
-                    charPropA = {event => this.setState({character: event.target.value})}
-                    charPropB = {event => this.setState({character2: event.target.value})}
-                    charPropC = {event => this.setState({character3: event.target.value})}
-                    currcharPropA = {this.state.character}
-                    currcharPropB = {this.state.character2}
-                    currcharPropC = {this.state.character3}
-                    setCharPropA = {charlist[this.state.game][this.state.character].image}
-                    setCharPropB = {charlist[this.state.game][this.state.character2].image}
-                    setCharPropC = {charlist[this.state.game][this.state.character3].image}
-
+                    charList = {this.charList()}
+                    charProp = {event => this.setState( {character: [event.target.value, this.state.character[1], this.state.character[2]]} )}
+                    currcharProp = {this.state.character[0]}
+                    imgCharProp = {charlist[this.state.game][this.state.character[0]].image}
                 />
+                */}
+                {CharactersComponent()}
                 <Translator 
                     valueProp = {this.state.term}
                     inputProp = {event => this.setState({term: event.target.value})}
