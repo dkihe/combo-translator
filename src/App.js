@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Games from './Games.js';
 import Translator from './Translator.js';
 import Output from './Output.js';
-import Characters from './Characters.js';
+import CharDropDown from './CharDropDown.js';
 import './App.css';
 import list from "./list.json";
 import charlist from "./charlist.json"
@@ -31,7 +31,6 @@ const CONF = {
         team: 2
     }
 }
-
 
 const hashFromParams = (param, defaultValue) => {
     if (window && window.location.search) {
@@ -105,7 +104,6 @@ class App extends Component {
         let option
         if (characters){
             //characters.querySelector('select').id = 'charList' + String(listId)
-            characters.querySelector('select').id = 'charList'
             // Clear options before creating new options
             //document.querySelector('#charList' + String(listId)).innerHTML = ""
             document.querySelector('#charList').innerHTML = ""
@@ -114,7 +112,6 @@ class App extends Component {
             for (var char in charlist[this.state.game]){
                 option = document.createElement('option')
                 option.value = charlist[this.state.game][char].name
-                option.label = charlist[this.state.game][char].name
                 option.innerHTML = charlist[this.state.game][char].name
                 //document.querySelector('#charList' + String(listId)).appendChild(option)
                 document.querySelector('#charList').appendChild(option)
@@ -132,7 +129,7 @@ class App extends Component {
         
         return "?c="+state+"&g="+game+"&cha="+charA+"&chb="+charB+"&chc="+charC
     }
-
+  
     componentDidMount() {
         const newState = {
             term: hashFromParams('c'),
@@ -146,22 +143,22 @@ class App extends Component {
         let CharactersComponent = () =>{
             return(
                 <div>
-                    <Characters 
-                        charList = {this.charList()}
+                    <CharDropDown 
                         charProp = {event => this.setState( {character: [event.target.value, this.state.character[1], this.state.character[2]] })}
                         currcharProp = {this.state.character[0]}
+                        dataProp = {charlist[this.state.game]}
                         imgCharProp = {charlist[this.state.game][this.state.character[0]].image}
                     />
-                    <Characters 
-                        charList = {this.charList()}
+                    <CharDropDown 
                         charProp = {event => this.setState( {character: [this.state.character[0], event.target.value, this.state.character[2]]} )}
                         currcharProp = {this.state.character[1]}
+                        dataProp = {charlist[this.state.game]}
                         imgCharProp = {charlist[this.state.game][this.state.character[1]].image}
                     />
-                    <Characters 
-                        charList = {this.charList()}
+                    <CharDropDown 
                         charProp = {event => this.setState( {character: [this.state.character[0], this.state.character[1], event.target.value]} )}
                         currcharProp = {this.state.character[2]}
+                        dataProp = {charlist[this.state.game]}
                         imgCharProp = {charlist[this.state.game][this.state.character[2]].image}
                     />
                 </div>
@@ -176,14 +173,6 @@ class App extends Component {
                     gameProp = {event => this.setState({game: event.target.value,character: ['None','None','None']})}
                     currgameProp = {this.state.game}
                 />
-                {/*
-                <Characters
-                    charList = {this.charList()}
-                    charProp = {event => this.setState( {character: [event.target.value, this.state.character[1], this.state.character[2]]} )}
-                    currcharProp = {this.state.character[0]}
-                    imgCharProp = {charlist[this.state.game][this.state.character[0]].image}
-                />
-                */}
                 {CharactersComponent()}
                 <Translator 
                     valueProp = {this.state.term}

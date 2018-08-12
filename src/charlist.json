@@ -23,6 +23,54 @@
     "Birdie": {
       "name": ["Birdie"],
       "image":["./img/streetfighter/char/sf_char_birdie.png"]
+    },
+    "Blanka": {
+      "name": ["Blanka"],
+      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+    },
+    "Cammy": {
+      "name": ["Cammy"],
+      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+    },
+    "Chun-Li": {
+      "name": ["Chun-Li"],
+      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+    },
+    "Cody": {
+      "name": ["Cody"],
+      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+    },
+    "Dhalsim": {
+      "name": ["Dhalsim"],
+      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+    },
+    "Ed": {
+      "name": ["Ed"],
+      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+    },
+    "F.A.N.G": {
+      "name": ["F.A.N.G"],
+      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+    },
+    "Falke": {
+      "name": ["Falke"],
+      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+    },
+    "G": {
+      "name": ["G"],
+      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+    },
+    "Guile": {
+      "name": ["Guile"],
+      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+    },
+    "Ibuki": {
+      "name": ["Ibuki"],
+      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+    },
+    "Juri": {
+      "name": ["Juri"],
+      "image":["./img/streetfighter/char/sf_char_birdie.png"]
     }
   },
   "tekken": {
