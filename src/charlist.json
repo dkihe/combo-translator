@@ -26,51 +26,123 @@
     },
     "Blanka": {
       "name": ["Blanka"],
-      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+      "image":["./img/streetfighter/char/sf_char_blanka.png"]
     },
     "Cammy": {
       "name": ["Cammy"],
-      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+      "image":["./img/streetfighter/char/sf_char_cammy.png"]
     },
     "Chun-Li": {
       "name": ["Chun-Li"],
-      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+      "image":["./img/streetfighter/char/sf_char_chunli.png"]
     },
     "Cody": {
       "name": ["Cody"],
-      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+      "image":["./img/streetfighter/char/sf_char_cody.png"]
     },
     "Dhalsim": {
       "name": ["Dhalsim"],
-      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+      "image":["./img/streetfighter/char/sf_char_dhalsim.png"]
     },
     "Ed": {
       "name": ["Ed"],
-      "image":["./img/streetfighter/char/sf_char_birdie.png"]
-    },
-    "F.A.N.G": {
-      "name": ["F.A.N.G"],
-      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+      "image":["./img/streetfighter/char/sf_char_ed.png"]
     },
     "Falke": {
       "name": ["Falke"],
-      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+      "image":["./img/streetfighter/char/sf_char_falke.png"]
+    },
+    "F.A.N.G": {
+      "name": ["F.A.N.G"],
+      "image":["./img/streetfighter/char/sf_char_fang.png"]
     },
     "G": {
       "name": ["G"],
-      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+      "image":["./img/streetfighter/char/sf_char_g.png"]
     },
     "Guile": {
       "name": ["Guile"],
-      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+      "image":["./img/streetfighter/char/sf_char_guile.png"]
     },
     "Ibuki": {
       "name": ["Ibuki"],
-      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+      "image":["./img/streetfighter/char/sf_char_ibuki.png"]
     },
     "Juri": {
       "name": ["Juri"],
-      "image":["./img/streetfighter/char/sf_char_birdie.png"]
+      "image":["./img/streetfighter/char/sf_char_juri.png"]
+    },
+    "Kage": {
+      "name": ["Kage"],
+      "image":["./img/streetfighter/char/sf_char_kage.png"]
+    },
+    "Karin": {
+      "name": ["Karin"],
+      "image":["./img/streetfighter/char/sf_char_karin.png"]
+    },
+    "Ken": {
+      "name": ["Ken"],
+      "image":["./img/streetfighter/char/sf_char_ken.png"]
+    },
+    "Kolin": {
+      "name": ["Kolin"],
+      "image":["./img/streetfighter/char/sf_char_kolin.png"]
+    },
+    "Laura": {
+      "name": ["Laura"],
+      "image":["./img/streetfighter/char/sf_char_laura.png"]
+    },
+    "M. Bison": {
+      "name": ["M. Bison"],
+      "image":["./img/streetfighter/char/sf_char_mbison.png"]
+    },
+    "Menat": {
+      "name": ["Manat"],
+      "image":["./img/streetfighter/char/sf_char_menat.png"]
+    },
+    "Nash": {
+      "name": ["Nash"],
+      "image":["./img/streetfighter/char/sf_char_nash.png"]
+    },
+    "Necalli": {
+      "name": ["Necalli"],
+      "image":["./img/streetfighter/char/sf_char_necalli.png"]
+    },
+    "R. Mika": {
+      "name": ["R. Mika"],
+      "image":["./img/streetfighter/char/sf_char_rmika.png"]
+    },
+    "Rashid": {
+      "name": ["Rashid"],
+      "image":["./img/streetfighter/char/sf_char_rashid.png"]
+    },
+    "Ryu": {
+      "name": ["Ryu"],
+      "image":["./img/streetfighter/char/sf_char_ryu.png"]
+    },
+    "Sagat": {
+      "name": ["Sagat"],
+      "image":["./img/streetfighter/char/sf_char_sagat.png"]
+    },
+    "Sakura": {
+      "name": ["Sakura"],
+      "image":["./img/streetfighter/char/sf_char_sakura.png"]
+    },
+    "Urien": {
+      "name": ["Urien"],
+      "image":["./img/streetfighter/char/sf_char_urien.png"]
+    },
+    "Vega": {
+      "name": ["Vega"],
+      "image":["./img/streetfighter/char/sf_char_vega.png"]
+    },
+    "Zangief": {
+      "name": ["Zangief"],
+      "image":["./img/streetfighter/char/sf_char_zangief.png"]
+    },
+    "Zeku": {
+      "name": ["Zeku"],
+      "image":["./img/streetfighter/char/sf_char_zeku.png"]
     }
   },
   "tekken": {

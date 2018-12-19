@@ -141,28 +141,75 @@ class App extends Component {
 
     render() {
         let CharactersComponent = () =>{
-            return(
-                <div>
-                    <CharDropDown 
-                        charProp = {event => this.setState( {character: [event.target.value, this.state.character[1], this.state.character[2]] })}
-                        currcharProp = {this.state.character[0]}
-                        dataProp = {charlist[this.state.game]}
-                        imgCharProp = {charlist[this.state.game][this.state.character[0]].image}
-                    />
-                    <CharDropDown 
-                        charProp = {event => this.setState( {character: [this.state.character[0], event.target.value, this.state.character[2]]} )}
-                        currcharProp = {this.state.character[1]}
-                        dataProp = {charlist[this.state.game]}
-                        imgCharProp = {charlist[this.state.game][this.state.character[1]].image}
-                    />
-                    <CharDropDown 
-                        charProp = {event => this.setState( {character: [this.state.character[0], this.state.character[1], event.target.value]} )}
-                        currcharProp = {this.state.character[2]}
-                        dataProp = {charlist[this.state.game]}
-                        imgCharProp = {charlist[this.state.game][this.state.character[2]].image}
-                    />
-                </div>
-            )
+            switch (this.state.game) {
+                case 'streetfighter':
+                case 'tekken':
+                    return(
+                        <div>
+                            <CharDropDown 
+                                charProp = {event => this.setState( {character: [event.target.value, this.state.character[1], this.state.character[2]] })}
+                                currcharProp = {this.state.character[0]}
+                                dataProp = {charlist[this.state.game]}
+                                imgCharProp = {charlist[this.state.game][this.state.character[0]].image}
+                            />
+                        </div>
+                    )
+                    break;
+                case 'mvci':
+                case 'bbtag':
+                    return(
+                        <div>
+                            <CharDropDown 
+                                charProp = {event => this.setState( {character: [event.target.value, this.state.character[1], this.state.character[2]] })}
+                                currcharProp = {this.state.character[0]}
+                                dataProp = {charlist[this.state.game]}
+                                imgCharProp = {charlist[this.state.game][this.state.character[0]].image}
+                            />
+                            <CharDropDown 
+                                charProp = {event => this.setState( {character: [this.state.character[0], event.target.value, this.state.character[2]]} )}
+                                currcharProp = {this.state.character[1]}
+                                dataProp = {charlist[this.state.game]}
+                                imgCharProp = {charlist[this.state.game][this.state.character[1]].image}
+                            />
+                        </div>
+                    )
+                    break;
+                case 'dbfz':
+                    return(
+                        <div>
+                            <CharDropDown 
+                                charProp = {event => this.setState( {character: [event.target.value, this.state.character[1], this.state.character[2]] })}
+                                currcharProp = {this.state.character[0]}
+                                dataProp = {charlist[this.state.game]}
+                                imgCharProp = {charlist[this.state.game][this.state.character[0]].image}
+                            />
+                            <CharDropDown 
+                                charProp = {event => this.setState( {character: [this.state.character[0], event.target.value, this.state.character[2]]} )}
+                                currcharProp = {this.state.character[1]}
+                                dataProp = {charlist[this.state.game]}
+                                imgCharProp = {charlist[this.state.game][this.state.character[1]].image}
+                            />
+                            <CharDropDown 
+                                charProp = {event => this.setState( {character: [this.state.character[0], this.state.character[1], event.target.value]} )}
+                                currcharProp = {this.state.character[2]}
+                                dataProp = {charlist[this.state.game]}
+                                imgCharProp = {charlist[this.state.game][this.state.character[2]].image}
+                            />
+                        </div>
+                    )
+                    break;
+                default:
+                return(
+                    <div>
+                        <CharDropDown 
+                            charProp = {event => this.setState( {character: [event.target.value, this.state.character[1], this.state.character[2]] })}
+                            currcharProp = {this.state.character[0]}
+                            dataProp = {charlist[this.state.game]}
+                            imgCharProp = {charlist[this.state.game][this.state.character[0]].image}
+                        />
+                    </div>
+                )
+            }
         }
         return (
             <div>
