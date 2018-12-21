@@ -4,7 +4,7 @@ class CharDropDown extends Component{
     render(){
         let tempList = []
         const dataProp = this.props.dataProp
-        const options = () =>{
+        const options = () => {
             for (let char in dataProp){
                 // Creates array of characters to be mapped
                 tempList.push(char)

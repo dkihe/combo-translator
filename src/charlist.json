@@ -169,9 +169,217 @@
     "Claudio": {
       "name": ["Claudio"],
       "image":["./img/tekken/char/tek_char_claudio.png"]
+    },
+    "Craig": {
+      "name": ["Akuma"],
+      "image":["./img/tekken/char/tek_char_akuma.png"]
+    },
+    "Devil Jin": {
+      "name": ["Alisa"],
+      "image":["./img/tekken/char/tek_char_alisa.png"]
+    },
+    "Dragunov": {
+      "name": ["Bryan"],
+      "image":["./img/tekken/char/tek_char_bryan.png"]
+    },
+    "Eliza": {
+      "name": ["Bob"],
+      "image":["./img/tekken/char/tek_char_bob.png"]
+    },
+    "Eddy": {
+      "name": ["Bryan"],
+      "image":["./img/tekken/char/tek_char_bryan.png"]
+    },
+    "Feng Wei": {
+      "name": ["Claudio"],
+      "image":["./img/tekken/char/tek_char_claudio.png"]
+    },
+    "Gigas": {
+      "name": ["Alisa"],
+      "image":["./img/tekken/char/tek_char_alisa.png"]
+    },
+    "Heihachi": {
+      "name": ["Akuma"],
+      "image":["./img/tekken/char/tek_char_akuma.png"]
+    },
+    "Hwoarang": {
+      "name": ["Alisa"],
+      "image":["./img/tekken/char/tek_char_alisa.png"]
+    },
+    "Jack-7": {
+      "name": ["Bob"],
+      "image":["./img/tekken/char/tek_char_bob.png"]
+    },
+    "Jin": {
+      "name": ["Bob"],
+      "image":["./img/tekken/char/tek_char_bob.png"]
+    },
+    "Josie": {
+      "name": ["Bryan"],
+      "image":["./img/tekken/char/tek_char_bryan.png"]
+    },
+    "Julia": {
+      "name": ["Bryan"],
+      "image":["./img/tekken/char/tek_char_bryan.png"]
+    },
+    "Katarina": {
+      "name": ["Claudio"],
+      "image":["./img/tekken/char/tek_char_claudio.png"]
+    },
+    "Kazumi": {
+      "name": ["Akuma"],
+      "image":["./img/tekken/char/tek_char_akuma.png"]
+    },
+    "Kazuya": {
+      "name": ["Claudio"],
+      "image":["./img/tekken/char/tek_char_claudio.png"]
+    },
+    "King": {
+      "name": ["Akuma"],
+      "image":["./img/tekken/char/tek_char_akuma.png"]
+    },
+    "Kuma": {
+      "name": ["Alisa"],
+      "image":["./img/tekken/char/tek_char_alisa.png"]
+    },
+    "Lars": {
+      "name": ["Bob"],
+      "image":["./img/tekken/char/tek_char_bob.png"]
+    },
+    "Lee (Violet)": {
+      "name": ["Bryan"],
+      "image":["./img/tekken/char/tek_char_bryan.png"]
+    },
+    "Lei": {
+      "name": ["Claudio"],
+      "image":["./img/tekken/char/tek_char_claudio.png"]
+    },
+    "Leo": {
+      "name": ["Akuma"],
+      "image":["./img/tekken/char/tek_char_akuma.png"]
+    },
+    "Lili": {
+      "name": ["Alisa"],
+      "image":["./img/tekken/char/tek_char_alisa.png"]
+    },
+    "Xiaoyu": {
+      "name": ["Bob"],
+      "image":["./img/tekken/char/tek_char_bob.png"]
+    },
+    "Law": {
+      "name": ["Bryan"],
+      "image":["./img/tekken/char/tek_char_bryan.png"]
+    },
+    "Master Raven": {
+      "name": ["Alisa"],
+      "image":["./img/tekken/char/tek_char_alisa.png"]
+    },
+    "Miguel": {
+      "name": ["Claudio"],
+      "image":["./img/tekken/char/tek_char_claudio.png"]
+    },
+    "Nina": {
+      "name": ["Akuma"],
+      "image":["./img/tekken/char/tek_char_akuma.png"]
+    },
+    "Panda": {
+      "name": ["Alisa"],
+      "image":["./img/tekken/char/tek_char_alisa.png"]
+    },
+    "Paul": {
+      "name": ["Bob"],
+      "image":["./img/tekken/char/tek_char_bob.png"]
+    },
+    "Shaheen": {
+      "name": ["Bob"],
+      "image":["./img/tekken/char/tek_char_bob.png"]
+    },
+    "Steve": {
+      "name": ["Claudio"],
+      "image":["./img/tekken/char/tek_char_claudio.png"]
+    },
+    "Yoshimitsu": {
+      "name": ["Akuma"],
+      "image":["./img/tekken/char/tek_char_akuma.png"]
+    }
+  },
+  "mvci": {
+    "None": {
+      "name": ["None"],
+      "image":[""]
+    },
+    "Android 16": {
+      "name": ["Android 16"],
+      "image":["./img/dbfz/char/dbfz_char_android16.png"]
+    },
+    "Android 18": {
+      "name": ["Android 18"],
+      "image":["./img/dbfz/char/dbfz_char_android18.png"]
+    },
+    "Android 21": {
+      "name": ["Android 21"],
+      "image":["./img/dbfz/char/dbfz_char_android21.png"]
+    },
+    "Captain Ginyu": {
+      "name": ["Captain Ginyu"],
+      "image":["./img/dbfz/char/dbfz_char_cginyu.png"]
+    },
+    "Cell": {
+      "name": ["Cell"],
+      "image":["./img/dbfz/char/dbfz_char_cell.png"]
+    },
+    "Frieza": {
+      "name": ["Frieza"],
+      "image":["./img/dbfz/char/dbfz_char_frieza.png"]
+    },
+    "Gohan (Adult)":{
+      "name":["Gohan (Adult)"],
+      "image":["./img/dbfz/char/dbfz_char_agohan.png"]
+    },
+    "Gohan (Teen)": {
+      "name": ["Gohan (Teen)"],
+      "image":["./img/dbfz/char/dbfz_char_tgohan.png"]
     }
   },
   "dbfz": {
+    "None": {
+      "name": ["None"],
+      "image":[""]
+    },
+    "Android 16": {
+      "name": ["Android 16"],
+      "image":["./img/dbfz/char/dbfz_char_android16.png"]
+    },
+    "Android 18": {
+      "name": ["Android 18"],
+      "image":["./img/dbfz/char/dbfz_char_android18.png"]
+    },
+    "Android 21": {
+      "name": ["Android 21"],
+      "image":["./img/dbfz/char/dbfz_char_android21.png"]
+    },
+    "Captain Ginyu": {
+      "name": ["Captain Ginyu"],
+      "image":["./img/dbfz/char/dbfz_char_cginyu.png"]
+    },
+    "Cell": {
+      "name": ["Cell"],
+      "image":["./img/dbfz/char/dbfz_char_cell.png"]
+    },
+    "Frieza": {
+      "name": ["Frieza"],
+      "image":["./img/dbfz/char/dbfz_char_frieza.png"]
+    },
+    "Gohan (Adult)":{
+      "name":["Gohan (Adult)"],
+      "image":["./img/dbfz/char/dbfz_char_agohan.png"]
+    },
+    "Gohan (Teen)": {
+      "name": ["Gohan (Teen)"],
+      "image":["./img/dbfz/char/dbfz_char_tgohan.png"]
+    }
+  },
+  "bbtag": {
     "None": {
       "name": ["None"],
       "image":[""]
