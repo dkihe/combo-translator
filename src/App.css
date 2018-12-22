@@ -1,6 +1,9 @@
 :root{
   --bg-color:/*#160D5F;*/#009999;
 }
+.ui.center.aligned.container{
+  width: 75%;
+}
 a:visited,a:link{
   text-decoration: none;
   background-color: white;

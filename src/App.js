@@ -213,19 +213,18 @@ class App extends Component {
         }
         return (
             <div>
+                {console.log(this.state.game)}
                 {console.log(this.state.character)}
-                {console.log(charlist[this.state.game][this.state.character[0].image])}
+                {/* {console.log(charlist[this.state.game][this.state.character[0].image])} */}
                 <div id="title">Combo Translator</div>
-                <Games 
-                    gameProp = {event => this.setState({game: event.target.value,character: ['None','None','None']})}
-                    currgameProp = {this.state.game}
-                />
-                {CharactersComponent()}
                 <Translator 
                     valueProp = {this.state.term}
                     inputProp = {event => this.setState({term: event.target.value})}
+                    gameProp = { (event, data) => this.setState({game: data.value, character: ['None','None','None']})}
+                    currgameProp = {this.state.game}
                 />
                 <div id="text">click an image to see a translation</div>
+                {CharactersComponent()}
                 <Output
                     imageProp = {this.createImage()}
                 />
