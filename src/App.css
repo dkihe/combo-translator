@@ -45,57 +45,7 @@ a:hover{
       letter-spacing: .125em;
       margin-bottom: .5em;
   }
-   #games{
-      width: 100%;
-      max-width: 90%;
-      margin: 0 auto;
-      text-align: center;
-  }
-  .select-field{
-    display:inline-block;
-    width: 100%;
-    background-color: #005D5D;
-    border-radius: .5em;
-    margin: 0 auto;
-  }
 
-  .select-field > select{
-    float:left;
-    width:100%;
-    background-color: transparent;
-    border:0em;
-    padding:.5em;
-    font-size: 1em;
-    color:#fff;
-    background: url("./menu_arrow.svg") no-repeat 97% 50%;
-    -moz-appearance:none;
-    -webkit-appearance:none;
-    appearance:none;
-  }
-
-  .select-field > select > option{
-    color:black;
-  }
-
-  #translator{
-  	width: 100%;
-    max-width: 90%;
-    margin: 0 auto;
-  }
-  #translator > input{
-    width:100%;
-    display: inline-block;
-    padding: .5em;
-    border: 0em;
-    -webkit-border-radius: .5em;
-    border-radius: .5em;
-    font: normal 1em/0 'Open Sans', Helvetica, sans-serif;
-    background: rgba(255,255,255,1);
-    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-  }
   #text{
       height:2em;
       width: 100%;
@@ -189,57 +139,7 @@ a:hover{
       letter-spacing: .125em;
       margin-bottom: .5em;
   }
-   #games{
-      width: 100%;
-      max-width: 90%;
-      margin: 0 auto;
-      text-align: center;
-  }
-  .select-field{
-    display:inline-block;
-    width: 100%;
-    background-color: #005D5D;
-    border-radius: .5em;
-    margin: 0 auto;
-  }
 
-  .select-field > select{
-    float:left;
-    width:100%;
-    background-color: transparent;
-    border:0em;
-    padding:.5em;
-    font-size: 1em;
-    color:#fff;
-    background: url("./menu_arrow.svg") no-repeat 97% 50%;
-    -moz-appearance:none;
-    -webkit-appearance:none;
-    appearance:none;
-  }
-
-  .select-field > select > option{
-    color:black;
-  }
-
-  #translator{
-    width: 100%;
-    max-width: 90%;
-    margin: 0 auto;
-  }
-  #translator > input{
-    width:100%;
-    display: inline-block;
-    padding: .5em;
-    border: 0em;
-    -webkit-border-radius: .5em;
-    border-radius: .5em;
-    font: normal 1em/0 'Open Sans', Helvetica, sans-serif;
-    background: rgba(255,255,255,1);
-    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-  }
   #text{
       height:2em;
       width: 100%;
@@ -333,57 +233,7 @@ a:hover{
       letter-spacing: .125em;
       margin-bottom: .5em;
   }
-   #games{
-      width: 100%;
-      max-width: 50%;
-      margin: 0 auto;
-      text-align: center;
-  }
-  .select-field{
-    display:inline-block;
-    width: 100%;
-    background-color: #005D5D;
-    border-radius: .5em;
-    margin: 0 auto;
-  }
 
-  .select-field > select{
-    float:left;
-    width:100%;
-    background-color: transparent;
-    border:0em;
-    padding:.5em;
-    font-size: 1em;
-    color:#fff;
-    background: url("./menu_arrow.svg") no-repeat 97% 50%;
-    -moz-appearance:none;
-    -webkit-appearance:none;
-    appearance:none;
-  }
-
-  .select-field > select > option{
-    color:black;
-  }
-
-  #translator{
-    width: 100%;
-    max-width: 50%;
-    margin: 0 auto;
-  }
-  #translator > input{
-    width:100%;
-    display: inline-block;
-    padding: .5em;
-    border: 0em;
-    -webkit-border-radius: .5em;
-    border-radius: .5em;
-    font: normal 1em/0 'Open Sans', Helvetica, sans-serif;
-    background: rgba(255,255,255,1);
-    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-  }
   #text{
       height:2em;
       width: 100%;
