@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Grid, Container, Dropdown, Image } from 'semantic-ui-react';
 
 class CharDropDown extends Component{
 	render(){
@@ -6,27 +7,19 @@ class CharDropDown extends Component{
 		const dataProp = this.props.dataProp
 		const options = () => {
 			for (let char in dataProp){
-				// Creates array of characters to be mapped
-				tempList.push(char)
-				// Create option element with character names for select drop down
-				var optionList = tempList.map(dataItem =>
-					<option key={dataItem}>{dataItem}</option>
-				)
+				tempList.push({ key: char, text: char, value: char })
 			}
-			return optionList
+			console.log(tempList)
+			return tempList
 		}
 
 		return(
-			<div className='characters'>
-				<div>
-					<img id = "charImg" src = {this.props.imgCharProp} />
-				</div>
-				<div>
-					<select id = "charList" onChange={this.props.charProp} value={this.props.currcharProp}>
-						{options()}
-					</select>
-				</div>
-			</div>
+			<Container >
+				<Container centered style={{ width: '15em' }}>
+					<Image fluid centered src = {this.props.imgCharProp}/>
+					<Dropdown fluid selection options={options()} onChange={this.props.charProp} value={this.props.currcharProp} />
+				</Container>
+			</Container>
 		)
 	}
 }

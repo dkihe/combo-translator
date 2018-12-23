@@ -6,6 +6,7 @@ import './App.css';
 import list from "./list.json";
 import charlist from "./charlist.json"
 import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { Grid, Container } from 'semantic-ui-react';
 
 
 const CONF = {
@@ -97,26 +98,6 @@ class App extends Component {
 			}
 		}
 	}
-			
-	charList(){
-		let characters = document.querySelector('.characters')
-		let option
-		if (characters) {
-			//characters.querySelector('select').id = 'charList' + String(listId)
-			// Clear options before creating new options
-			//document.querySelector('#charList' + String(listId)).innerHTML = ""
-			document.querySelector('#charList').innerHTML = ""
-	
-			// Create drop down values
-			for (var char in charlist[this.state.game]) {
-				option = document.createElement('option')
-				option.value = charlist[this.state.game][char].name
-				option.innerHTML = charlist[this.state.game][char].name
-				//document.querySelector('#charList' + String(listId)).appendChild(option)
-				document.querySelector('#charList').appendChild(option)
-			}
-		}	
-	}
 
 	outputURL(){
 		let state = encodeURIComponent(this.state.term)
@@ -143,76 +124,106 @@ class App extends Component {
 				case 'streetfighter':
 				case 'tekken':
 					return(
-						<div>
-							<CharDropDown 
-								charProp = {event => this.setState( {character: [event.target.value, this.state.character[1], this.state.character[2]] })}
-								currcharProp = {this.state.character[0]}
-								dataProp = {charlist[this.state.game]}
-								imgCharProp = {charlist[this.state.game][this.state.character[0]].image}
-							/>
-						</div>
+						<Container>
+							<Grid textAlign='center' columns={1}>
+								<Grid.Row>
+									<Grid.Column>
+										<CharDropDown 
+											charProp = {(event, data) => this.setState( {character: [data.value, this.state.character[1], this.state.character[2]] })}
+											currcharProp = {this.state.character[0]}
+											dataProp = {charlist[this.state.game]}
+											imgCharProp = {charlist[this.state.game][this.state.character[0]].image}
+										/>
+									</Grid.Column>
+								</Grid.Row>
+							</Grid>
+						</Container>
 					)
 					break;
 				case 'mvci':
 				case 'bbtag':
 					return(
-						<div>
-							<CharDropDown 
-								charProp = {event => this.setState( {character: [event.target.value, this.state.character[1], this.state.character[2]] })}
-								currcharProp = {this.state.character[0]}
-								dataProp = {charlist[this.state.game]}
-								imgCharProp = {charlist[this.state.game][this.state.character[0]].image}
-							/>
-							<CharDropDown 
-								charProp = {event => this.setState( {character: [this.state.character[0], event.target.value, this.state.character[2]]} )}
-								currcharProp = {this.state.character[1]}
-								dataProp = {charlist[this.state.game]}
-								imgCharProp = {charlist[this.state.game][this.state.character[1]].image}
-							/>
-						</div>
+						<Container>
+							<Grid textAlign='center' columns={2}>
+								<Grid.Row>
+									<Grid.Column>	
+										<CharDropDown 
+											charProp = {(event, data) => this.setState( {character: [data.value, this.state.character[1], this.state.character[2]] })}
+											currcharProp = {this.state.character[0]}
+											dataProp = {charlist[this.state.game]}
+											imgCharProp = {charlist[this.state.game][this.state.character[0]].image}
+										/>
+									</Grid.Column>	
+									<Grid.Column>	
+										<CharDropDown 
+											charProp = {(event, data) => this.setState( {character: [this.state.character[0], data.value, this.state.character[2]]} )}
+											currcharProp = {this.state.character[1]}
+											dataProp = {charlist[this.state.game]}
+											imgCharProp = {charlist[this.state.game][this.state.character[1]].image}
+										/>
+									</Grid.Column>
+								</Grid.Row>
+							</Grid>
+						</Container>
 					)
 					break;
 				case 'dbfz':
 					return(
-						<div>
-							<CharDropDown 
-								charProp = {event => this.setState( {character: [event.target.value, this.state.character[1], this.state.character[2]] })}
-								currcharProp = {this.state.character[0]}
-								dataProp = {charlist[this.state.game]}
-								imgCharProp = {charlist[this.state.game][this.state.character[0]].image}
-							/>
-							<CharDropDown 
-								charProp = {event => this.setState( {character: [this.state.character[0], event.target.value, this.state.character[2]]} )}
-								currcharProp = {this.state.character[1]}
-								dataProp = {charlist[this.state.game]}
-								imgCharProp = {charlist[this.state.game][this.state.character[1]].image}
-							/>
-							<CharDropDown 
-								charProp = {event => this.setState( {character: [this.state.character[0], this.state.character[1], event.target.value]} )}
-								currcharProp = {this.state.character[2]}
-								dataProp = {charlist[this.state.game]}
-								imgCharProp = {charlist[this.state.game][this.state.character[2]].image}
-							/>
-						</div>
+						<Container>
+							<Grid textAlign='center' columns={3}>
+								<Grid.Row cenetered>
+									<Grid.Column>	
+										<CharDropDown 
+											charProp = {(event, data) => this.setState( {character: [data.value, this.state.character[1], this.state.character[2]] })}
+											currcharProp = {this.state.character[0]}
+											dataProp = {charlist[this.state.game]}
+											imgCharProp = {charlist[this.state.game][this.state.character[0]].image}
+										/>
+									</Grid.Column>	
+									<Grid.Column>	
+										<CharDropDown 
+											charProp = {(event, data) => this.setState( {character: [this.state.character[0], data.value, this.state.character[2]]} )}
+											currcharProp = {this.state.character[1]}
+											dataProp = {charlist[this.state.game]}
+											imgCharProp = {charlist[this.state.game][this.state.character[1]].image}
+										/>
+									</Grid.Column>	
+									<Grid.Column>	
+										<CharDropDown 
+											charProp = {(event, data) => this.setState( {character: [this.state.character[0], this.state.character[1], data.value]} )}
+											currcharProp = {this.state.character[2]}
+											dataProp = {charlist[this.state.game]}
+											imgCharProp = {charlist[this.state.game][this.state.character[2]].image}
+										/>
+									</Grid.Column>
+								</Grid.Row>
+							</Grid>
+						</Container>
 					)
 					break;
 				default:
 					return(
-						<div>
-							<CharDropDown 
-								charProp = {event => this.setState( {character: [event.target.value, this.state.character[1], this.state.character[2]] })}
-								currcharProp = {this.state.character[0]}
-								dataProp = {charlist[this.state.game]}
-								imgCharProp = {charlist[this.state.game][this.state.character[0]].image}
-							/>
-						</div>
+						<Container>
+							<Grid textAlign='center' columns={1}>
+								<Grid.Row>
+									<Grid.Column>
+										<CharDropDown 
+											charProp = {(event, data) => this.setState( {character: [data.value, this.state.character[1], this.state.character[2]] })}
+											currcharProp = {this.state.character[0]}
+											dataProp = {charlist[this.state.game]}
+											imgCharProp = {charlist[this.state.game][this.state.character[0]].image}
+										/>
+									</Grid.Column>
+								</Grid.Row>
+							</Grid>
+						</Container>
 					)
 			}
 		}
 		return (
 			<div>
-				{console.log(this.state.game)}
-				{console.log(this.state.character)}
+				{/* {console.log(this.state.game)}
+				{console.log(this.state.character)} */}
 				{/* {console.log(charlist[this.state.game][this.state.character[0].image])} */}
 				<div id="title">Combo Translator</div>
 				<Translator 
