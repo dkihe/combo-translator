@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Input, Container, Dropdown } from 'semantic-ui-react';
+import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { Grid, Label, Select, Button, Icon, Input, Container, Dropdown } from 'semantic-ui-react';
 
 const options = [
   { key: 'streetfighter', text: 'Street Fighter', value: 'streetfighter' },
@@ -12,18 +13,26 @@ const options = [
 class Translator extends Component{
 	render(){
 		return (
-			<Container textAlign='center'>
-				<Input 
-					fluid
-					label={<Dropdown labeled options={options} onChange={this.props.gameProp} value={this.props.currgameProp} />}
-					labelPosition='right'
-					size='large'
-					type='search'
-					placeholder='Example: cr.mk,qcf+p'
-					value={this.props.valueProp}
-					onChange={this.props.inputProp}
-				/>
-			</Container>
+			<Grid container textAlign='center' columns={1}>
+				<Grid.Row>
+					<Grid.Column mobile={16} tablet={16} computer={16} >
+						<Input 
+							action
+							actionPosition='left'
+							fluid
+							size='large'
+							type='search'
+							placeholder='Example: cr.mk,qcf+p'
+							value={this.props.valueProp}
+							onChange={this.props.inputProp}
+						>
+							<CopyToClipboard text={this.props.copyProp}><Button icon>Get URL!<Icon name='copy'/></Button></CopyToClipboard>
+							<Dropdown selection options={options} onChange={this.props.gameProp} value={this.props.currgameProp} />
+							<input />
+						</Input>
+					</Grid.Column>
+				</Grid.Row>
+			</Grid>
 		)
 	}
 }

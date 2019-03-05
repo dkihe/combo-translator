@@ -6,7 +6,7 @@ import './App.css';
 import list from "./list.json";
 import charlist from "./charlist.json"
 import {CopyToClipboard} from 'react-copy-to-clipboard';
-import { Grid, Container } from 'semantic-ui-react';
+import { Icon, Button, Grid, Container } from 'semantic-ui-react';
 
 
 const CONF = {
@@ -29,6 +29,14 @@ const CONF = {
 	'bbtag': {
 		regex: /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./,
 		team: 2
+	},
+	'unib': {
+		regex: /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./,
+		team: 1
+	},
+	'guiltygear':{
+		regex: /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./,
+		team: 1
 	}
 }
 
@@ -124,8 +132,7 @@ class App extends Component {
 				case 'streetfighter':
 				case 'tekken':
 					return(
-						<Container>
-							<Grid textAlign='center' columns={1}>
+							<Grid container textAlign='center' columns={1}>
 								<Grid.Row>
 									<Grid.Column>
 										<CharDropDown 
@@ -137,14 +144,12 @@ class App extends Component {
 									</Grid.Column>
 								</Grid.Row>
 							</Grid>
-						</Container>
 					)
 					break;
 				case 'mvci':
 				case 'bbtag':
 					return(
-						<Container>
-							<Grid textAlign='center' columns={2}>
+							<Grid container textAlign='center' columns={2}>
 								<Grid.Row>
 									<Grid.Column>	
 										<CharDropDown 
@@ -164,13 +169,11 @@ class App extends Component {
 									</Grid.Column>
 								</Grid.Row>
 							</Grid>
-						</Container>
 					)
 					break;
 				case 'dbfz':
 					return(
-						<Container>
-							<Grid textAlign='center' columns={3}>
+							<Grid container textAlign='center' columns={3}>
 								<Grid.Row cenetered>
 									<Grid.Column>	
 										<CharDropDown 
@@ -198,13 +201,11 @@ class App extends Component {
 									</Grid.Column>
 								</Grid.Row>
 							</Grid>
-						</Container>
 					)
 					break;
 				default:
 					return(
-						<Container>
-							<Grid textAlign='center' columns={1}>
+							<Grid container textAlign='center' columns={1}>
 								<Grid.Row>
 									<Grid.Column>
 										<CharDropDown 
@@ -216,31 +217,32 @@ class App extends Component {
 									</Grid.Column>
 								</Grid.Row>
 							</Grid>
-						</Container>
 					)
 			}
 		}
 		return (
-			<div>
-				{/* {console.log(this.state.game)}
-				{console.log(this.state.character)} */}
-				{/* {console.log(charlist[this.state.game][this.state.character[0].image])} */}
-				<div id="title">Combo Translator</div>
+			<Container>
 				<Translator 
 					valueProp = {this.state.term}
 					inputProp = {event => this.setState({term: event.target.value})}
 					gameProp = { (event, data) => this.setState({game: data.value, character: ['None','None','None']})}
 					currgameProp = {this.state.game}
+					copyProp = {this.outputURL()}
 				/>
-				<div id="text">click an image to see a translation</div>
+				<Container id="text">click an image to see a translation</Container>
 				{CharactersComponent()}
 				<Output
 					imageProp = {this.createImage()}
 				/>
-				<CopyToClipboard text={this.outputURL()}> 
-					<button>GET URL</button>
-				</CopyToClipboard>
-			</div>
+				{/* <CopyToClipboard text={this.outputURL()}> 
+					<Container textAlign='center'>
+						<Button icon labelPosition='right'>
+							Copy!
+							<Icon name='copy' />
+						</Button>
+					</Container>
+				</CopyToClipboard> */}
+			</Container>
 		);
 	}
 }
