@@ -16,8 +16,8 @@ class CharDropDown extends Component{
 		return(
 			<Container >
 				<Container centered style={{ width: '15em' }}>
-					<Image centered style={{ maxWidth: '15em' }} src = {this.props.imgCharProp}/>
-					<Dropdown selection style={{ maxWidth: '15em' }} options={options()} onChange={this.props.charProp} value={this.props.currcharProp} />
+					<Dropdown selection style={{ maxWidth: '15em', marginBottom: '3em' }} options={options()} onChange={this.props.charProp} value={this.props.currcharProp} />
+					<Image centered style={{ maxWidth: '10em' }} src = {this.props.imgCharProp}/>
 				</Container>
 			</Container>
 		)
