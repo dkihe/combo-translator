@@ -312,6 +312,10 @@
       "name": ["Android 16"],
       "image":["./img/dbfz/char/dbfz_char_android16.png"]
     },
+    "Android 17": {
+      "name": ["Android 17"],
+      "image":["./img/dbfz/char/dbfz_char_android17.png"]
+    },
     "Android 18": {
       "name": ["Android 18"],
       "image":["./img/dbfz/char/dbfz_char_android18.png"]
@@ -358,13 +362,37 @@
       "name": ["Android 21"],
       "image":["./img/dbfz/char/dbfz_char_android21.png"]
     },
+    "Bardock": {
+      "name": ["Bardock"],
+      "image":["./img/dbfz/char/dbfz_char_bardock.png"]
+    },
+    "Beerus": {
+      "name": ["Beerus"],
+      "image":["./img/dbfz/char/dbfz_char_beerus.png"]
+    },
+    "Broly": {
+      "name": ["Broly"],
+      "image":["./img/dbfz/char/dbfz_char_broly.png"]
+    },
+    "Buu (Fat)": {
+      "name": ["Buu (Fat)"],
+      "image":["./img/dbfz/char/dbfz_char_fatbuu.png"]
+    },
+    "Buu (Kid)": {
+      "name": ["Buu (Kid)"],
+      "image":["./img/dbfz/char/dbfz_char_kidbuu.png"]
+    },
     "Captain Ginyu": {
       "name": ["Captain Ginyu"],
-      "image":["./img/dbfz/char/dbfz_char_cginyu.png"]
+      "image":["./img/dbfz/char/dbfz_char_ginyu.png"]
     },
     "Cell": {
       "name": ["Cell"],
       "image":["./img/dbfz/char/dbfz_char_cell.png"]
+    },
+    "Cooler": {
+      "name": ["Cooler"],
+      "image":["./img/dbfz/char/dbfz_char_cooler.png"]
     },
     "Frieza": {
       "name": ["Frieza"],
@@ -372,11 +400,87 @@
     },
     "Gohan (Adult)":{
       "name":["Gohan (Adult)"],
-      "image":["./img/dbfz/char/dbfz_char_agohan.png"]
+      "image":["./img/dbfz/char/dbfz_char_adultgohan.png"]
     },
     "Gohan (Teen)": {
       "name": ["Gohan (Teen)"],
-      "image":["./img/dbfz/char/dbfz_char_tgohan.png"]
+      "image":["./img/dbfz/char/dbfz_char_teengohan.png"]
+    },
+    "Goku": {
+      "name": ["Goku"],
+      "image":["./img/dbfz/char/dbfz_char_goku.png"]
+    },
+    "Goku (Kid)": {
+      "name": ["Goku (Kid)"],
+      "image":["./img/dbfz/char/dbfz_char_kidgoku.png"]
+    },
+    "Goku (SSJ)": {
+      "name": ["Goku (SSJ)"],
+      "image":["./img/dbfz/char/dbfz_char_ssjgoku.png"]
+    },
+    "Goku (SSGSS)": {
+      "name": ["Goku (SSGSS)"],
+      "image":["./img/dbfz/char/dbfz_char_ssgssgoku.png"]
+    },
+    "Gotenks": {
+      "name": ["Gotenks"],
+      "image":["./img/dbfz/char/dbfz_char_gotenks.png"]
+    },
+    "Hit": {
+      "name": ["Hit"],
+      "image":["./img/dbfz/char/dbfz_char_hit.png"]
+    },
+    "Jiren": {
+      "name": ["Jiren"],
+      "image":["./img/dbfz/char/dbfz_char_jiren.png"]
+    },
+    "Krillin": {
+      "name": ["Krillin"],
+      "image":["./img/dbfz/char/dbfz_char_krillin.png"]
+    },
+    "Nappa": {
+      "name": ["Nappa"],
+      "image":["./img/dbfz/char/dbfz_char_nappa.png"]
+    },
+    "Piccolo": {
+      "name": ["Piccolo"],
+      "image":["./img/dbfz/char/dbfz_char_piccolo.png"]
+    },
+    "Tien": {
+      "name": ["Tien"],
+      "image":["./img/dbfz/char/dbfz_char_tien.png"]
+    },
+    "Trunks": {
+      "name": ["Trunks"],
+      "image":["./img/dbfz/char/dbfz_char_trunks.png"]
+    },
+    "Videl": {
+      "name": ["Videl"],
+      "image":["./img/dbfz/char/dbfz_char_videl.png"]
+    },
+    "Vegeta": {
+      "name": ["Vegeta"],
+      "image":["./img/dbfz/char/dbfz_char_vegeta.png"]
+    },
+    "Vegeta (SSJ)": {
+      "name": ["Vegeta (SSJ)"],
+      "image":["./img/dbfz/char/dbfz_char_ssjvegeta.png"]
+    },
+    "Vegeta (SSGSS)": {
+      "name": ["Vegeta (SSGSS)"],
+      "image":["./img/dbfz/char/dbfz_char_ssgssvegeta.png"]
+    },
+    "Vegito": {
+      "name": ["Vegito"],
+      "image":["./img/dbfz/char/dbfz_char_vegito.png"]
+    },
+    "Yamcha": {
+      "name": ["Yamcha"],
+      "image":["./img/dbfz/char/dbfz_char_yamcha.png"]
+    },
+    "Zamasu": {
+      "name": ["Zamasu"],
+      "image":["./img/dbfz/char/dbfz_char_zamasu.png"]
     }
   },
   "bbtag": {
