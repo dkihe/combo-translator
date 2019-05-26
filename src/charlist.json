@@ -488,37 +488,181 @@
       "name": ["None"],
       "image":[""]
     },
-    "Android 16": {
-      "name": ["Android 16"],
-      "image":["./img/dbfz/char/dbfz_char_android16.png"]
+    "Aegis": {
+      "name": ["Aegis"],
+      "image":["./img/bbtag/char/bbtag_char_aegis.png"]
     },
-    "Android 18": {
-      "name": ["Android 18"],
-      "image":["./img/dbfz/char/dbfz_char_android18.png"]
+    "Akihiko": {
+      "name": ["Akihiko"],
+      "image":["./img/bbtag/char/bbtag_char_akihiko.png"]
     },
-    "Android 21": {
-      "name": ["Android 21"],
-      "image":["./img/dbfz/char/dbfz_char_android21.png"]
+    "Azrael": {
+      "name": ["Azrael"],
+      "image":["./img/bbtag/char/bbtag_char_azrael.png"]
     },
-    "Captain Ginyu": {
-      "name": ["Captain Ginyu"],
-      "image":["./img/dbfz/char/dbfz_char_cginyu.png"]
+    "Blake": {
+      "name": ["Blake"],
+      "image":["./img/bbtag/char/bbtag_char_blake.png"]
     },
-    "Cell": {
-      "name": ["Cell"],
-      "image":["./img/dbfz/char/dbfz_char_cell.png"]
+    "Carmine": {
+      "name": ["Carmine"],
+      "image":["./img/bbtag/char/bbtag_char_carmine.png"]
     },
-    "Frieza": {
-      "name": ["Frieza"],
-      "image":["./img/dbfz/char/dbfz_char_frieza.png"]
+    "Chie": {
+      "name": ["Chie"],
+      "image":["./img/bbtag/char/bbtag_char_chie.png"]
     },
-    "Gohan (Adult)":{
-      "name":["Gohan (Adult)"],
-      "image":["./img/dbfz/char/dbfz_char_agohan.png"]
+    "Es": {
+      "name": ["Es"],
+      "image":["./img/bbtag/char/bbtag_char_Es.png"]
     },
-    "Gohan (Teen)": {
-      "name": ["Gohan (Teen)"],
-      "image":["./img/dbfz/char/dbfz_char_tgohan.png"]
+    "Gordeau": {
+      "name": ["Gordeau"],
+      "image":["./img/bbtag/char/bbtag_char_gordeau.png"]
+    },
+    "Hakumen": {
+      "name": ["Hakumen"],
+      "image":["./img/bbtag/char/bbtag_char_hakumen.png"]
+    },
+    "Hazama": {
+      "name": ["Hazama"],
+      "image":["./img/bbtag/char/bbtag_char_hazama.png"]
+    },
+    "Heart Aino": {
+      "name": ["Heart aino"],
+      "image":["./img/bbtag/char/bbtag_char_aino.png"]
+    },
+    "Hyde": {
+      "name": ["Hyde"],
+      "image":["./img/bbtag/char/bbtag_char_hyde.png"]
+    },
+    "Izayoi": {
+      "name": ["Izayoi"],
+      "image":["./img/bbtag/char/bbtag_char_izayoi.png"]
+    },
+    "Jin": {
+      "name": ["Jin"],
+      "image":["./img/bbtag/char/bbtag_char_jin.png"]
+    },
+    "Jubei": {
+      "name": ["Jubei"],
+      "image":["./img/bbtag/char/bbtag_char_jubei.png"]
+    },
+    "Kanji": {
+      "name": ["Kanji"],
+      "image":["./img/bbtag/char/bbtag_char_kanji.png"]
+    },
+    "Labrys": {
+      "name": ["Labrys"],
+      "image":["./img/bbtag/char/bbtag_char_labrys.png"]
+    },
+    "Linne": {
+      "name": ["Linne"],
+      "image":["./img/bbtag/char/bbtag_char_linne.png"]
+    },
+    "Mai": {
+      "name": ["Mai"],
+      "image":["./img/bbtag/char/bbtag_char_mai.png"]
+    },
+    "Makoto": {
+      "name": ["Makoto"],
+      "image":["./img/bbtag/char/bbtag_char_makoto.png"]
+    },
+    "Merkava": {
+      "name": ["Merkava"],
+      "image":["./img/bbtag/char/bbtag_char_merkava.png"]
+    },
+    "Mika": {
+      "name": ["Mika"],
+      "image":["./img/bbtag/char/bbtag_char_mika.png"]
+    },
+    "Mitsuru": {
+      "name": ["Jin"],
+      "image":["./img/bbtag/char/bbtag_char_mitsuru.png"]
+    },
+    "Naoto K": {
+      "name": ["Naoto K"],
+      "image":["./img/bbtag/char/bbtag_char_naotok.png"]
+    },
+    "Naoto S": {
+      "name": ["Naoto S"],
+      "image":["./img/bbtag/char/bbtag_char_naotos.png"]
+    },
+    "Nine": {
+      "name": ["Nine"],
+      "image":["./img/bbtag/char/bbtag_char_nine.png"]
+    },
+    "Noel": {
+      "name": ["Noel"],
+      "image":["./img/bbtag/char/bbtag_char_noel.png"]
+    },
+    "Nu-13": {
+      "name": ["Nu-13"],
+      "image":["./img/bbtag/char/bbtag_char_nu13.png"]
+    },
+    "Orie": {
+      "name": ["Orie"],
+      "image":["./img/bbtag/char/bbtag_char_orie.png"]
+    },
+    "Platinum": {
+      "name": ["Platinum"],
+      "image":["./img/bbtag/char/bbtag_char_platinum.png"]
+    },
+    "Rachel": {
+      "name": ["Rachel"],
+      "image":["./img/bbtag/char/bbtag_char_rachel.png"]
+    },
+    "Ragna": {
+      "name": ["Ragna"],
+      "image":["./img/bbtag/char/bbtag_char_ragna.png"]
+    },
+    "Ruby": {
+      "name": ["Ruby"],
+      "image":["./img/bbtag/char/bbtag_char_ruby.png"]
+    },
+    "Seth": {
+      "name": ["Seth"],
+      "image":["./img/bbtag/char/bbtag_char_seth.png"]
+    },
+    "Tager": {
+      "name": ["Tager"],
+      "image":["./img/bbtag/char/bbtag_char_tager.png"]
+    },
+    "Teddie": {
+      "name": ["Teddie"],
+      "image":["./img/bbtag/char/bbtag_char_teddie.png"]
+    },
+    "Vatista": {
+      "name": ["Vatista"],
+      "image":["./img/bbtag/char/bbtag_char_vatista.png"]
+    },
+    "Waldstein": {
+      "name": ["Waldstein"],
+      "image":["./img/bbtag/char/bbtag_char_waldstein.png"]
+    },
+    "Weiss": {
+      "name": ["Weiss"],
+      "image":["./img/bbtag/char/bbtag_char_weiss.png"]
+    },
+    "Yang": {
+      "name": ["Yang"],
+      "image":["./img/bbtag/char/bbtag_char_yang.png"]
+    },
+    "Yosuke": {
+      "name": ["Yosuke"],
+      "image":["./img/bbtag/char/bbtag_char_yosuke.png"]
+    },
+    "Yu": {
+      "name": ["Yu"],
+      "image":["./img/bbtag/char/bbtag_char_yu.png"]
+    },
+    "Yukiko": {
+      "name": ["Yukiko"],
+      "image":["./img/bbtag/char/bbtag_char_yukiko.png"]
+    },
+    "Yuzuriha": {
+      "name": ["Yuzuriha"],
+      "image":["./img/bbtag/char/bbtag_char_yuzuriha.png"]
     }
   }
 }
