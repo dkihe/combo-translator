@@ -308,41 +308,145 @@
       "name": ["None"],
       "image":[""]
     },
-    "Android 16": {
-      "name": ["Android 16"],
-      "image":["./img/dbfz/char/dbfz_char_android16.png"]
+    "Black Panther": {
+      "name": ["Black Panther"],
+      "image":["./img/mvci/char/mvci_char_blackpanther.png"]
     },
-    "Android 17": {
-      "name": ["Android 17"],
-      "image":["./img/dbfz/char/dbfz_char_android17.png"]
+    "Black Widow": {
+      "name": ["Black Widow"],
+      "image":["./img/mvci/char/mvci_char_blackwidow.png"]
     },
-    "Android 18": {
-      "name": ["Android 18"],
-      "image":["./img/dbfz/char/dbfz_char_android18.png"]
+    "Captain America": {
+      "name": ["Captain America"],
+      "image":["./img/mvci/char/mvci_char_captainamerica.png"]
     },
-    "Android 21": {
-      "name": ["Android 21"],
-      "image":["./img/dbfz/char/dbfz_char_android21.png"]
+    "Captain Marvel": {
+      "name": ["Captain Marvel"],
+      "image":["./img/mvci/char/mvci_char_captainmarvel.png"]
     },
-    "Captain Ginyu": {
-      "name": ["Captain Ginyu"],
-      "image":["./img/dbfz/char/dbfz_char_cginyu.png"]
+    "Chris Redfield": {
+      "name": ["Chris Redfield"],
+      "image":["./img/mvci/char/mvci_char_chrisredfield.png"]
     },
-    "Cell": {
-      "name": ["Cell"],
-      "image":["./img/dbfz/char/dbfz_char_cell.png"]
+    "Chun-li": {
+      "name": ["Chun-li"],
+      "image":["./img/mvci/char/mvci_char_chunli.png"]
     },
-    "Frieza": {
-      "name": ["Frieza"],
-      "image":["./img/dbfz/char/dbfz_char_frieza.png"]
+    "Dante": {
+      "name": ["Dante"],
+      "image":["./img/mvci/char/mvci_char_dante.png"]
     },
-    "Gohan (Adult)":{
-      "name":["Gohan (Adult)"],
-      "image":["./img/dbfz/char/dbfz_char_agohan.png"]
+    "Doctor Strange": {
+      "name": ["Doctor Strange"],
+      "image":["./img/mvci/char/mvci_char_doctorstrange.png"]
     },
-    "Gohan (Teen)": {
-      "name": ["Gohan (Teen)"],
-      "image":["./img/dbfz/char/dbfz_char_tgohan.png"]
+    "Dormammu": {
+      "name": ["Dormammu"],
+      "image":["./img/mvci/char/mvci_char_dormammu.png"]
+    },
+    "Fire Brand": {
+      "name": ["Fire Brand"],
+      "image":["./img/mvci/char/mvci_char_firebrand.png"]
+    },
+    "Frank West": {
+      "name": ["Frank West"],
+      "image":["./img/mvci/char/mvci_char_frankwest.png"]
+    },
+    "Gamora": {
+      "name": ["Gamora"],
+      "image":["./img/mvci/char/mvci_char_gamora.png"]
+    },
+    "Ghost Rider": {
+      "name": ["Ghost Rider"],
+      "image":["./img/mvci/char/mvci_char_ghostrider.png"]
+    },
+    "Haggar": {
+      "name": ["Haggar"],
+      "image":["./img/mvci/char/mvci_char_haggar.png"]
+    },
+    "Hawkeye": {
+      "name": ["Hawkeye"],
+      "image":["./img/mvci/char/mvci_char_hawkeye.png"]
+    },
+    "Hulk": {
+      "name": ["Hulk"],
+      "image":["./img/mvci/char/mvci_char_hulk.png"]
+    },
+    "Iron Man": {
+      "name": ["Iron Man"],
+      "image":["./img/mvci/char/mvci_char_ironman.png"]
+    },
+    "Jedah": {
+      "name": ["Jedah"],
+      "image":["./img/mvci/char/mvci_char_jedah.png"]
+    },
+    "Megaman X": {
+      "name": ["Megaman X"],
+      "image":["./img/mvci/char/mvci_char_megamanx.png"]
+    },
+    "Monster Hunter": {
+      "name": ["Monster Hunter"],
+      "image":["./img/mvci/char/mvci_char_monsterhunter.png"]
+    },
+    "Morrigan": {
+      "name": ["Morrigan"],
+      "image":["./img/mvci/char/mvci_char_morrigan.png"]
+    },
+    "Nemesis": {
+      "name": ["Nemesis"],
+      "image":["./img/mvci/char/mvci_char_nemesis.png"]
+    },
+    "Nova": {
+      "name": ["Nova"],
+      "image":["./img/mvci/char/mvci_char_nova.png"]
+    },
+    "Rocket Raccoon": {
+      "name": ["Rocket Raccoon"],
+      "image":["./img/mvci/char/mvci_char_rocketraccoon.png"]
+    },
+    "Ryu": {
+      "name": ["Ryu"],
+      "image":["./img/mvci/char/mvci_char_ryu.png"]
+    },
+    "Sigma": {
+      "name": ["Sigma"],
+      "image":["./img/mvci/char/mvci_char_sigma.png"]
+    },
+    "Spencer": {
+      "name": ["Spencer"],
+      "image":["./img/mvci/char/mvci_char_spencer.png"]
+    },
+    "Spider Man": {
+      "name": ["Spider Man"],
+      "image":["./img/mvci/char/mvci_char_spiderman.png"]
+    },
+    "Strider": {
+      "name": ["Strider"],
+      "image":["./img/mvci/char/mvci_char_strider.png"]
+    },
+    "Thanos": {
+      "name": ["Thanos"],
+      "image":["./img/mvci/char/mvci_char_thanos.png"]
+    },
+    "Thor": {
+      "name": ["Thor"],
+      "image":["./img/mvci/char/mvci_char_thor.png"]
+    },
+    "Ultron": {
+      "name": ["Ultron"],
+      "image":["./img/mvci/char/mvci_char_ultron.png"]
+    },
+    "Venom": {
+      "name": ["Venom"],
+      "image":["./img/mvci/char/mvci_char_venom.png"]
+    },
+    "Winter Soldier": {
+      "name": ["Winter Soldier"],
+      "image":["./img/mvci/char/mvci_char_wintersoldier.png"]
+    },
+    "Zero": {
+      "name": ["Zero"],
+      "image":["./img/mvci/char/mvci_char_zero.png"]
     }
   },
   "dbfz": {
