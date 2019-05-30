@@ -838,5 +838,91 @@
       "name": ["Yoshitora"],
       "image":["./img/samsho/char/samsho_char_yoshitora.png"]
     }
+  },
+  "unib": {
+    "None": {
+      "name": ["None"],
+      "image":[""]
+    },
+    "Akatsuki": {
+      "name": ["Akatsuki"],
+      "image":["./img/unib/char/unib_char_akatsuki.png"]
+    },
+    "Byakuya": {
+      "name": ["Byakuya"],
+      "image":["./img/unib/char/unib_char_byakuya.png"]
+    },
+    "Carmine": {
+      "name": ["Carmine"],
+      "image":["./img/unib/char/unib_char_carmine.png"]
+    },
+    "Chaos": {
+      "name": ["Chaos"],
+      "image":["./img/unib/char/unib_char_chaos.png"]
+    },
+    "Eltnum": {
+      "name": ["Eltnum"],
+      "image":["./img/unib/char/unib_char_eltnum.png"]
+    },
+    "Enkidu": {
+      "name": ["Enkidu"],
+      "image":["./img/unib/char/unib_char_enkidu.png"]
+    },
+    "Gordeau": {
+      "name": ["Gordeau"],
+      "image":["./img/unib/char/unib_char_gordeau.png"]
+    },
+    "Hilda": {
+      "name": ["Hilda"],
+      "image":["./img/unib/char/unib_char_hilda.png"]
+    },
+    "Hyde": {
+      "name": ["Hyde"],
+      "image":["./img/unib/char/unib_char_hyde.png"]
+    },
+    "Linne": {
+      "name": ["Linne"],
+      "image":["./img/unib/char/unib_char_linne.png"]
+    },
+    "Merkava": {
+      "name": ["Merkava"],
+      "image":["./img/unib/char/unib_char_merkava.png"]
+    },
+    "Mika": {
+      "name": ["Mika"],
+      "image":["./img/unib/char/unib_char_mika.png"]
+    },
+    "Nanase": {
+      "name": ["Nanase"],
+      "image":["./img/unib/char/unib_char_nanase.png"]
+    },
+    "Orie": {
+      "name": ["Orie"],
+      "image":["./img/unib/char/unib_char_orie.png"]
+    },
+    "Phonon": {
+      "name": ["Phonon"],
+      "image":["./img/unib/char/unib_char_phonon.png"]
+    },
+    "Seth": {
+      "name": ["Seth"],
+      "image":["./img/unib/char/unib_char_seth.png"]
+    },
+    "Vavista": {
+      "name": ["Vavista"],
+      "image":["./img/unib/char/unib_char_vavista.png"]
+    },
+    "Wagner": {
+      "name": ["Wagner"],
+      "image":["./img/unib/char/unib_char_wagner.png"]
+    },
+    "Waldstein": {
+      "name": ["Waldstein"],
+      "image":["./img/unib/char/unib_char_waldstein.png"]
+    },
+    "Yuzuriha": {
+      "name": ["Yuzuriha"],
+      "image":["./img/unib/char/unib_char_yuzuriha.png"]
+    }
   }
 }
