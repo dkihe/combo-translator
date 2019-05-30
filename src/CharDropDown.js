@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Grid, Container, Dropdown, Image } from 'semantic-ui-react';
+import { Container, Dropdown, Image } from 'semantic-ui-react';
 
 class CharDropDown extends Component{
 	render(){

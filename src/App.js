@@ -5,13 +5,13 @@ import CharDropDown from './CharDropDown.js';
 import './App.css';
 import list from "./list.json";
 import charlist from "./charlist.json"
-import {CopyToClipboard} from 'react-copy-to-clipboard';
-import { Icon, Button, Grid, Container } from 'semantic-ui-react';
+// import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { Grid, Container } from 'semantic-ui-react';
 
 
 const CONF = {
 	'streetfighter': {
-		regex: /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./,
+		regex: /(tk)\s*|\s*(,|>|xx)\s*|\+|-|\./,
 		team: 1
 	},
 	'tekken': {
@@ -19,23 +19,23 @@ const CONF = {
 		team: 1
 	},
 	'mvci': {
-		regex: /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./,
+		regex: /(tk)\s*|\s*(,|>|xx)\s*|\+|-|\./,
 		team: 2
 	},
 	'dbfz': {
-		regex: /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./,
+		regex: /(tk)\s*|\s*(,|>|xx)\s*|\+|-|\./,
 		team: 3
 	},
 	'bbtag': {
-		regex: /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./,
+		regex: /(tk)\s*|\s*(,|>|xx)\s*|\+|-|\./,
 		team: 2
 	},
 	'unib': {
-		regex: /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./,
+		regex: /(tk)\s*|\s*(,|>|xx)\s*|\+|-|\./,
 		team: 1
 	},
 	'guiltygear':{
-		regex: /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./,
+		regex: /(tk)\s*|\s*(,|>|xx)\s*|\+|-|\./,
 		team: 1
 	}
 }
@@ -99,8 +99,8 @@ class App extends Component {
 			}
 		}
 		if (altImg){
-			for (var j = 0; j < altImg.length;j++) {
-				altImg[j].addEventListener('click',function show() {
+			for (var k = 0; k < altImg.length;k++) {
+				altImg[k].addEventListener('click',function show() {
 					document.querySelector("#text").innerHTML = this.alt
 				})
 			}
@@ -145,7 +145,6 @@ class App extends Component {
 								</Grid.Row>
 							</Grid>
 					)
-					break;
 				case 'mvci':
 				case 'bbtag':
 					return(
@@ -170,7 +169,6 @@ class App extends Component {
 								</Grid.Row>
 							</Grid>
 					)
-					break;
 				case 'dbfz':
 					return(
 							<Grid container textAlign='center' columns={3}>
@@ -202,7 +200,6 @@ class App extends Component {
 								</Grid.Row>
 							</Grid>
 					)
-					break;
 				default:
 					return(
 							<Grid container textAlign='center' columns={1}>
@@ -238,14 +235,6 @@ class App extends Component {
 				<Output
 					imageProp = {this.createImage()}
 				/>
-				{/* <CopyToClipboard text={this.outputURL()}> 
-					<Container textAlign='center'>
-						<Button icon labelPosition='right'>
-							Copy!
-							<Icon name='copy' />
-						</Button>
-					</Container>
-				</CopyToClipboard> */}
 			</Container>
 		);
 	}

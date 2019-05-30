@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
-import { Grid, Label, Select, Button, Icon, Input, Container, Dropdown } from 'semantic-ui-react';
+import { Grid, Button, Icon, Input, Dropdown } from 'semantic-ui-react';
 
 const options = [
 	{ key: 'streetfighter', text: 'Street Fighter', value: 'streetfighter' },
