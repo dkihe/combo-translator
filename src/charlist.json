@@ -768,5 +768,75 @@
       "name": ["Yuzuriha"],
       "image":["./img/bbtag/char/bbtag_char_yuzuriha.png"]
     }
+  },
+  "samsho": {
+    "None": {
+      "name": ["None"],
+      "image":[""]
+    },
+    "Charlotte": {
+      "name": ["Charlotte"],
+      "image":["./img/samsho/char/samsho_char_charlotte.png"]
+    },
+    "Darli Daggar": {
+      "name": ["Darli Daggar"],
+      "image":["./img/samsho/char/samsho_char_darlidaggar.png"]
+    },
+    "Earthquake": {
+      "name": ["Earthquake"],
+      "image":["./img/samsho/char/samsho_char_earthquake.png"]
+    },
+    "Galford": {
+      "name": ["Galford"],
+      "image":["./img/samsho/char/samsho_char_galford.png"]
+    },
+    "Genjuro": {
+      "name": ["Genjuro"],
+      "image":["./img/samsho/char/samsho_char_genjuro.png"]
+    },
+    "Hanzo": {
+      "name": ["Hanzo"],
+      "image":["./img/samsho/char/samsho_char_hanzo.png"]
+    },
+    "Haohmaru": {
+      "name": ["Haohmaru"],
+      "image":["./img/samsho/char/samsho_char_haohmaru.png"]
+    },
+    "Jubei": {
+      "name": ["Jubei"],
+      "image":["./img/samsho/char/samsho_char_jubei.png"]
+    },
+    "Kyoshiro": {
+      "name": ["Kyoshiro"],
+      "image":["./img/samsho/char/samsho_char_kyoshiro.png"]
+    },
+    "Nakoruru": {
+      "name": ["Nakoruru"],
+      "image":["./img/samsho/char/samsho_char_nakoruru.png"]
+    },
+    "Shiki": {
+      "name": ["Shiki"],
+      "image":["./img/samsho/char/samsho_char_shiki.png"]
+    },
+    "Tam Tam": {
+      "name": ["Tam Tam"],
+      "image":["./img/samsho/char/samsho_char_tamtam.png"]
+    },
+    "Ukyo": {
+      "name": ["Ukyo"],
+      "image":["./img/samsho/char/samsho_char_ukyo.png"]
+    },
+    "Wu-Ruixiang": {
+      "name": ["Wu-Ruixiang"],
+      "image":["./img/samsho/char/samsho_char_wuruixiang.png"]
+    },
+    "Yashamaru": {
+      "name": ["Yashamaru"],
+      "image":["./img/samsho/char/samsho_char_yashamaru.png"]
+    },
+    "Yoshitora": {
+      "name": ["Yoshitora"],
+      "image":["./img/samsho/char/samsho_char_yoshitora.png"]
+    }
   }
 }
