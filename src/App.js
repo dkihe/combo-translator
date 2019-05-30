@@ -221,16 +221,20 @@ class App extends Component {
 			}
 		}
 		return (
-			<Container>
-				<Translator 
-					valueProp = {this.state.term}
-					inputProp = {event => this.setState({term: event.target.value})}
-					gameProp = { (event, data) => this.setState({game: data.value, character: ['None','None','None']})}
-					currgameProp = {this.state.game}
-					copyProp = {this.outputURL()}
-				/>
+			<Container style={{ width: '70%' }}>
+				<Container style={{ width: '100%' }}>
+					<Translator 
+						valueProp = {this.state.term}
+						inputProp = {event => this.setState({term: event.target.value})}
+						gameProp = { (event, data) => this.setState({game: data.value, character: ['None','None','None']})}
+						currgameProp = {this.state.game}
+						copyProp = {this.outputURL()}
+					/>
+				</Container>
 				<Container id="text">click an image to see a translation</Container>
-				{CharactersComponent()}
+				<Container style={{ width: '80%' }}>
+					{CharactersComponent()}
+				</Container>
 				<Output
 					imageProp = {this.createImage()}
 				/>

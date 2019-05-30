@@ -56,17 +56,22 @@ body{
 }
 
 #text{
-    height:2em;
+    height: 1.5em;
     width: 100%;
     position: relative;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin-top: 2rem;
     text-align: center;
     /* font-family: 'Open Sans', Helvetica, sans-serif; */
     color:#e0e0e0;
-    font-size:1em;
+    font-size: 2rem;
 }
-input:focus{
+/* input:focus{
   border: .125em solid rgba(0,255,255,1);
+} */
+
+.ui.selection.visible.dropdown>.text:not(.default) {
+  color: white;
 }
 
 #output{
@@ -80,7 +85,6 @@ input:focus{
   top: 0;
 }
 .images span{
-  /* font-family: 'Open Sans', Helvetica, sans-serif; */
   font-size: .5em;
   display: inline-block;
   vertical-align: middle;
@@ -90,25 +94,25 @@ input:focus{
 }
 .images .small{
     vertical-align: middle;
-    width: 3em;
-    height: 3em;
+    width: 3rem;
+    height: 3rem;
     margin-left:0;
     margin-right:0;
 }
 .images .medium{
     vertical-align: middle;
-    width: 4.5em;
-    height: 3em;
+    width: 4.5rem;
+    height: 3rem;
     margin-left:0;
     margin-right:0;
 }
 .images .large{
     vertical-align: middle;
-    width: 6em;
-    height: 3em;
+    width: 6rem;
+    height: 3rem;
     margin-left:0;
     margin-right:0;
 }
 img:hover{
-    background-color:#46B2B2;
+    background-color:#23334C;
 }
