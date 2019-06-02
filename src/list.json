@@ -1936,5 +1936,79 @@
 			"size":["small"],
 			"alt":["Diagonal Up Back"]
 		}
+	},
+	"sc":{
+		"horizontal attack":{
+			"term":["A"],
+			"image":["./img/sc/sc_button_a.svg"],
+			"size":["small"],
+			"alt":["Horizontal Attack"]
+		},
+		"vertical attack":{
+			"term":["B"],
+			"image":["./img/sc/sc_button_b.svg"],
+			"size":["small"],
+			"alt":["Vertical Attack"]
+		},
+		"kick":{
+			"term":["K"],
+			"image":["./img/sc/sc_button_k.svg"],
+			"size":["small"],
+			"alt":["Kick"]
+		},
+		"guard":{
+			"term":["G"],
+			"image":["./img/sc/sc_button_g.svg"],
+			"size":["small"],
+			"alt":["Guard"]
+		},
+		"forward":{
+			"term":["f","6"],
+			"image":["./img/sc/sc_arrow_f.svg"],
+			"size":["small"],
+			"alt":["Forward"]
+		},
+		"back":{
+			"term":["b","4"],
+			"image":["./img/sc/sc_arrow_b.svg"],
+			"size":["small"],
+			"alt":["Back"]
+		},
+		"up":{
+			"term":["u","8"],
+			"image":["./img/sc/sc_arrow_u.svg"],
+			"size":["small"],
+			"alt":["Up"]
+		},
+		"down":{
+			"term":["d","2"],
+			"image":["./img/sc/sc_arrow_d.svg"],
+			"size":["small"],
+			"alt":["Down"]
+		},
+		"down-forward":{
+			"term":["df","d/f","3"],
+			"image":["./img/sc/sc_arrow_df.svg"],
+			"size":["small"],
+			"alt":["Diagonal Down Forward"]
+		},
+		"down-back":{
+			"term":["db","d/b","1"],
+			"image":["./img/sc/sc_arrow_db.svg"],
+			"size":["small"],
+			"alt":["Diagonal Down Back"]
+		},
+		"up-forward":{
+			"term":["uf","u/f","9"],
+			"image":["./img/sc/sc_arrow_uf.svg"],
+			"size":["small"],
+			"alt":["Diagonal Up Forward"]
+		},
+		"up-back":{
+			"term":["ub","u/b","7"],
+			"image":["./img/sc/sc_arrow_ub.svg"],
+			"size":["small"],
+			"alt":["Diagonal Up Back"]
+		}
 	}
 }
