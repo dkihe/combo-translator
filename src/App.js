@@ -73,7 +73,7 @@ class App extends Component {
 			let item;
 		if (this.state.game === "tekken"){    
 			item = userinput.split(CONF["tekken"].regex);
-		} else if (this.state.game === "dbfz" || this.state.game === "bbtag" || this.state.game === "unib" || this.state.game === "mk"){
+		} else if (this.state.game === "dbfz" || this.state.game === "bbtag" || this.state.game === "unib" || this.state.game === "mk" || this.state.game === "sc"){
 			item = userinput.split(CONF["streetfighter"].regex);
 		}else{
 			item = userinput.toLowerCase().split(CONF["streetfighter"].regex);

@@ -1030,5 +1030,107 @@
       "name": ["Sub Zero"],
       "image":["./img/mk/char/mk_char_subzero.png"]
     }
+  },
+  "sc": {
+    "None": {
+      "name": ["None"],
+      "image":[""]
+    },
+    "2B": {
+      "name": ["2B"],
+      "image":["./img/sc/char/sc_char_2b.png"]
+    },
+    "Amy": {
+      "name": ["Amy"],
+      "image":["./img/sc/char/sc_char_amy.png"]
+    },
+    "Astaroth": {
+      "name": ["Astaroth"],
+      "image":["./img/sc/char/sc_char_astaroth.png"]
+    },
+    "Azwel": {
+      "name": ["Azwel"],
+      "image":["./img/sc/char/sc_char_azwel.png"]
+    },
+    "Cervantes": {
+      "name": ["Cervantes"],
+      "image":["./img/sc/char/sc_char_cervantes.png"]
+    },
+    "Geralt": {
+      "name": ["Geralt"],
+      "image":["./img/sc/char/sc_char_geralt.png"]
+    },
+    "Groh": {
+      "name": ["Groh"],
+      "image":["./img/sc/char/sc_char_groh.png"]
+    },
+    "Inferno": {
+      "name": ["Inferno"],
+      "image":["./img/sc/char/sc_char_inferno.png"]
+    },
+    "Ivy": {
+      "name": ["Ivy"],
+      "image":["./img/sc/char/sc_char_ivy.png"]
+    },
+    "Kilik": {
+      "name": ["Kilik"],
+      "image":["./img/sc/char/sc_char_kilik.png"]
+    },
+    "Maxi": {
+      "name": ["Maxi"],
+      "image":["./img/sc/char/sc_char_maxi.png"]
+    },
+    "Mitsurugi": {
+      "name": ["Mitsurugi"],
+      "image":["./img/sc/char/sc_char_mitsurugi.png"]
+    },
+    "Nightmare": {
+      "name": ["Nightmare"],
+      "image":["./img/sc/char/sc_char_nightmare.png"]
+    },
+    "Raphael": {
+      "name": ["Raphael"],
+      "image":["./img/sc/char/sc_char_raphael.png"]
+    },
+    "Seong Mi-na": {
+      "name": ["Seong Mi-na"],
+      "image":["./img/sc/char/sc_char_seongmina.png"]
+    },
+    "Siegfried": {
+      "name": ["Siegfried"],
+      "image":["./img/sc/char/sc_char_siegfried.png"]
+    },
+    "Sophitia": {
+      "name": ["Sophitia"],
+      "image":["./img/sc/char/sc_char_sophitia.png"]
+    },
+    "Taki": {
+      "name": ["Taki"],
+      "image":["./img/sc/char/sc_char_taki.png"]
+    },
+    "Talim": {
+      "name": ["Talim"],
+      "image":["./img/sc/char/sc_char_talim.png"]
+    },
+    "Tira": {
+      "name": ["Tira"],
+      "image":["./img/sc/char/sc_char_tira.png"]
+    },
+    "Voldo": {
+      "name": ["Voldo"],
+      "image":["./img/sc/char/sc_char_voldo.png"]
+    },
+    "Xianghua": {
+      "name": ["Xianghua"],
+      "image":["./img/sc/char/sc_char_xianghua.png"]
+    },
+    "Yoshimitsu": {
+      "name": ["Yoshimitsu"],
+      "image":["./img/sc/char/sc_char_yoshimitsu.png"]
+    },
+    "Zasalamel": {
+      "name": ["Zasalamel"],
+      "image":["./img/sc/char/sc_char_zasalamel.png"]
+    }
   }
 }
