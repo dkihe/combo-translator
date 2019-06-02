@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>sc_button_k_mul</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="30" height="30" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sc_button_k_mul" transform="translate(1.000000, 1.000000)">
+            <g id="Rectangle">
+                <rect stroke="#000000" stroke-width="2" stroke-linejoin="square" x="1" y="1" width="28" height="28" rx="2"></rect>
+                <rect stroke="#CBCBCC" stroke-width="1" x="-0.5" y="-0.5" width="31" height="31" rx="2"></rect>
+            </g>
+            <rect id="Rectangle" stroke="#CBCBCC" fill="#000000" x="1.5" y="1.5" width="27" height="27" rx="2"></rect>
+            <text id="K" fill="#CBCBCC" font-family="HiraMinProN-W6, Hiragino Mincho ProN" font-size="24" font-weight="500">
+                <tspan x="5.904" y="21">K</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

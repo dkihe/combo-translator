@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="15px" viewBox="0 0 16 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>sc_sep_plus</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sc_sep_plus" fill="#D8D8D8">
+            <rect id="Rectangle" x="6" y="0" width="4" height="15"></rect>
+            <polygon id="Rectangle" transform="translate(8.000000, 7.500000) rotate(90.000000) translate(-8.000000, -7.500000) " points="6 -2.08166817e-16 10 -2.08166817e-16 10 15 6 15"></polygon>
+        </g>
+    </g>
+</svg>
