@@ -9,7 +9,8 @@ const options = [
 	{ key: 'dbfz', text: 'Dragon Ball FighterZ', value: 'dbfz' },
 	{ key: 'bbtag', text: 'BlazBlue Cross Tag Battle', value: 'bbtag' },
 	{ key: 'samsho', text: 'Samurai Shodown', value: 'samsho' },
-	{ key: 'unib', text: 'Under Night In-Birth', value: 'unib' }
+	{ key: 'unib', text: 'Under Night In-Birth', value: 'unib' },
+	{ key: 'mk', text: 'Mortal Kombat 11', value: 'mk' }
 ]
 
 class Translator extends Component{

@@ -924,5 +924,111 @@
       "name": ["Yuzuriha"],
       "image":["./img/unib/char/unib_char_yuzuriha.png"]
     }
+  },
+  "mk": {
+    "None": {
+      "name": ["None"],
+      "image":[""]
+    },
+    "Baraka": {
+      "name": ["Baraka"],
+      "image":["./img/mk/char/mk_char_baraka.png"]
+    },
+    "Cassie Cage": {
+      "name": ["Cassie Cage"],
+      "image":["./img/mk/char/mk_char_cassiecage.png"]
+    },
+    "Cetrion": {
+      "name": ["Cetrion"],
+      "image":["./img/mk/char/mk_char_cetrion.png"]
+    },
+    "Dvorah": {
+      "name": ["Dvorah"],
+      "image":["./img/mk/char/mk_char_dvorah.png"]
+    },
+    "Erron Black": {
+      "name": ["Erron Black"],
+      "image":["./img/mk/char/mk_char_erronblack.png"]
+    },
+    "Frost": {
+      "name": ["Frost"],
+      "image":["./img/mk/char/mk_char_frost.png"]
+    },
+    "Geras": {
+      "name": ["Geras"],
+      "image":["./img/mk/char/mk_char_geras.png"]
+    },
+    "Jacqui": {
+      "name": ["Jacqui"],
+      "image":["./img/mk/char/mk_char_jacqui.png"]
+    },
+    "Jade": {
+      "name": ["Jade"],
+      "image":["./img/mk/char/mk_char_jade.png"]
+    },
+    "Jax": {
+      "name": ["Jax"],
+      "image":["./img/mk/char/mk_char_jax.png"]
+    },
+    "Johnny Cage": {
+      "name": ["Johnny Cage"],
+      "image":["./img/mk/char/mk_char_johnnycage.png"]
+    },
+    "Kabal": {
+      "name": ["Kabal"],
+      "image":["./img/mk/char/mk_char_kabal.png"]
+    },
+    "Kano": {
+      "name": ["Kano"],
+      "image":["./img/mk/char/mk_char_kano.png"]
+    },
+    "Kitana": {
+      "name": ["Kitana"],
+      "image":["./img/mk/char/mk_char_kitana.png"]
+    },
+    "Kollector": {
+      "name": ["Kollector"],
+      "image":["./img/mk/char/mk_char_kollector.png"]
+    },
+    "Kotal Kahn": {
+      "name": ["Kotal Kahn"],
+      "image":["./img/mk/char/mk_char_kotalkahn.png"]
+    },
+    "Kung Lao": {
+      "name": ["Kung Lao"],
+      "image":["./img/mk/char/mk_char_kunglao.png"]
+    },
+    "Liu Kang": {
+      "name": ["Liu Kang"],
+      "image":["./img/mk/char/mk_char_liukang.png"]
+    },
+    "Noob Saibot": {
+      "name": ["Noob Saibot"],
+      "image":["./img/mk/char/mk_char_noobsaibot.png"]
+    },
+    "Raiden": {
+      "name": ["Raiden"],
+      "image":["./img/mk/char/mk_char_raiden.png"]
+    },
+    "Scorpion": {
+      "name": ["Scorpion"],
+      "image":["./img/mk/char/mk_char_scorpion.png"]
+    },
+    "Shao Kahn": {
+      "name": ["Shao Kahn"],
+      "image":["./img/mk/char/mk_char_shaokahn.png"]
+    },
+    "Skarlet": {
+      "name": ["Skarlet"],
+      "image":["./img/mk/char/mk_char_skarlet.png"]
+    },
+    "Sonya": {
+      "name": ["Sonya"],
+      "image":["./img/mk/char/mk_char_sonya.png"]
+    },
+    "Sub Zero": {
+      "name": ["Sub Zero"],
+      "image":["./img/mk/char/mk_char_subzero.png"]
+    }
   }
 }

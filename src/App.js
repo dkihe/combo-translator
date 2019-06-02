@@ -34,7 +34,7 @@ const CONF = {
 		regex: /(tk)\s*|\s*(,|>|xx)\s*|\+|-|\./,
 		team: 1
 	},
-	'guiltygear':{
+	'mk':{
 		regex: /(tk)\s*|\s*(,|>|xx)\s*|\+|-|\./,
 		team: 1
 	}
@@ -73,7 +73,7 @@ class App extends Component {
 			let item;
 		if (this.state.game === "tekken"){    
 			item = userinput.split(CONF["tekken"].regex);
-		} else if (this.state.game === "dbfz" || this.state.game === "bbtag" || this.state.game === "unib"){
+		} else if (this.state.game === "dbfz" || this.state.game === "bbtag" || this.state.game === "unib" || this.state.game === "mk"){
 			item = userinput.split(CONF["streetfighter"].regex);
 		}else{
 			item = userinput.toLowerCase().split(CONF["streetfighter"].regex);
