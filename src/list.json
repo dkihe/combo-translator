@@ -1962,6 +1962,30 @@
 			"size":["small"],
 			"alt":["Guard"]
 		},
+		"hold horizontal attack":{
+			"term":["[A]"],
+			"image":["./img/sc/sc_button_a_hold.svg"],
+			"size":["small"],
+			"alt":["Hold Horizontal Attack"]
+		},
+		"hold vertical attack":{
+			"term":["[B]"],
+			"image":["./img/sc/sc_button_b_hold.svg"],
+			"size":["small"],
+			"alt":["Hold Vertical Attack"]
+		},
+		"hold kick":{
+			"term":["[K]"],
+			"image":["./img/sc/sc_button_k_hold.svg"],
+			"size":["small"],
+			"alt":["Hold Kick"]
+		},
+		"hold guard":{
+			"term":["[G]"],
+			"image":["./img/sc/sc_button_g_hold.svg"],
+			"size":["small"],
+			"alt":["Hold Guard"]
+		},
 		"forward":{
 			"term":["f","6"],
 			"image":["./img/sc/sc_arrow_f.svg"],
