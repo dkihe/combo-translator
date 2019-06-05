@@ -37,7 +37,11 @@ const CONF = {
 	'mk':{
 		regex: /(tk)\s*|\s*(,|>|xx)\s*|\+|-|\./,
 		team: 1
-	}
+	},
+	'sc': {
+		regex: /\s|(,)\s*|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)|(\[[[1-9]\])/,
+		team: 1
+	},
 }
 
 const hashFromParams = (param, defaultValue) => {
@@ -71,8 +75,10 @@ class App extends Component {
 		//let regex = /(\(.*?\))/
 		// const item = userinput.toLowerCase().split(CONF[this.state.game].regex)
 			let item;
-		if (this.state.game === "tekken" || this.state.game === "sc"){    
+		if (this.state.game === "tekken"){    
 			item = userinput.split(CONF["tekken"].regex);
+		} else if (this.state.game === "sc") {
+			item = userinput.split(CONF["sc"].regex);
 		} else if (this.state.game === "dbfz" || this.state.game === "bbtag" || this.state.game === "unib" || this.state.game === "mk"){
 			item = userinput.split(CONF["streetfighter"].regex);
 		}else{
