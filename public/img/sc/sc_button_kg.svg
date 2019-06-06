@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="30px" viewBox="0 0 60 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>sc_button_kg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="20" height="20" rx="2"></rect>
+        <rect id="path-2" x="0" y="0" width="20" height="20" rx="2"></rect>
+        <rect id="path-3" x="0" y="0" width="20" height="20" rx="2"></rect>
+        <rect id="path-4" x="0" y="0" width="20" height="20" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sc_button_a" transform="translate(3.000000, 5.000000)">
+            <g id="Rectangle">
+                <rect stroke="#000000" stroke-width="2" stroke-linejoin="square" fill="#CBCBCC" fill-rule="evenodd" x="1" y="1" width="18" height="18" rx="2"></rect>
+                <rect stroke="#CBCBCC" stroke-width="1" x="-0.5" y="-0.5" width="21" height="21" rx="2"></rect>
+            </g>
+            <text id="A" font-family="HiraMinProN-W6, Hiragino Mincho ProN" font-size="16" font-weight="500" fill="#000000">
+                <tspan x="3.704" y="16">A</tspan>
+            </text>
+        </g>
+        <g id="sc_sep_plus" transform="translate(26.000000, 11.000000)" fill="#D8D8D8">
+            <rect id="Rectangle" x="3" y="0" width="2" height="8"></rect>
+            <polygon id="Rectangle" transform="translate(4.000000, 4.000000) rotate(90.000000) translate(-4.000000, -4.000000) " points="3 -3.33066907e-15 5 -3.33066907e-15 5 8 3 8"></polygon>
+        </g>
+        <g id="sc_button_b" transform="translate(37.000000, 5.000000)">
+            <g id="Rectangle">
+                <rect stroke="#000000" stroke-width="2" stroke-linejoin="square" fill="#CBCBCC" fill-rule="evenodd" x="1" y="1" width="18" height="18" rx="2"></rect>
+                <rect stroke="#CBCBCC" stroke-width="1" x="-0.5" y="-0.5" width="21" height="21" rx="2"></rect>
+            </g>
+            <text id="G" font-family="HiraMinProN-W6, Hiragino Mincho ProN" font-size="16" font-weight="500" fill="#000000">
+                <tspan x="3.72" y="16">G</tspan>
+            </text>
+        </g>
+        <g id="sc_button_a" transform="translate(3.000000, 5.000000)">
+            <g id="Rectangle">
+                <rect stroke="#000000" stroke-width="2" stroke-linejoin="square" fill="#CBCBCC" fill-rule="evenodd" x="1" y="1" width="18" height="18" rx="2"></rect>
+                <rect stroke="#CBCBCC" stroke-width="1" x="-0.5" y="-0.5" width="21" height="21" rx="2"></rect>
+            </g>
+            <text id="K" font-family="HiraMinProN-W6, Hiragino Mincho ProN" font-size="16" font-weight="500" fill="#000000">
+                <tspan x="3.936" y="16">K</tspan>
+            </text>
+        </g>
+        <g id="sc_button_b" transform="translate(37.000000, 5.000000)">
+            <g id="Rectangle">
+                <rect stroke="#000000" stroke-width="2" stroke-linejoin="square" fill="#CBCBCC" fill-rule="evenodd" x="1" y="1" width="18" height="18" rx="2"></rect>
+                <rect stroke="#CBCBCC" stroke-width="1" x="-0.5" y="-0.5" width="21" height="21" rx="2"></rect>
+            </g>
+            <text id="G" font-family="HiraMinProN-W6, Hiragino Mincho ProN" font-size="16" font-weight="500" fill="#000000">
+                <tspan x="3.72" y="16">G</tspan>
+            </text>
+        </g>
+        <g id="sc_arrow_u_hold" transform="translate(48.000000, 28.000000)" fill="#000000" stroke="#D8D8D8" stroke-width="0.5">
+            <path d="M15,0.353553391 L0.603553391,14.75 L8.45498557,14.75 L15,7.11590316 L21.5450144,14.75 L29.3964466,14.75 L15,0.353553391 Z" id="Path"></path>
+        </g>
+        <g id="sc_arrow_d_hold" transform="translate(23.000000, 41.000000) scale(1, -1) translate(-23.000000, -41.000000) translate(8.000000, 28.000000)" fill="#000000">
+            <rect id="Rectangle" x="12" y="6" width="6" height="20"></rect>
+        </g>
+    </g>
+</svg>
