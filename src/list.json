@@ -2120,9 +2120,9 @@
 		},
 		"a+b+k":{
 			"term":["A+B+K"],
-			"image":["./img/sc/sc_button_a.svg","./img/sc/sc_sep_plus.svg","./img/sc/sc_button_b.svg","./img/sc/sc_sep_plus.svg","./img/sc/sc_button_k.svg"],
-			"size":["small","small","small","small","small"],
-			"alt":["Horizontal Attack","Plus","Vertical Attack", "Plus", "Kick"]
+			"image":["./img/sc/sc_button_abk.svg"],
+			"size":["extra-large"],
+			"alt":["Horizontal Attack + Vertical Attack + Kick"]
 		}
 	}
 }
