@@ -2123,6 +2123,53 @@
 			"image":["./img/sc/sc_button_abk.svg"],
 			"size":["extra-large"],
 			"alt":["Horizontal Attack + Vertical Attack + Kick"]
+		},
+		"a+b_hold":{
+			"term":["[A+B]"],
+			"image":["./img/sc/sc_button_ab_hold.svg"],
+			"size":["large"],
+			"alt":["Hold Horizontal Attack + Vertical Attack"]
+		},
+		"a+k_hold":{
+			"term":["[A+K]"],
+			"image":["./img/sc/sc_button_ak_hold.svg"],
+			"size":["large"],
+			"alt":["Hold Horizontal Attack + Kick"]
+		},
+		"a+g_hold":{
+			"term":["[A+G]"],
+			"image":["./img/sc/sc_button_ag_hold.svg"],
+			"size":["large"],
+			"alt":["Hold Horizontal Attack + Guard"]
+		},
+		"b+k_hold":{
+			"term":["[B+K]"],
+			"image":["./img/sc/sc_button_bk_hold.svg"],
+			"size":["large"],
+			"alt":["Hold Vertical Attack + Kick"]
+		},
+		"b+g_hold":{
+			"term":["[B+G]"],
+			"image":["./img/sc/sc_button_bg_hold.svg"],
+			"size":["large"],
+			"alt":["Hold Vertical Attack + Guard"]
+		},
+		"k+g_hold":{
+			"term":["[K+G]"],
+			"image":["./img/sc/sc_button_kg_hold.svg"],
+			"size":["large"],
+			"alt":["Hold Kick + Guard"]
+		},
+		"a+b+k_hold":{
+			"term":["[A+B+K]"],
+			"image":["./img/sc/sc_button_abk_hold.svg"],
+			"size":["extra-large"],
+			"alt":["Hold Horizontal Attack + Vertical Attack + Kick"]
+		},
+		"dot":{
+			"term":[","],
+			"image":["./img/sc/sc_sep_dot.svg"],
+			"size":["small"]
 		}
 	}
 }
