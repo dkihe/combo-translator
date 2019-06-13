@@ -1963,121 +1963,121 @@
 			"alt":["Guard"]
 		},
 		"hold horizontal attack":{
-			"term":["[A]"],
+			"term":["(A)","[A]"],
 			"image":["./img/sc/sc_button_a_hold.svg"],
 			"size":["small"],
 			"alt":["Hold Horizontal Attack"]
 		},
 		"hold vertical attack":{
-			"term":["[B]"],
+			"term":["(B)","[B]"],
 			"image":["./img/sc/sc_button_b_hold.svg"],
 			"size":["small"],
 			"alt":["Hold Vertical Attack"]
 		},
 		"hold kick":{
-			"term":["[K]"],
+			"term":["(K)","[K]"],
 			"image":["./img/sc/sc_button_k_hold.svg"],
 			"size":["small"],
 			"alt":["Hold Kick"]
 		},
 		"hold guard":{
-			"term":["[G]"],
+			"term":["(G)","[G]"],
 			"image":["./img/sc/sc_button_g_hold.svg"],
 			"size":["small"],
 			"alt":["Hold Guard"]
 		},
 		"forward":{
-			"term":["f","6"],
+			"term":["6"],
 			"image":["./img/sc/sc_arrow_f.svg"],
 			"size":["small"],
 			"alt":["Forward"]
 		},
 		"back":{
-			"term":["b","4"],
+			"term":["4"],
 			"image":["./img/sc/sc_arrow_b.svg"],
 			"size":["small"],
 			"alt":["Back"]
 		},
 		"up":{
-			"term":["u","8"],
+			"term":["8"],
 			"image":["./img/sc/sc_arrow_u.svg"],
 			"size":["small"],
 			"alt":["Up"]
 		},
 		"down":{
-			"term":["d","2"],
+			"term":["2"],
 			"image":["./img/sc/sc_arrow_d.svg"],
 			"size":["small"],
 			"alt":["Down"]
 		},
 		"down_forward":{
-			"term":["df","d/f","3"],
+			"term":["3"],
 			"image":["./img/sc/sc_arrow_df.svg"],
 			"size":["small"],
 			"alt":["Diagonal Down Forward"]
 		},
 		"down_back":{
-			"term":["db","d/b","1"],
+			"term":["1"],
 			"image":["./img/sc/sc_arrow_db.svg"],
 			"size":["small"],
 			"alt":["Diagonal Down Back"]
 		},
 		"up_forward":{
-			"term":["uf","u/f","9"],
+			"term":["9"],
 			"image":["./img/sc/sc_arrow_uf.svg"],
 			"size":["small"],
 			"alt":["Diagonal Up Forward"]
 		},
 		"up_back":{
-			"term":["ub","u/b","7"],
+			"term":["7"],
 			"image":["./img/sc/sc_arrow_ub.svg"],
 			"size":["small"],
 			"alt":["Diagonal Up Back"]
 		},
 		"hold_forward":{
-			"term":["F","[6]","[f]"],
+			"term":["(6)","[6]"],
 			"image":["./img/sc/sc_arrow_f_hold.svg"],
 			"size":["small"],
 			"alt":["Hold Forward"]
 		},
 		"hold_back":{
-			"term":["[4]","[b]"],
+			"term":["(4)","[4]"],
 			"image":["./img/sc/sc_arrow_b_hold.svg"],
 			"size":["small"],
 			"alt":["Hold Back"]
 		},
 		"hold_up":{
-			"term":["U","[8]","[u]"],
+			"term":["(8)","[8]"],
 			"image":["./img/sc/sc_arrow_u_hold.svg"],
 			"size":["small"],
 			"alt":["Hold Up"]
 		},
 		"hold_down":{
-			"term":["D","[2]","[d]"],
+			"term":["(2)","[2]"],
 			"image":["./img/sc/sc_arrow_d_hold.svg"],
 			"size":["small"],
 			"alt":["Hold Down"]
 		},
 		"hold_down_forward":{
-			"term":["D/F","DF","[3]","[d/f]","[df]"],
+			"term":["(3)","[3]"],
 			"image":["./img/sc/sc_arrow_df_hold.svg"],
 			"size":["small"],
 			"alt":["Hold Diagonal Down Forward"]
 		},
 		"hold_down_back":{
-			"term":["D/B","DB","[1]","[d/b]","[db]"],
+			"term":["(1)","[1]"],
 			"image":["./img/sc/sc_arrow_db_hold.svg"],
 			"size":["small"],
 			"alt":["Hold Diagonal Down Back"]
 		},
 		"hold_up_forward":{
-			"term":["U/F","UF","[9]","[u/f]","[uf]"],
+			"term":["(9)","[9]"],
 			"image":["./img/sc/sc_arrow_uf_hold.svg"],
 			"size":["small"],
 			"alt":["Hold Diagonal Up Forward"]
 		},
 		"hold_up_back":{
-			"term":["U/B","UB","[7]","[u/b]","[ub]"],
+			"term":["(7)","[7]"],
 			"image":["./img/sc/sc_arrow_ub_hold.svg"],
 			"size":["small"],
 			"alt":["Hold Diagonal Up Back"]
@@ -2125,43 +2125,43 @@
 			"alt":["Horizontal Attack + Vertical Attack + Kick"]
 		},
 		"a+b_hold":{
-			"term":["[A+B]"],
+			"term":["(A+B)","[A+B]"],
 			"image":["./img/sc/sc_button_ab_hold.svg"],
 			"size":["large"],
 			"alt":["Hold Horizontal Attack + Vertical Attack"]
 		},
 		"a+k_hold":{
-			"term":["[A+K]"],
+			"term":["(A+K)","[A+K]"],
 			"image":["./img/sc/sc_button_ak_hold.svg"],
 			"size":["large"],
 			"alt":["Hold Horizontal Attack + Kick"]
 		},
 		"a+g_hold":{
-			"term":["[A+G]"],
+			"term":["(A+G)","[A+G]"],
 			"image":["./img/sc/sc_button_ag_hold.svg"],
 			"size":["large"],
 			"alt":["Hold Horizontal Attack + Guard"]
 		},
 		"b+k_hold":{
-			"term":["[B+K]"],
+			"term":["(B+K)","[B+K]"],
 			"image":["./img/sc/sc_button_bk_hold.svg"],
 			"size":["large"],
 			"alt":["Hold Vertical Attack + Kick"]
 		},
 		"b+g_hold":{
-			"term":["[B+G]"],
+			"term":["(B+G)","[B+G]"],
 			"image":["./img/sc/sc_button_bg_hold.svg"],
 			"size":["large"],
 			"alt":["Hold Vertical Attack + Guard"]
 		},
 		"k+g_hold":{
-			"term":["[K+G]"],
+			"term":["(K+G)","[K+G]"],
 			"image":["./img/sc/sc_button_kg_hold.svg"],
 			"size":["large"],
 			"alt":["Hold Kick + Guard"]
 		},
 		"a+b+k_hold":{
-			"term":["[A+B+K]"],
+			"term":["(A+B+K)","[A+B+K]"],
 			"image":["./img/sc/sc_button_abk_hold.svg"],
 			"size":["extra-large"],
 			"alt":["Hold Horizontal Attack + Vertical Attack + Kick"]
@@ -2169,6 +2169,11 @@
 		"dot":{
 			"term":[","],
 			"image":["./img/sc/sc_sep_dot.svg"],
+			"size":["extra-small"]
+		},
+		"tilda":{
+			"term":["~"],
+			"image":["./img/sc/sc_sep_tilda.svg"],
 			"size":["small"]
 		}
 	}

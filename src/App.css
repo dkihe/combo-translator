@@ -92,6 +92,13 @@ body{
   margin-right:0;
   color:white;
 }
+.images .extra-small{
+  vertical-align: middle;
+  width: .5rem;
+  height: 3rem;
+  margin-left:0;
+  margin-right:0;
+}
 .images .small{
     vertical-align: middle;
     width: 3rem;
