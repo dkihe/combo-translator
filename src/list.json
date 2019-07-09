@@ -1939,7 +1939,7 @@
 	},
 	"sc":{
 		"horizontal attack":{
-			"term":["A"],
+			"term":"A{1}",
 			"image":["./img/sc/sc_button_a.svg"],
 			"size":["small"],
 			"alt":["Horizontal Attack"]
@@ -2165,6 +2165,12 @@
 			"image":["./img/sc/sc_button_abk_hold.svg"],
 			"size":["extra-large"],
 			"alt":["Hold Horizontal Attack + Vertical Attack + Kick"]
+		},
+		"a+":{
+			"term":"A{2,}",
+			"image":["./img/sc/sc_sep_dot.svg","./img/sc/sc_button_a.svg"],
+			"size":["extra-small","small"],
+			"alt":["", "Horizontal Attack"]
 		},
 		"dot":{
 			"term":[","],
