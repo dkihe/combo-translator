@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import Translator from './Translator.js';
-import Output from './Output.js';
-import CharDropDown from './CharDropDown.js';
-import './App.css';
+import "./App.css";
+import Translator from "./Translator.js";
+import ImageOutput from "./ImageOutput.js";
 import list from './list.json';
 import charlist from './charlist.json';
-// import {CopyToClipboard} from 'react-copy-to-clipboard';
 import { Grid, Container } from 'semantic-ui-react';
 
 const CONF = {
@@ -43,34 +41,24 @@ const CONF = {
 	}
 };
 
-const hashFromParams = (param, defaultValue) => {
-	if (window && window.location.search) {
-		const params = new URL(document.location).searchParams;
-		const hash = params.get(param);
-		return String(decodeURIComponent(hash));
-	} else {
-		return defaultValue || '';
-	}
-};
-
 class App extends Component {
 	constructor(props) {
 		super(props);
 
 		this.state = {
-			term: '',
+			input: '',
 			game: 'streetfighter',
 			character: [ 'None', 'None', 'None' ]
-		};
+		}
 	}
-
-	createImage() {
+	
+	createImage = () => {
 		let altImg = document.getElementsByTagName('img');
 		//let tekken_re = /(\(.*?\))|\s|(,)\s*|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/
 		//let sf_re = /(tk)\s*|\s*(\,|\>|xx)\s*|\+|(\(.*?\))\s*|\-|\./
 		// let tekken_re = /\s|(,)\s*|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/
 		// let sf_re = /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./
-		let userinput = this.state.term;
+		let userinput = this.state.input;
 		//let regex = /(\(.*?\))/
 		// const item = userinput.toLowerCase().split(CONF[this.state.game].regex)
 		let item;
@@ -119,182 +107,20 @@ class App extends Component {
 		}
 	}
 
-	outputURL() {
-		let state = encodeURIComponent(this.state.term);
-		let game = encodeURIComponent(this.state.game);
-		let charA = encodeURIComponent(this.state.character[0]);
-		let charB = encodeURIComponent(this.state.character[1]);
-		let charC = encodeURIComponent(this.state.character[2]);
-
-		return '?c=' + state + '&g=' + game + '&cha=' + charA + '&chb=' + charB + '&chc=' + charC;
-	}
-
-	componentDidMount() {
-		const newState = {
-			term: hashFromParams('c'),
-			game: hashFromParams('g', 'streetfighter'),
-			character: [ hashFromParams('cha', 'None'), hashFromParams('chb', 'None'), hashFromParams('chc', 'None') ]
-		};
-		this.setState({ ...this.state, ...newState });
-	}
-
+	// Render react elements on page
 	render() {
-		let CharactersComponent = () => {
-			switch (this.state.game) {
-				case 'streetfighter':
-				case 'tekken':
-					return (
-						<Grid container textAlign="center" columns={1}>
-							<Grid.Row>
-								<Grid.Column>
-									<CharDropDown
-										charProp={(event, data) =>
-											this.setState({
-												character: [
-													data.value,
-													this.state.character[1],
-													this.state.character[2]
-												]
-											})}
-										currcharProp={this.state.character[0]}
-										dataProp={charlist[this.state.game]}
-										imgCharProp={charlist[this.state.game][this.state.character[0]].image}
-									/>
-								</Grid.Column>
-							</Grid.Row>
-						</Grid>
-					);
-				case 'mvci':
-				case 'bbtag':
-					return (
-						<Grid container textAlign="center" columns={2}>
-							<Grid.Row>
-								<Grid.Column>
-									<CharDropDown
-										charProp={(event, data) =>
-											this.setState({
-												character: [
-													data.value,
-													this.state.character[1],
-													this.state.character[2]
-												]
-											})}
-										currcharProp={this.state.character[0]}
-										dataProp={charlist[this.state.game]}
-										imgCharProp={charlist[this.state.game][this.state.character[0]].image}
-									/>
-								</Grid.Column>
-								<Grid.Column>
-									<CharDropDown
-										charProp={(event, data) =>
-											this.setState({
-												character: [
-													this.state.character[0],
-													data.value,
-													this.state.character[2]
-												]
-											})}
-										currcharProp={this.state.character[1]}
-										dataProp={charlist[this.state.game]}
-										imgCharProp={charlist[this.state.game][this.state.character[1]].image}
-									/>
-								</Grid.Column>
-							</Grid.Row>
-						</Grid>
-					);
-				case 'dbfz':
-					return (
-						<Grid container textAlign="center" columns={3}>
-							<Grid.Row cenetered>
-								<Grid.Column>
-									<CharDropDown
-										charProp={(event, data) =>
-											this.setState({
-												character: [
-													data.value,
-													this.state.character[1],
-													this.state.character[2]
-												]
-											})}
-										currcharProp={this.state.character[0]}
-										dataProp={charlist[this.state.game]}
-										imgCharProp={charlist[this.state.game][this.state.character[0]].image}
-									/>
-								</Grid.Column>
-								<Grid.Column>
-									<CharDropDown
-										charProp={(event, data) =>
-											this.setState({
-												character: [
-													this.state.character[0],
-													data.value,
-													this.state.character[2]
-												]
-											})}
-										currcharProp={this.state.character[1]}
-										dataProp={charlist[this.state.game]}
-										imgCharProp={charlist[this.state.game][this.state.character[1]].image}
-									/>
-								</Grid.Column>
-								<Grid.Column>
-									<CharDropDown
-										charProp={(event, data) =>
-											this.setState({
-												character: [
-													this.state.character[0],
-													this.state.character[1],
-													data.value
-												]
-											})}
-										currcharProp={this.state.character[2]}
-										dataProp={charlist[this.state.game]}
-										imgCharProp={charlist[this.state.game][this.state.character[2]].image}
-									/>
-								</Grid.Column>
-							</Grid.Row>
-						</Grid>
-					);
-				default:
-					return (
-						<Grid container textAlign="center" columns={1}>
-							<Grid.Row>
-								<Grid.Column>
-									<CharDropDown
-										charProp={(event, data) =>
-											this.setState({
-												character: [
-													data.value,
-													this.state.character[1],
-													this.state.character[2]
-												]
-											})}
-										currcharProp={this.state.character[0]}
-										dataProp={charlist[this.state.game]}
-										imgCharProp={charlist[this.state.game][this.state.character[0]].image}
-									/>
-								</Grid.Column>
-							</Grid.Row>
-						</Grid>
-					);
-			}
-		};
 		return (
-			<Container style={{ width: '70%' }}>
-				<Container style={{ width: '100%' }}>
-					<Translator
-						valueProp={this.state.term}
-						inputProp={(event) => this.setState({ term: event.target.value })}
-						gameProp={(event, data) =>
-							this.setState({ game: data.value, character: [ 'None', 'None', 'None' ] })}
-						currgameProp={this.state.game}
-						copyProp={this.outputURL()}
-					/>
-				</Container>
-				<Container id="text">click an image to see a translation</Container>
-				<Container style={{ width: '80%' }}>{CharactersComponent()}</Container>
-				<Output imageProp={this.createImage()} />
+			<Container>
+				<Translator
+					valueProp = { this.state.input }
+					// Handle text input
+					inputProp = { (e) => this.setState({ input: e.target.value }) }
+				/>
+				<ImageOutput
+					imageProp = { this.createImage() }
+				/>
 			</Container>
-		);
+		)
 	}
 }
 

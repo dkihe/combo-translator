@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Output extends Component {
+class ImageOutput extends Component {
 	render() {
 		return (
 			<div id="output">
@@ -12,4 +12,4 @@ class Output extends Component {
 	}
 }
 
-export default Output;
+export default ImageOutput;
