@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "./App.css";
 import Translator from "./Translator.js";
 import ImageOutput from "./ImageOutput.js";
+import GameDropdown from "./GameDropdown.js";
 import list from './list.json';
 import charlist from './charlist.json';
 import { Grid, Container } from 'semantic-ui-react';
@@ -51,31 +52,44 @@ class App extends Component {
 			character: [ 'None', 'None', 'None' ]
 		}
 	}
-	
+
+	// Return a regex depending on the game
+	getInputFromRegex = () => {
+		let userInput = this.state.input
+		let inputRegex
+
+		switch (userInput) {
+			case 'streetfighter':
+				inputRegex = userInput.toLowerCase().split(CONF['streetfighter'].regex)
+			case 'tekken':
+				inputRegex = userInput.split(CONF['tekken'].regex);
+			default:
+				inputRegex = userInput.toLowerCase().split(CONF['streetfighter'].regex)
+		}
+
+		return inputRegex
+	}
+
 	createImage = () => {
 		let altImg = document.getElementsByTagName('img');
-		//let tekken_re = /(\(.*?\))|\s|(,)\s*|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/
-		//let sf_re = /(tk)\s*|\s*(\,|\>|xx)\s*|\+|(\(.*?\))\s*|\-|\./
-		// let tekken_re = /\s|(,)\s*|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/
-		// let sf_re = /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./
-		let userinput = this.state.input;
-		//let regex = /(\(.*?\))/
-		// const item = userinput.toLowerCase().split(CONF[this.state.game].regex)
-		let item;
-		if (this.state.game === 'tekken') {
-			item = userinput.split(CONF['tekken'].regex);
-		} else if (this.state.game === 'sc') {
-			item = userinput.split(CONF['sc'].regex);
-		} else if (
-			this.state.game === 'dbfz' ||
-			this.state.game === 'bbtag' ||
-			this.state.game === 'unib' ||
-			this.state.game === 'mk'
-		) {
-			item = userinput.split(CONF['streetfighter'].regex);
-		} else {
-			item = userinput.toLowerCase().split(CONF['streetfighter'].regex);
-		}
+		// let userinput = this.state.input;
+		// let item;
+		// if (this.state.game === 'tekken') {
+		// 	item = userinput.split(CONF['tekken'].regex);
+		// } else if (this.state.game === 'sc') {
+		// 	item = userinput.split(CONF['sc'].regex);
+		// } else if (
+		// 	this.state.game === 'dbfz' ||
+		// 	this.state.game === 'bbtag' ||
+		// 	this.state.game === 'unib' ||
+		// 	this.state.game === 'mk'
+		// ) {
+		// 	item = userinput.split(CONF['streetfighter'].regex);
+		// } else {
+		// 	item = userinput.toLowerCase().split(CONF['streetfighter'].regex);
+		// }
+
+		let item = this.getInputFromRegex()
 		const imagesContainer = document.querySelector('.images');
 		if (imagesContainer) {
 			imagesContainer.innerHTML = '';
@@ -109,8 +123,13 @@ class App extends Component {
 
 	// Render react elements on page
 	render() {
+		console.log(this.state.input)
 		return (
 			<Container>
+				<GameDropdown
+					gameProp = { (e) => this.setState({ game: e.target.value }) }
+					valueProp = { this.state.game }
+				/>
 				<Translator
 					valueProp = { this.state.input }
 					// Handle text input

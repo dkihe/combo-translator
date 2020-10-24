@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Grid, Button, Icon, Input, Dropdown } from "semantic-ui-react";
+import { Dropdown, Input } from "semantic-ui-react";
 
 const options = [
 	{ key: 'streetfighter', text: 'Street Fighter', value: 'streetfighter' },
@@ -13,19 +13,17 @@ const options = [
 	{ key: 'sc', text: 'Soul Calibur 6', value: 'sc' }
 ];
 
-class Translator extends Component {
-    render () {
+class GameDropdown extends Component {
+    render() {
         return (
-            <Input
-                size = "large"
-                type = "search"
-                placeholder = "Example: cr.mk, qcf+p"
-                value = { this.props.valueProp }
-                onChange = { this.props.inputProp }
-            >
-            </Input>
+            <Dropdown
+                selection
+                options = { options }
+                onChange = { this.gameProp }
+                value = { this.valueProp }
+            />
         )
     }
 }
 
-export default Translator
+export default GameDropdown
