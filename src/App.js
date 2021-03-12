@@ -71,7 +71,6 @@ class App extends Component {
 	}
 
 	createImage = () => {
-		let altImg = document.getElementsByTagName('img');
 		// let userinput = this.state.input;
 		// let item;
 		// if (this.state.game === 'tekken') {
@@ -88,10 +87,13 @@ class App extends Component {
 		// } else {
 		// 	item = userinput.toLowerCase().split(CONF['streetfighter'].regex);
 		// }
-
+		let altImg = document.getElementsByTagName('img');
 		let item = this.getInputFromRegex()
 		const imagesContainer = document.querySelector('.images');
+
+		// Check if imageContainer exists
 		if (imagesContainer) {
+			// Make inner html blank after every key press (to keep array empty)
 			imagesContainer.innerHTML = '';
 			for (var i = 0; i < item.length; i++) {
 				for (var key in list[this.state.game]) {
