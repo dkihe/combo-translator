@@ -13,17 +13,28 @@ const options = [
 	{ key: 'sc', text: 'Soul Calibur 6', value: 'sc' }
 ];
 
-class GameDropdown extends Component {
-    render() {
-        return (
-            <Dropdown
-                selection
-                options = { options }
-                onChange = { this.gameProp }
-                value = { this.valueProp }
-            />
-        )
-    }
+// class GameDropdown extends Component {
+//     render() {
+//         return (
+//             <Dropdown
+//                 selection
+//                 options = { options }
+//                 onChange = { this.gameProp }
+//                 value = { this.valueProp }
+//             />
+//         )
+//     }
+// }
+
+const GameDropdown = (props) => {
+    return (
+        <Dropdown
+            selection
+            options = { options }
+            onChange = { props.gameProp }
+            value = { props.valueProp }
+        />
+    )
 }
 
 export default GameDropdown
