@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "http://combotranslator.com",
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
     "atob-lite": "^2.0.0",
     "btoa-lite": "^1.0.0",
     "canvas-toBlob": "^1.0.0",

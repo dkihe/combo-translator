@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Dropdown, Input } from "semantic-ui-react";
+import { Select, MenuItem, Grid, FormControl } from '@material-ui/core';
+import * as styles from './styles.module.scss'
 
 const options = [
 	{ key: 'streetfighter', text: 'Street Fighter', value: 'streetfighter' },
@@ -28,12 +29,21 @@ const options = [
 
 const GameDropdown = (props) => {
     return (
-        <Dropdown
-            selection
-            options = { options }
-            onChange = { props.gameProp }
-            value = { props.valueProp }
-        />
+        <Grid item xs={12} sm={6} className={styles.gamedropdown}>
+            <FormControl variant="outlined" className={styles.form}>
+                <Select
+                    onChange = { props.gameProp }
+                    value = { props.valueProp }
+                    className={styles.select}
+                >
+                    {options.map((item) => (
+                        <MenuItem className={styles.menuitem} value={item.value}>
+                            {item.text}
+                        </MenuItem>
+                    ))}
+                </Select>
+            </FormControl>
+        </Grid>
     )
 }
 

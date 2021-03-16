@@ -1,0 +1,45 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.imageoutput {
+	height: 32px;
+	.images.horizontal {
+		display: flex;
+		img {
+			flex-direction: column;
+		}
+	}
+	.images.vertical {
+		background-color: red;
+		display: flex;
+		flex-direction: column;
+		img {
+			background-color: green;
+		}
+	}
+}
+
+.app {
+	.gamedropdown {
+		// background-color: green;
+		width: 100%;
+		.form {
+			width: 100%;
+			.select {
+				text-transform: uppercase;
+				font-weight: 700;
+				letter-spacing: 0.1em;
+			}
+		}
+	}
+	.translator {
+		// background-color: yellow;
+		.textfield {
+			width: 100%;
+		}
+	}
+	.imageoutput {
+		background-color: red;
+	}
+}

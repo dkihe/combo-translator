@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
+import { Container, Grid } from '@material-ui/core';
 import "./App.css";
-import * as styles from './styles.scss'
+import * as styles from './styles.module.scss'
 import Translator from "./Translator.js";
 import ImageOutput from "./ImageOutput.js";
 import GameDropdown from "./GameDropdown.js";
 import list from './list.json';
 import charlist from './charlist.json';
-import { Grid, Container } from 'semantic-ui-react';
 
 const CONF = {
 	streetfighter: {
@@ -68,11 +68,11 @@ class App extends Component {
 
 		switch (game) {
 			case 'streetfighter':
-				inputRegex = userInput.split(CONF['streetfighter'].regex)
+				inputRegex = userInput.toLowerCase().split(CONF['streetfighter'].regex)
 			case 'tekken':
 				inputRegex = userInput.split(CONF['tekken'].regex);
 			default:
-				inputRegex = userInput.split(CONF['streetfighter'].regex)
+				inputRegex = userInput.toLowerCase().split(CONF['streetfighter'].regex)
 		}
 		console.log(inputRegex)
 		console.log(userInput)
@@ -145,19 +145,27 @@ class App extends Component {
 	// Render react elements on page
 	render() {
 		return (
-			<Container>
+			<Grid container justify="center" className={styles.app}>
+				<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+				<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 				<GameDropdown
-					gameProp = { (e, {value}) => this.setState({ game: value }) }
+					gameProp = { e => {
+						const { value } = e.target;
+						this.setState({ game: value });
+					}}
 					valueProp = { this.state.game }
 				/>
 				<Translator
 					valueProp = { this.state.input }
-					inputProp = { (e,  {value}) => this.setState({ input: value }) }
+					inputProp = { e => {
+						const { value } = e.target;
+						this.setState({ input: value });
+					}}
 				/>
 				<ImageOutput
 					imageProp = { this.createImage(1) }
 				/>
-			</Container>
+			</Grid>
 		)
 	}
 }

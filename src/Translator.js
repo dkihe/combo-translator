@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Grid, Button, Icon, Input, Dropdown } from "semantic-ui-react";
+import { TextField, Grid } from '@material-ui/core';
+import * as styles from './styles.module.scss'
 
 const options = [
 	{ key: 'streetfighter', text: 'Street Fighter', value: 'streetfighter' },
@@ -13,19 +13,18 @@ const options = [
 	{ key: 'sc', text: 'Soul Calibur 6', value: 'sc' }
 ];
 
-class Translator extends Component {
-    render () {
-        return (
-            <Input
-                size = "large"
-                type = "search"
-                placeholder = "Example: cr.mk, qcf+p"
-                value = { this.props.valueProp }
-                onChange = { this.props.inputProp }
-            >
-            </Input>
-        )
-    }
+const Translator = (props) => {
+    return (
+        <Grid item xs={12} sm={6} className={styles.translator}>
+            <TextField
+                className={styles.textfield}
+                variant="outlined"
+                defaultValue = "Example: cr.mk, qcf+p"
+                value = { props.valueProp }
+                onChange = { props.inputProp }
+            />
+        </Grid>
+    )
 }
 
 export default Translator
