@@ -9,7 +9,6 @@ class CharDropDown extends Component {
 			for (let char in dataProp) {
 				tempList.push({ key: char, text: char, value: char });
 			}
-			console.log(tempList);
 			return tempList;
 		};
 

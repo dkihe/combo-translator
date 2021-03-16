@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Translator from './Translator.js';
-import Output from './Output.js';
+import ImageOutput from './ImageOutput.js';
 import CharDropDown from './CharDropDown.js';
 import './App.css';
+import './styles.scss'
 import list from './list.json';
 import charlist from './charlist.json';
 // import {CopyToClipboard} from 'react-copy-to-clipboard';
@@ -58,44 +59,57 @@ class App extends Component {
 		super(props);
 
 		this.state = {
-			term: '',
+			input: '',
 			game: 'streetfighter',
 			character: [ 'None', 'None', 'None' ]
 		};
 	}
 
-	createImage() {
-		let altImg = document.getElementsByTagName('img');
-		//let tekken_re = /(\(.*?\))|\s|(,)\s*|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/
-		//let sf_re = /(tk)\s*|\s*(\,|\>|xx)\s*|\+|(\(.*?\))\s*|\-|\./
-		// let tekken_re = /\s|(,)\s*|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/
-		// let sf_re = /(tk)\s*|\s*(\,|\>|xx)\s*|\+|\-|\./
-		let userinput = this.state.term;
-		//let regex = /(\(.*?\))/
-		// const item = userinput.toLowerCase().split(CONF[this.state.game].regex)
-		let item;
-		if (this.state.game === 'tekken') {
-			item = userinput.split(CONF['tekken'].regex);
-		} else if (this.state.game === 'sc') {
-			item = userinput.split(CONF['sc'].regex);
-		} else if (
-			this.state.game === 'dbfz' ||
-			this.state.game === 'bbtag' ||
-			this.state.game === 'unib' ||
-			this.state.game === 'mk'
-		) {
-			item = userinput.split(CONF['streetfighter'].regex);
-		} else {
-			item = userinput.toLowerCase().split(CONF['streetfighter'].regex);
+	// Return the user input using a given regex
+	getInputFromRegex () {
+		let game = this.state.game
+		let userInput = this.state.input
+		let inputRegex
+
+		switch (game) {
+			case 'streetfighter':
+				inputRegex = userInput.toLowerCase().split(CONF['streetfighter'].regex)
+			case 'tekken':
+				inputRegex = userInput.split(CONF['tekken'].regex);
+			case 'dbfz':
+				inputRegex = userInput.split(CONF['streetfighter'].regex);
+			case 'bbtag':
+				inputRegex = userInput.split(CONF['streetfighter'].regex);
+			case 'unib':
+				inputRegex = userInput.split(CONF['streetfighter'].regex);
+			case 'mk':
+				inputRegex = userInput.split(CONF['streetfighter'].regex);
+
+			default:
+				inputRegex = userInput.toLowerCase().split(CONF['streetfighter'].regex)
 		}
+		return inputRegex
+	}
+
+	// Get and place image according to the user input
+	createImage () {
+		let altImg = document.getElementsByTagName('img');
+		let comboInput = this.getInputFromRegex()
 		const imagesContainer = document.querySelector('.images');
+
+		// Check if imageContainer exists
 		if (imagesContainer) {
+			// Make inner html blank after every key press (to keep array empty)
 			imagesContainer.innerHTML = '';
-			for (var i = 0; i < item.length; i++) {
-				for (var key in list[this.state.game]) {
-					for (var j = 0; j < list[this.state.game][key].term.length; j++) {
-						if (list[this.state.game][key].term[j] === item[i]) {
-							for (var imgNum = 0; imgNum < list[this.state.game][key].image.length; imgNum++) {
+			// Iterate through each item in comboInput
+			for (let i = 0; i < comboInput.length; i++) {
+				// Iterate through all keys (combo inputs) from the given game in list.json
+				for (let key in list[this.state.game]) {
+					// Iterate through all terms in the given game
+					for (let j = 0; j < list[this.state.game][key].term.length; j++) {
+						// Check if any of the terms matches the given comboInput
+						if (list[this.state.game][key].term[j] === comboInput[i]) {
+							for (let imgNum = 0; imgNum < list[this.state.game][key].image.length; imgNum++) {
 								let img = document.createElement('img');
 								img.src = String(list[this.state.game][key].image[imgNum]);
 								if (list[this.state.game][key].hasOwnProperty('alt')) {
@@ -120,7 +134,7 @@ class App extends Component {
 	}
 
 	outputURL() {
-		let state = encodeURIComponent(this.state.term);
+		let state = encodeURIComponent(this.state.input);
 		let game = encodeURIComponent(this.state.game);
 		let charA = encodeURIComponent(this.state.character[0]);
 		let charB = encodeURIComponent(this.state.character[1]);
@@ -205,7 +219,7 @@ class App extends Component {
 				case 'dbfz':
 					return (
 						<Grid container textAlign="center" columns={3}>
-							<Grid.Row cenetered>
+							<Grid.Row centered>
 								<Grid.Column>
 									<CharDropDown
 										charProp={(event, data) =>
@@ -282,17 +296,18 @@ class App extends Component {
 			<Container style={{ width: '70%' }}>
 				<Container style={{ width: '100%' }}>
 					<Translator
-						valueProp={this.state.term}
-						inputProp={(event) => this.setState({ term: event.target.value })}
-						gameProp={(event, data) =>
-							this.setState({ game: data.value, character: [ 'None', 'None', 'None' ] })}
-						currgameProp={this.state.game}
-						copyProp={this.outputURL()}
+						valueProp={this.state.input}
+						inputProp={ (e,  {value}) => this.setState({ input: value }) }
+						gameProp={ (e, data) => this.setState({ game: data.value, character: [ 'None', 'None', 'None' ] })}
+						currgameProp={ this.state.game }
+						copyProp={ this.outputURL() }
+					/>
+					<Container id="text">click an image to see a translation</Container>
+					<Container style={{ width: '80%' }}>{CharactersComponent()}</Container>
+					<ImageOutput
+						imageProp = { this.createImage() }
 					/>
 				</Container>
-				<Container id="text">click an image to see a translation</Container>
-				<Container style={{ width: '80%' }}>{CharactersComponent()}</Container>
-				<Output imageProp={this.createImage()} />
 			</Container>
 		);
 	}

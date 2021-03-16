@@ -17,9 +17,9 @@ const options = [
 class Translator extends Component {
 	render() {
 		return (
-			<Grid container textAlign="center" columns={1}>
+			<Grid container textAlign="center" stackable>
 				<Grid.Row>
-					<Grid.Column mobile={16} tablet={16} computer={16}>
+					<Grid.Column>
 						<Input
 							action
 							actionPosition="left"
