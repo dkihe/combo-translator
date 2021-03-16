@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./App.css";
+import * as styles from './styles.scss'
 import Translator from "./Translator.js";
 import ImageOutput from "./ImageOutput.js";
 import GameDropdown from "./GameDropdown.js";
@@ -82,7 +83,6 @@ class App extends Component {
 		let altImg = document.getElementsByTagName('img');
 		let comboInput = this.getInputFromRegex()
 		const imagesContainer = document.querySelector('.images');
-		let result
 
 		// Check if imageContainer exists
 		if (imagesContainer) {
@@ -108,6 +108,7 @@ class App extends Component {
 										imagesContainer.appendChild(img).className = String(
 											list[this.state.game][key].size[imgNum]
 										);
+										imagesContainer.className = 'images horizontal'
 									}
 									break;
 								// Iterate through images and place them vertically
@@ -121,6 +122,7 @@ class App extends Component {
 										imagesContainer.appendChild(img).className = String(
 											list[this.state.game][key].size[imgNum]
 										);
+										imagesContainer.className = 'images vertical'
 									}
 									break;
 								default:
@@ -131,20 +133,17 @@ class App extends Component {
 				}
 			}
 		}
-		// if (altImg) {
-		// 	for (var k = 0; k < altImg.length; k++) {
-		// 		altImg[k].addEventListener('click', function show() {
-		// 			document.querySelector('#text').innerHTML = this.alt;
-		// 		});
-		// 	}
-		// }
+		if (altImg) {
+			for (var k = 0; k < altImg.length; k++) {
+				altImg[k].addEventListener('click', function show() {
+					document.querySelector('#text').innerHTML = this.alt;
+				});
+			}
+		}
 	}
 
 	// Render react elements on page
 	render() {
-		// let test = this.getMatchingTerm()
-		// // console.log(test)
-		// console.log(test)
 		return (
 			<Container>
 				<GameDropdown
@@ -156,7 +155,7 @@ class App extends Component {
 					inputProp = { (e,  {value}) => this.setState({ input: value }) }
 				/>
 				<ImageOutput
-					imageProp = { this.createImage(0) }
+					imageProp = { this.createImage(1) }
 				/>
 			</Container>
 		)
