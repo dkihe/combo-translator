@@ -10,11 +10,11 @@ import charlist from './charlist.json';
 
 const CONF = {
 	streetfighter: {
-		regex: /tk\s*|\s*(?:,|>|xx)\s*|\+|-|\./g,
+		regex: /(tk)\s*|\s*(,|>|xx)\s*|\+|-|\./g,
 		team: 1
 	},
 	tekken: {
-		regex: /\s|,\s*|\+|(?:\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/g,
+		regex: /\s|,\s*|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/,
 		team: 1
 	},
 	mvci: {
@@ -74,9 +74,8 @@ class App extends Component {
 			default:
 				inputRegex = userInput.toLowerCase().split(CONF['streetfighter'].regex)
 		}
-		console.log(inputRegex)
-		console.log(userInput)
-		return inputRegex
+		// Filter undefined
+		return inputRegex.filter(x => { return x } )
 	}
 
 	createImage = (dir) => {
@@ -145,27 +144,30 @@ class App extends Component {
 	// Render react elements on page
 	render() {
 		return (
-			<Grid container justify="center" className={styles.app}>
-				<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-				<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-				<GameDropdown
-					gameProp = { e => {
-						const { value } = e.target;
-						this.setState({ game: value });
-					}}
-					valueProp = { this.state.game }
-				/>
-				<Translator
-					valueProp = { this.state.input }
-					inputProp = { e => {
-						const { value } = e.target;
-						this.setState({ input: value });
-					}}
-				/>
-				<ImageOutput
-					imageProp = { this.createImage(1) }
-				/>
-			</Grid>
+			// <Container className={styles.app}>
+				<Grid container spacing={0} alignItems="center" justify="center" align="center" className={styles.app}>
+					<div className={styles.title}>
+						<h1>Combo Translator</h1>
+					</div>
+					<GameDropdown
+						gameProp = { e => {
+							const { value } = e.target;
+							this.setState({ game: value });
+						}}
+						valueProp = { this.state.game }
+					/>
+					<Translator
+						valueProp = { this.state.input }
+						inputProp = { e => {
+							const { value } = e.target;
+							this.setState({ input: value });
+						}}
+					/>
+					<ImageOutput
+						imageProp = { this.createImage(1) }
+					/>
+				</Grid>
+			// </Container>
 		)
 	}
 }
