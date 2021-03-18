@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Container, Grid } from '@material-ui/core';
+import { Container, Grid, Button, IconButton } from '@material-ui/core';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkIcon from '@material-ui/icons/Link';
 import "./App.css";
 import * as styles from './styles.module.scss'
 import Translator from "./Translator.js";
@@ -144,11 +146,19 @@ class App extends Component {
 	// Render react elements on page
 	render() {
 		return (
-			// <Container className={styles.app}>
-				<Grid container spacing={0} alignItems="center" justify="center" align="center" className={styles.app}>
-					<div className={styles.title}>
-						<h1>Combo Translator</h1>
-					</div>
+			<Container className={styles.app}>
+				<Grid container justify="space-between" alignItems="center" className={styles.title}>
+					<h1>Combo Translator</h1>
+					<nav>
+						<Button href="https://github.com/dkihe/combo-translator/"size="small" color="black" startIcon={<GitHubIcon />} className={styles.button}>
+							repo
+						</Button>
+						<Button href="https://github.com/dkihe/combo-translator/wiki" size="small" color="black" startIcon={<LinkIcon />} className={styles.button}>
+							wiki
+						</Button>
+					</nav>
+				</Grid>
+				<Grid container spacing={0} alignItems="center" justify="center" align="center" className={styles.content}>
 					<GameDropdown
 						gameProp = { e => {
 							const { value } = e.target;
@@ -163,11 +173,12 @@ class App extends Component {
 							this.setState({ input: value });
 						}}
 					/>
-					<ImageOutput
-						imageProp = { this.createImage(1) }
-					/>
 				</Grid>
-			// </Container>
+				<Grid container spacing={0} alignItems="center" justify="center" align="center" id="text" className={styles.text}>Click an image to see a translation</Grid>
+				<ImageOutput
+					imageProp = { this.createImage(1) }
+				/>
+			</Container>
 		)
 	}
 }

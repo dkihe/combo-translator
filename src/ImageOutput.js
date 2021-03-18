@@ -5,8 +5,8 @@ import * as styles from './styles.module.scss'
 class ImageOutput extends Component {
 	render() {
 		return (
-			<Grid item xs={12} sm={12} md={6} lg={6}  xl={6}  className={styles.imageoutput}>
-				<div className="images" style={{ marginTop: '5em' }}>
+			<Grid item className={styles.imageoutput}>
+				<div className="images">
 					{this.props.imageProp}
 				</div>
 			</Grid>

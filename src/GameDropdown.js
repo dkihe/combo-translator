@@ -16,7 +16,7 @@ const options = [
 
 const GameDropdown = (props) => {
     return (
-        <Grid item spacing={0} xs={12} sm={12} md={6} lg={6}  xl={6}  className={styles.gamedropdown}>
+        <Grid item spacing={0} className={styles.gamedropdown}>
             <FormControl variant="outlined" className={styles.form}>
                 <Select
                     onChange = { props.gameProp }

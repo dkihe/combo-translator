@@ -15,10 +15,10 @@ const options = [
 
 const Translator = (props) => {
     return (
-        <Grid item spacing={0} xs={12} sm={12} md={6} lg={6}  xl={6} className={styles.translator}>
+        <Grid item spacing={0} className={styles.translator}>
             <TextField
                 className={styles.textfield}
-                variant="outlined"
+                variant="standard"
                 label="Combo"
                 value = { props.valueProp }
                 onChange = { props.inputProp }
