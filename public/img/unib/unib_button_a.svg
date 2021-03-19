@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>A</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A">
+            <circle id="Oval" fill="#FFFFFF" cx="15" cy="15" r="15"></circle>
+            <circle id="Oval" fill="#D21A7E" cx="15" cy="15" r="13"></circle>
+            <g id="Letter" transform="translate(4.000000, 4.000000)">
+                <path d="M10.9627443,0 C3.65424812,12.4771718 1.13686838e-13,18.7157577 1.13686838e-13,18.7157577 C1.13686838e-13,18.7157577 1.82712406,18.7157577 5.48137217,18.7157577 L7.16057049,14.9094814 L14.3426189,14.9094814 L15.2845771,18.7157577 L19.9000193,18.7157577 L16.2721759,0 L10.9627443,0 Z" id="Path" stroke="#FFFFFF" fill="#FFFFFF"></path>
+                <polygon id="Path-2" fill="#D21A7E" points="11.3282373 5.87211126 13.8072061 5.87211126 13.8072061 11.6202273 8.8492685 11.6202273"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
