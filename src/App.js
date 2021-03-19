@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Grid, Button, IconButton } from '@material-ui/core';
+import { Container, Grid, Button, Box } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkIcon from '@material-ui/icons/Link';
 import "./App.css";
@@ -80,10 +80,10 @@ class App extends Component {
 		return inputRegex.filter(x => { return x } )
 	}
 
-	createImage = (dir) => {
+	createImage = () => {
 		let altImg = document.getElementsByTagName('img');
 		let comboInput = this.getInputFromRegex()
-		const imagesContainer = document.querySelector('.images');
+		const imagesContainer = document.querySelector('#images');
 
 		// Check if imageContainer exists
 		if (imagesContainer) {
@@ -97,37 +97,16 @@ class App extends Component {
 					for (let j = 0; j < list[this.state.game][key].term.length; j++) {
 						// Check if any of the terms matches the given comboInput
 						if (list[this.state.game][key].term[j] === comboInput[i]) {
-							switch (dir) {
-								// Iterate through images and place them horizontally
-								case (0):
-									for (let imgNum = 0; imgNum < list[this.state.game][key].image.length; imgNum++) {
-										let img = document.createElement('img');
-										img.src = String(list[this.state.game][key].image[imgNum]);
-										if (list[this.state.game][key].hasOwnProperty('alt')) {
-											img.alt = String(list[this.state.game][key].alt[imgNum]);
-										}
-										imagesContainer.appendChild(img).className = String(
-											list[this.state.game][key].size[imgNum]
-										);
-										imagesContainer.className = 'images horizontal'
-									}
-									break;
-								// Iterate through images and place them vertically
-								case (1):
-									for (let imgNum = 0; imgNum < list[this.state.game][key].image.length; imgNum++) {
-										let img = document.createElement('img');
-										img.src = String(list[this.state.game][key].image[imgNum]);
-										if (list[this.state.game][key].hasOwnProperty('alt')) {
-											img.alt = String(list[this.state.game][key].alt[imgNum]);
-										}
-										imagesContainer.appendChild(img).className = String(
-											list[this.state.game][key].size[imgNum]
-										);
-										imagesContainer.className = 'images vertical'
-									}
-									break;
-								default:
-									break;
+							// Iterate through images and place them horizontally
+							for (let imgNum = 0; imgNum < list[this.state.game][key].image.length; imgNum++) {
+								let img = document.createElement('img');
+								img.src = String(list[this.state.game][key].image[imgNum]);
+								if (list[this.state.game][key].hasOwnProperty('alt')) {
+									img.alt = String(list[this.state.game][key].alt[imgNum]);
+								}
+								imagesContainer.appendChild(img).className = String(
+									list[this.state.game][key].size[imgNum]
+								);
 							}
 						}
 					}
@@ -147,7 +126,7 @@ class App extends Component {
 	render() {
 		return (
 			<Container className={styles.app}>
-				<Grid container justify="space-between" alignItems="center" className={styles.title}>
+				<Grid container spacing={0} justify="space-between" className={styles.title}>
 					<h1>Combo Translator</h1>
 					<nav>
 						<Button href="https://github.com/dkihe/combo-translator/"size="small" color="black" startIcon={<GitHubIcon />} className={styles.button}>
@@ -176,7 +155,7 @@ class App extends Component {
 				</Grid>
 				<Grid container spacing={0} alignItems="center" justify="center" align="center" id="text" className={styles.text}>Click an image to see a translation</Grid>
 				<ImageOutput
-					imageProp = { this.createImage(1) }
+					imageProp = { this.createImage(0) }
 				/>
 			</Container>
 		)

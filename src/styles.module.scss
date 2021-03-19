@@ -1,10 +1,37 @@
+// $background-color: #222831;
+$background-color: #30475e;
+$header-color: #222831;
+$font-color: #ececec;
+$image-color: #f2a365;
+
 html, body {
 	font-family: 'Roboto', sans-serif;
+	color: $font-color;
+	background-color: $background-color;
 }
+
+// .Select.icon {
+// 	color: green;
+// }
+
+// .MuiSelect-outlined {
+//     border-color: #ececec;//for border color
+// }
+// .MuiSelect-iconOutlined {
+//     color: #ececec;// for icon drop down icon color
+// }
+// .MuiInputLabel-root {
+//     color: #ececec;// for lable color
+// }
 
 @mixin resize-320 {
 	.title {
-		width: 100%;
+		width: 100vw;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: $header-color;
+		padding: 0.2em 0.5em;
 		h1 {
 			font-size: 0.65em;
 			text-transform: uppercase;
@@ -15,6 +42,7 @@ html, body {
 				font-size: 0.5em;
 				text-decoration: none;
 				margin: 0;
+				color: $font-color;
 			}
 		}
 	}
@@ -27,14 +55,17 @@ html, body {
 			.form {
 				width: 100%;
 				.select {
+					border: 0.1em solid;
 					text-transform: uppercase;
 					font-weight: 700;
 					letter-spacing: 0.1em;
+					color: $font-color;
 				}
 			}
 		}
 		.translator {
 			width: 100%;
+			color: $font-color;
 			.textfield {
 				width: 100%;
 			}
@@ -48,17 +79,15 @@ html, body {
 		letter-spacing: 0.1em;
 	}
 	.imageoutput {
+		overflow-y: hidden;
 		margin-top: 25%;
-		height: 1em;
-		.images.horizontal {
-			display: flex;
+		border-radius: 10%;
+		.images {
+			padding: 0.5em;
+			display: inline-block;
 			img {
-				flex-direction: column;
+				
 			}
-		}
-		.images.vertical {
-			display: flex;
-			flex-direction: column;
 		}
 	}
 }

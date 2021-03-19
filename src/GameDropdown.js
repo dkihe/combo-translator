@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Select, MenuItem, Grid, FormControl } from '@material-ui/core';
 import * as styles from './styles.module.scss'
+import './App.css'
+import { makeStyles } from '@material-ui/core/styles';
 
 const options = [
 	{ key: 'streetfighter', text: 'Street Fighter', value: 'streetfighter' },
@@ -14,17 +16,30 @@ const options = [
 	{ key: 'sc', text: 'Soul Calibur 6', value: 'sc' }
 ];
 
+const useStyles = makeStyles({
+    root: {
+
+    },
+    icon: {
+        fill: '#ececec'
+    }
+})
+
 const GameDropdown = (props) => {
+
+    const classes = useStyles();
+
     return (
-        <Grid item spacing={0} className={styles.gamedropdown}>
+        <Grid item spacing={0} justify="center" className={styles.gamedropdown}>
             <FormControl variant="outlined" className={styles.form}>
                 <Select
                     onChange = { props.gameProp }
                     value = { props.valueProp }
                     className={styles.select}
+                    classes={{root: classes.root, icon: classes.icon}}
                 >
                     {options.map((item) => (
-                        <MenuItem className={styles.menuitem} value={item.value} key={item.key}>
+                        <MenuItem className={styles.menuitem} value={item.value} key={item.key} >
                             {item.text}
                         </MenuItem>
                     ))}

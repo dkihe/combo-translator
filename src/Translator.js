@@ -1,6 +1,7 @@
 import { TextField, Grid } from '@material-ui/core';
 import * as styles from './styles.module.scss'
 
+
 const options = [
 	{ key: 'streetfighter', text: 'Street Fighter', value: 'streetfighter' },
 	{ key: 'tekken', text: 'Tekken', value: 'tekken' },
@@ -22,6 +23,12 @@ const Translator = (props) => {
                 label="Combo"
                 value = { props.valueProp }
                 onChange = { props.inputProp }
+                inputProps={{
+                    style: {
+                        color: '#ececec',
+                    }
+                }}
+                labelStyle={{ fill: '#ececec' }}
             />
         </Grid>
     )

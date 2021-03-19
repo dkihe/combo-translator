@@ -6,7 +6,7 @@ class ImageOutput extends Component {
 	render() {
 		return (
 			<Grid item className={styles.imageoutput}>
-				<div className="images">
+				<div id="images" className={styles.images}>
 					{this.props.imageProp}
 				</div>
 			</Grid>
