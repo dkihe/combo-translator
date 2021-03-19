@@ -1,37 +1,24 @@
-import { TextField, Grid } from '@material-ui/core';
-import * as styles from './styles.module.scss'
+import { TextField, Grid } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+import * as styles from "./styles.module.scss";
 
+// Material UI styling
+const useStyles = makeStyles({
+	root: {
+		"& > *": {
+			color: "#ececec",
+		},
+	},
+});
 
-const options = [
-	{ key: 'streetfighter', text: 'Street Fighter', value: 'streetfighter' },
-	{ key: 'tekken', text: 'Tekken', value: 'tekken' },
-	{ key: 'mvci', text: 'Marvel vs Capcom: Infinite ', value: 'mvci' },
-	{ key: 'dbfz', text: 'Dragon Ball FighterZ', value: 'dbfz' },
-	{ key: 'bbtag', text: 'BlazBlue Cross Tag Battle', value: 'bbtag' },
-	{ key: 'samsho', text: 'Samurai Shodown', value: 'samsho' },
-	{ key: 'unib', text: 'Under Night In-Birth', value: 'unib' },
-	{ key: 'mk', text: 'Mortal Kombat 11', value: 'mk' },
-	{ key: 'sc', text: 'Soul Calibur 6', value: 'sc' }
-];
-
+// User input component
 const Translator = (props) => {
-    return (
-        <Grid item spacing={0} className={styles.translator}>
-            <TextField
-                className={styles.textfield}
-                variant="standard"
-                label="Combo"
-                value = { props.valueProp }
-                onChange = { props.inputProp }
-                inputProps={{
-                    style: {
-                        color: '#ececec',
-                    }
-                }}
-                labelStyle={{ fill: '#ececec' }}
-            />
-        </Grid>
-    )
-}
+	const classes = useStyles();
+	return (
+		<Grid container spacing={0} className={styles.translator}>
+			<TextField classes={{ root: classes.root }} className={styles.textfield} label="Combo" value={props.valueProp} onChange={props.inputProp} />
+		</Grid>
+	);
+};
 
-export default Translator
+export default Translator;

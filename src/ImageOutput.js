@@ -1,17 +1,15 @@
-import React, { Component } from 'react';
-import { Select, MenuItem, Grid, FormControl } from '@material-ui/core';
-import * as styles from './styles.module.scss'
+import { Grid } from "@material-ui/core";
+import * as styles from "./styles.module.scss";
 
-class ImageOutput extends Component {
-	render() {
-		return (
-			<Grid item className={styles.imageoutput}>
-				<div id="images" className={styles.images}>
-					{this.props.imageProp}
-				</div>
-			</Grid>
-		);
-	}
-}
+// Image component
+const ImageOutput = (props) => {
+	return (
+		<Grid item className={styles.imageoutput}>
+			<div id="images" className={styles.images}>
+				{props.imageProp}
+			</div>
+		</Grid>
+	);
+};
 
 export default ImageOutput;
