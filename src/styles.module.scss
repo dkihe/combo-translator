@@ -2,7 +2,7 @@
 $background-color: #30475e;
 $header-color: #222831;
 $font-color: #ececec;
-$image-color: #f2a365;
+$image-color: #0E6D86;
 
 html, body {
 	font-family: 'Roboto', sans-serif;
@@ -73,6 +73,9 @@ html, body {
 			display: inline-block;
 			img {
 				padding: 0.2em;
+				&:hover{
+					background-color: $image-color;
+				}
 			}
 		}
 	}
@@ -270,7 +273,7 @@ html, body {
 			padding: 0.5em;
 			display: inline-block;
 			img {
-				padding: 0.2em;
+				padding: 0.5em;
 			}
 		}
 	}

@@ -795,19 +795,19 @@
 		},
 		"crouch":{
 			"term":["cr"],
-			"image":["./img/mvci/mvc_state_cr.svg"],
+			"image":["./img/streetfighter/sf_state_cr.svg"],
 			"size":["large"],
 			"alt":["Crouch"]
 		},
 		"jump":{
 			"term":["j"],
-			"image":["./img/mvci/mvc_state_j.svg"],
+			"image":["./img/streetfighter/sf_state_j.svg"],
 			"size":["large"],
 			"alt":["Jump"]
 		},
 		"release":{
 			"term":["release","r"],
-			"image":["./img/sf/sf_state_release.svg"],
+			"image":["./img/streetfighter/sf_state_release.svg"],
 			"size":["large"],
 			"alt":["Release"]
 		},
@@ -1066,7 +1066,7 @@
 		},
 		"dash":{
 			"term":["dash"],
-			"image":["./img/tekken/mvc_state_dash"],
+			"image":["./img/tekken/tek_state_dash.svg"],
 			"size":["large"],
 			"alt":["Dash"]
 		},
@@ -1186,7 +1186,7 @@
 		},
 		"full_crouch":{
 			"term":["fc","FC"],
-			"image":["./img/tekken/tek_state_fc.svg"],
+			"image":["./img/tekken/.svg"],
 			"size":["large"],
 			"alt":["Full Crouch"]
 		},
@@ -1463,37 +1463,37 @@
 		},
 		"power":{
 			"term":["power"],
-			"image":["./img/mvci/mvc_stone_power.svg"],
+			"image":["./img/mvci/mvc_state_power.svg"],
 			"size":["large"],
 			"alt":["Power"]
 		},
 		"time":{
 			"term":["time"],
-			"image":["./img/mvci/mvc_stone_time.svg"],
+			"image":["./img/mvci/mvc_state_time.svg"],
 			"size":["large"],
 			"alt":["Time"]
 		},
 		"space":{
 			"term":["space"],
-			"image":["./img/mvci/mvc_stone_space.svg"],
+			"image":["./img/mvci/mvc_state_space.svg"],
 			"size":["large"],
 			"alt":["Space"]
 		},
 		"reality":{
 			"term":["reality"],
-			"image":["./img/mvci/mvc_stone_reality.svg"],
+			"image":["./img/mvci/mvc_state_reality.svg"],
 			"size":["large"],
 			"alt":["Reality"]
 		},
 		"mind":{
 			"term":["mind"],
-			"image":["./img/mvci/mvc_stone_mind.svg"],
+			"image":["./img/mvci/mvc_state_mind.svg"],
 			"size":["large"],
 			"alt":["Mind"]
 		},
 		"soul":{
 			"term":["soul"],
-			"image":["./img/mvci/mvc_stone_soul.svg"],
+			"image":["./img/mvci/mvc_state_soul.svg"],
 			"size":["large"],
 			"alt":["Soul"]
 		},
@@ -1670,12 +1670,6 @@
 			"image":["./img/streetfighter/sf_arrow_qcf.svg"],
 			"size":["medium"],
 			"alt":["Quarter Circle Forward"]
-		},
-		"quarter_circle_back":{
-			"term":["qcb","214"],
-			"image":["./img/streetfighter/sf_arrow_qcb.svg"],
-			"size":["medium"],
-			"alt":["Quarter Circle Back"]
 		},
 		"dash":{
 			"term":["dash"],
