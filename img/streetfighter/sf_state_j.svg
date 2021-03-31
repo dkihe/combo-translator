@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="64px" height="32px" viewBox="0 0 64 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="64px" height="33px" viewBox="0 0 64 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
-    <title>sf_state_ch</title>
+    <title>sf_state_j</title>
     <desc>Created with Sketch.</desc>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Counter">
+        <g id="Jump" transform="translate(0.000000, 1.000000)">
             <rect id="Rectangle" stroke="#FFFFFF" x="2" y="2" width="60" height="28" rx="3"></rect>
             <text font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" fill="#FFFFFF">
-                <tspan x="4.91503906" y="21">COUNTER</tspan>
+                <tspan x="15.5732422" y="21">JUMP</tspan>
             </text>
         </g>
     </g>

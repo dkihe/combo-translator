@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="64px" height="32px" viewBox="0 0 64 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
-    <title>tek_state_stance</title>
+    <title>mvc_state_space</title>
     <desc>Created with Sketch.</desc>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="TEKKEN" transform="translate(-168.000000, -185.000000)">
-            <g id="Switch-Stance" transform="translate(168.000000, 185.000000)">
+        <g id="MVCI" transform="translate(-168.000000, -111.000000)">
+            <g id="Space" transform="translate(168.000000, 111.000000)">
                 <rect id="Rectangle" stroke="#FFFFFF" x="2" y="2" width="60" height="28" rx="3"></rect>
-                <text font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" fill="#FFFFFF">
-                    <tspan x="9.37695312" y="13">STANCE </tspan>
-                    <tspan x="9.60546875" y="27">SWITCH</tspan>
+                <text id="SPACE" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="13.6865234" y="21">SPACE</tspan>
                 </text>
             </g>
         </g>
