@@ -21,7 +21,7 @@ const CONF = {
 		regex: /(tk)\s*|\s*(,|>|xx)\s*|\+|-|\./g,
 	},
 	tekken: {
-		regex: /\s|,\s*|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/,
+		regex: /\s|\+|(\d\+\d\+\d\+\d|\d\+\d\+\d|\d\+\d|\d)/,
 	},
 	mvci: {
 		regex: /(tk)\s*|\s*(,|>|xx)\s*|\+|-|\./g,
