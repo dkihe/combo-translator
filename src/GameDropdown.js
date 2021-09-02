@@ -11,6 +11,7 @@ const options = [
 	{ key: "bbtag", text: "BlazBlue Cross Tag Battle", value: "bbtag" },
 	// { key: "samsho", text: "Samurai Shodown", value: "samsho" },
 	{ key: "unib", text: "Under Night In-Birth", value: "unib" },
+	{ key: "ggst", text: "Guilty Gear Strive", value: "ggst" },
 	// { key: "mk", text: "Mortal Kombat 11", value: "mk" },
 	// { key: "sc", text: "Soul Calibur 6", value: "sc" },
 ];

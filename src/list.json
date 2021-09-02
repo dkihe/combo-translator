@@ -1747,6 +1747,178 @@
 			"size":["small"]
 		}
 	},
+	"ggst":{
+		"punch":{
+			"term":["P","p"],
+			"image":["./img/ggst/ggst_button_p.svg"],
+			"size":["small"],
+			"alt":["Punch"]
+		},
+		"kick":{
+			"term":["K","k"],
+			"image":["./img/ggst/ggst_button_k.svg"],
+			"size":["small"],
+			"alt":["Kick"]
+		},
+		"slash":{
+			"term":["S","s"],
+			"image":["./img/ggst/ggst_button_s.svg"],
+			"size":["small"],
+			"alt":["Slash"]
+		},
+		"heavy slash":{
+			"term":["HS","hs"],
+			"image":["./img/ggst/ggst_button_hs.svg"],
+			"size":["small"],
+			"alt":["Switch"]
+		},
+		"dust":{
+			"term":["D","d"],
+			"image":["./img/ggst/ggst_button_d.svg"],
+			"size":["small"],
+			"alt":["Dust"]
+		},
+		"roman cancel":{
+			"term":["RC","rc"],
+			"image":["./img/ggst/ggst_button_rc.svg"],
+			"size":["small"],
+			"alt":["Roman Cancel"]
+		},
+		"forward":{
+			"term":["6"],
+			"image":["./img/ggst/ggst_arrow_f.svg"],
+			"size":["small"],
+			"alt":["Forward"]
+		},
+		"back":{
+			"term":["4"],
+			"image":["./img/ggst/ggst_arrow_b.svg"],
+			"size":["small"],
+			"alt":["Back"]
+		},
+		"up":{
+			"term":["8"],
+			"image":["./img/ggst/ggst_arrow_u.svg"],
+			"size":["small"],
+			"alt":["Up"]
+		},
+		"down":{
+			"term":["2"],
+			"image":["./img/ggst/ggst_arrow_d.svg"],
+			"size":["small"],
+			"alt":["Down"]
+		},
+		"down-forward":{
+			"term":["3"],
+			"image":["./img/ggst/ggst_arrow_df.svg"],
+			"size":["small"],
+			"alt":["Diagonal Down Forward"]
+		},
+		"down-back":{
+			"term":["1"],
+			"image":["./img/ggst/ggst_arrow_db.svg"],
+			"size":["small"],
+			"alt":["Diagonal Down Back"]
+		},
+		"up-forward":{
+			"term":["9"],
+			"image":["./img/ggst/ggst_arrow_uf.svg"],
+			"size":["small"],
+			"alt":["Diagonal Up Forward"]
+		},
+		"up-back":{
+			"term":["7"],
+			"image":["./img/ggst/ggst_arrow_ub.svg"],
+			"size":["small"],
+			"alt":["Diagonal Up Back"]
+		},
+		"quarter_circle_forward":{
+			"term":["qcf","236"],
+			"image":["./img/streetfighter/sf_arrow_qcf.svg"],
+			"size":["small"],
+			"alt":["Quarter Circle Forward"]
+		},
+		"quarter_circle_back":{
+			"term":["qcb","214"],
+			"image":["./img/streetfighter/sf_arrow_qcb.svg"],
+			"size":["small"],
+			"alt":["Quarter Circle Back"]
+		}
+	},
+	"unib":{
+		"weak attack":{
+			"term":["A"],
+			"image":["./img/unib/unib_button_a.svg"],
+			"size":["small"],
+			"alt":["Weak Attack"]
+		},
+		"medium attack":{
+			"term":["B"],
+			"image":["./img/unib/unib_button_b.svg"],
+			"size":["small"],
+			"alt":["Medium Attack"]
+		},
+		"heavy attack":{
+			"term":["C"],
+			"image":["./img/unib/unib_button_c.svg"],
+			"size":["small"],
+			"alt":["Heavy Attack"]
+		},
+		"exs attack":{
+			"term":["D"],
+			"image":["./img/unib/unib_button_d.svg"],
+			"size":["small"],
+			"alt":["EXS Attack"]
+		},
+		"forward":{
+			"term":["f","6"],
+			"image":["./img/unib/unib_arrow_f.svg"],
+			"size":["small"],
+			"alt":["Forward"]
+		},
+		"back":{
+			"term":["b","4"],
+			"image":["./img/unib/unib_arrow_b.svg"],
+			"size":["small"],
+			"alt":["Back"]
+		},
+		"up":{
+			"term":["u","8"],
+			"image":["./img/unib/unib_arrow_u.svg"],
+			"size":["small"],
+			"alt":["Up"]
+		},
+		"down":{
+			"term":["d","2"],
+			"image":["./img/unib/unib_arrow_d.svg"],
+			"size":["small"],
+			"alt":["Down"]
+		},
+		"down-forward":{
+			"term":["df","d/f","3"],
+			"image":["./img/unib/unib_arrow_df.svg"],
+			"size":["small"],
+			"alt":["Diagonal Down Forward"]
+		},
+		"down-back":{
+			"term":["db","d/b","1"],
+			"image":["./img/unib/unib_arrow_db.svg"],
+			"size":["small"],
+			"alt":["Diagonal Down Back"]
+		},
+		"up-forward":{
+			"term":["uf","u/f","9"],
+			"image":["./img/unib/unib_arrow_uf.svg"],
+			"size":["small"],
+			"alt":["Diagonal Up Forward"]
+		},
+		"up-back":{
+			"term":["ub","u/b","7"],
+			"image":["./img/unib/unib_arrow_ub.svg"],
+			"size":["small"],
+			"alt":["Diagonal Up Back"]
+		}
+	},
 	"bbtag":{
 		"weak attack":{
 			"term":["A"],
@@ -1855,80 +2027,6 @@
 			"image":["./img/streetfighter/sf_arrow_qcb.svg"],
 			"size":["small"],
 			"alt":["Quarter Circle Back"]
-		}
-	},
-	"unib":{
-		"weak attack":{
-			"term":["A"],
-			"image":["./img/unib/unib_button_a.svg"],
-			"size":["small"],
-			"alt":["Weak Attack"]
-		},
-		"medium attack":{
-			"term":["B"],
-			"image":["./img/unib/unib_button_b.svg"],
-			"size":["small"],
-			"alt":["Medium Attack"]
-		},
-		"heavy attack":{
-			"term":["C"],
-			"image":["./img/unib/unib_button_c.svg"],
-			"size":["small"],
-			"alt":["Heavy Attack"]
-		},
-		"exs attack":{
-			"term":["D"],
-			"image":["./img/unib/unib_button_d.svg"],
-			"size":["small"],
-			"alt":["EXS Attack"]
-		},
-		"forward":{
-			"term":["f","6"],
-			"image":["./img/unib/unib_arrow_f.svg"],
-			"size":["small"],
-			"alt":["Forward"]
-		},
-		"back":{
-			"term":["b","4"],
-			"image":["./img/unib/unib_arrow_b.svg"],
-			"size":["small"],
-			"alt":["Back"]
-		},
-		"up":{
-			"term":["u","8"],
-			"image":["./img/unib/unib_arrow_u.svg"],
-			"size":["small"],
-			"alt":["Up"]
-		},
-		"down":{
-			"term":["d","2"],
-			"image":["./img/unib/unib_arrow_d.svg"],
-			"size":["small"],
-			"alt":["Down"]
-		},
-		"down-forward":{
-			"term":["df","d/f","3"],
-			"image":["./img/unib/unib_arrow_df.svg"],
-			"size":["small"],
-			"alt":["Diagonal Down Forward"]
-		},
-		"down-back":{
-			"term":["db","d/b","1"],
-			"image":["./img/unib/unib_arrow_db.svg"],
-			"size":["small"],
-			"alt":["Diagonal Down Back"]
-		},
-		"up-forward":{
-			"term":["uf","u/f","9"],
-			"image":["./img/unib/unib_arrow_uf.svg"],
-			"size":["small"],
-			"alt":["Diagonal Up Forward"]
-		},
-		"up-back":{
-			"term":["ub","u/b","7"],
-			"image":["./img/unib/unib_arrow_ub.svg"],
-			"size":["small"],
-			"alt":["Diagonal Up Back"]
 		}
 	},
 	"sc":{

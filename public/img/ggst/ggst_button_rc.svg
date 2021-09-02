@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="30px" viewBox="0 0 29 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>ggst_button_rc</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0.0765413851%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#727272" offset="0.0765413851%"></stop>
+            <stop stop-color="#202020" offset="100%"></stop>
+        </linearGradient>
+        <path d="M14.05,28.1 C6.3,28.1 0,21.8 0,14.05 C0,6.3 6.3,0 14.05,0 C21.8,0 28.1,6.3 28.1,14.05 C28.1,21.8 21.8,28.1 14.05,28.1 Z" id="path-2"></path>
+        <filter x="-2.2%" y="-2.2%" width="108.0%" height="108.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="0.125" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.75" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ggst_button_rc">
+            <g id="bg" fill-rule="nonzero">
+                <g id="circle-copy">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="#444444" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                </g>
+            </g>
+            <g id="RC" transform="translate(6.000000, 6.000000)">
+                <g id="Border" stroke="#323232" stroke-width="3">
+                    <g id="C" transform="translate(9.473684, 0.000000)" stroke-linecap="round">
+                        <path d="M1.77635684e-15,14.06 C0.710526316,16.02 1.72793687,17 3.05223167,17 C5.03867386,17 6.24805598,15.4299111 7.09946357,13.0626856 C7.95087115,10.69546 7.96736576,6.39202334 7.1194951,3.99349239 C6.27162443,1.59496144 5.03867386,0 3.05223167,0 C1.72793687,0 0.710526316,1 1.77635684e-15,3" transform="translate(3.873391, 8.500000) scale(-1, 1) translate(-3.873391, -8.500000) "></path>
+                    </g>
+                    <g id="R">
+                        <path d="M0.532894737,0 C0.532894737,3.78682574 0.532894737,3.78682574 0.532894737,8 C6.13455271,8 7.99342105,7.57365149 7.99342105,3.78682574 C7.99342105,0 6.13324606,0 0.532894737,0 Z" id="Path-5" stroke-linejoin="round"></path>
+                        <path d="M0.532894737,8 L0.532894737,16.4971355" id="Path-6" stroke-linecap="round"></path>
+                        <path d="M2.01460361,8 C4.80056039,7.64082248 6.46858225,8.35069722 7.01866919,10.1296242 C7.66850377,11.8488938 8.099549,13.9713976 8.3118049,16.4971355" id="Path-7" stroke-linecap="round"></path>
+                    </g>
+                </g>
+                <g id="C" transform="translate(9.473684, 0.000000)" stroke="#FF3299" stroke-linecap="round" stroke-width="1.5">
+                    <path d="M1.77635684e-15,14.06 C0.710526316,16.02 1.72793687,17 3.05223167,17 C5.03867386,17 6.24805598,15.4299111 7.09946357,13.0626856 C7.95087115,10.69546 7.96736576,6.39202334 7.1194951,3.99349239 C6.27162443,1.59496144 5.03867386,0 3.05223167,0 C1.72793687,0 0.710526316,1 1.77635684e-15,3" transform="translate(3.873391, 8.500000) scale(-1, 1) translate(-3.873391, -8.500000) "></path>
+                </g>
+                <g id="R" stroke="#FF3299" stroke-width="1.5">
+                    <path d="M0.532894737,0 C0.532894737,3.78682574 0.532894737,3.78682574 0.532894737,8 C6.13455271,8 7.99342105,7.57365149 7.99342105,3.78682574 C7.99342105,0 6.13324606,0 0.532894737,0 Z" id="Path-5" stroke-linejoin="round"></path>
+                    <path d="M0.532894737,8 L0.532894737,16.4971355" id="Path-6" stroke-linecap="round"></path>
+                    <path d="M2.01460361,8 C4.80056039,7.64082248 6.46858225,8.35069722 7.01866919,10.1296242 C7.66850377,11.8488938 8.099549,13.9713976 8.3118049,16.4971355" id="Path-7" stroke-linecap="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

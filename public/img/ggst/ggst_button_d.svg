@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="30px" viewBox="0 0 29 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>ggst_button_d</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0.0765413851%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#727272" offset="0.0765413851%"></stop>
+            <stop stop-color="#202020" offset="100%"></stop>
+        </linearGradient>
+        <path d="M14.05,28.1 C6.3,28.1 -4.61852778e-14,21.8 -4.61852778e-14,14.05 C-4.61852778e-14,6.3 6.3,1.0658141e-14 14.05,1.0658141e-14 C21.8,1.0658141e-14 28.1,6.3 28.1,14.05 C28.1,21.8 21.8,28.1 14.05,28.1 Z" id="path-2"></path>
+        <filter x="-2.2%" y="-2.2%" width="108.0%" height="108.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="0.125" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.75" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ggst_button_d">
+            <g id="bg" fill-rule="nonzero">
+                <g id="circle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="#444444" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                </g>
+            </g>
+            <g id="D" transform="translate(8.000000, 6.000000)" stroke-linejoin="round">
+                <g id="Border" stroke="#323232" stroke-width="3">
+                    <path d="M-2.84217094e-14,3.55271368e-15 C-2.84217094e-14,7.84857484 -2.84217094e-14,7.84857484 -2.84217094e-14,16.5807996 C10.405434,16.5807996 13.8583995,15.6971497 13.8583995,7.84857484 C13.8583995,3.55271368e-15 10.4030068,3.55271368e-15 -2.84217094e-14,3.55271368e-15 Z" id="D"></path>
+                </g>
+                <path d="M-2.84217094e-14,3.55271368e-15 C-2.84217094e-14,7.84857484 -2.84217094e-14,7.84857484 -2.84217094e-14,16.5807996 C10.405434,16.5807996 13.8583995,15.6971497 13.8583995,7.84857484 C13.8583995,3.55271368e-15 10.4030068,3.55271368e-15 -2.84217094e-14,3.55271368e-15 Z" stroke="#FE9833" stroke-width="1.5"></path>
+            </g>
+        </g>
+    </g>
+</svg>

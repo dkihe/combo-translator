@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="31px" viewBox="0 0 30 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>ggst_button_p</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0.0765413851%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#727272" offset="0.0765413851%"></stop>
+            <stop stop-color="#202020" offset="100%"></stop>
+        </linearGradient>
+        <path d="M15,29.05 C7.25,29.05 0.95,22.75 0.95,15 C0.95,7.25 7.25,0.95 15,0.95 C22.75,0.95 29.05,7.25 29.05,15 C29.05,22.75 22.75,29.05 15,29.05 Z" id="path-2"></path>
+        <filter x="-2.2%" y="-2.2%" width="108.0%" height="108.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="0.125" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.75" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ggst_button_p">
+            <g id="bg" fill-rule="nonzero">
+                <g id="circle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="#444444" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                </g>
+            </g>
+            <g id="P" transform="translate(10.000000, 7.000000)" stroke-linejoin="round">
+                <path d="M0,17 L0,0 L9.0703244,0 C11.7942065,0 13.1561476,1.61714064 13.1561476,4.85142191 C13.1561476,8.08570319 11.7942065,9.70284383 9.0703244,9.70284383 L0,9.70284383 L0,17 Z" id="Border" stroke="#323232" stroke-width="3"></path>
+                <path d="M4.26325641e-14,17 L4.26325641e-14,0 L9.0703244,0 C11.7942065,0 13.1561476,1.61714064 13.1561476,4.85142191 C13.1561476,8.08570319 11.7942065,9.70284383 9.0703244,9.70284383 L4.26325641e-14,9.70284383 L4.26325641e-14,17 Z" stroke="#FF8DFF" stroke-width="1.5"></path>
+            </g>
+        </g>
+    </g>
+</svg>

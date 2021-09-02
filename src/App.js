@@ -35,11 +35,15 @@ const CONF = {
 	unib: {
 		regex: /(tk)\s*|\s*(,|>|xx)\s*|\+|-|\./g,
 	},
+	ggst: {
+		regex: /(tk)\s*|\s*(,|>|xx)\s*|\+|-|\./g,
+	},
+
 	// To be implemented
 	mk: {
 		regex: /(tk)\s*|\s*(,|>|xx)\s*|\+|-|\./g,
 	},
-	// Needs to abe worked on
+	// Needs to be worked on
 	sc: {
 		regex: /\s|(,|~)|(\[[1-9]\]|\([1-9]\))|([1-9])/g,
 	},
@@ -75,6 +79,9 @@ class App extends Component {
 			case "dbfz":
 			case "bbtag":
 			case "unib":
+				inputRegex = userInput.split(CONF["streetfighter"].regex);
+				break;
+			case "ggst":
 				inputRegex = userInput.split(CONF["streetfighter"].regex);
 				break;
 			case "sc":

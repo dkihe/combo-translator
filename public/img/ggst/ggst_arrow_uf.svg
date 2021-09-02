@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>ggst_arrow_uf</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-1">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#434345" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#D40A00" offset="0%"></stop>
+            <stop stop-color="#FBFF00" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#9A9A9A" offset="0%"></stop>
+            <stop stop-color="#4D4D4D" offset="10.9559755%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="ggst_arrow_uf" transform="translate(1.000000, -3.000000)">
+            <g id="dpad" transform="translate(0.000000, 4.000000)" fill="url(#radialGradient-1)" stroke="#000000">
+                <polygon points="7.2 0 16.8 0 16.8 7.2 24 7.2 24 16.8 16.8 16.8 16.8 24 7.2 24 7.2 16.8 1.70530257e-13 16.8 1.43937464e-13 7.2 7.2 7.2"></polygon>
+            </g>
+            <g id="uf_Arrow" transform="translate(18.000000, 10.000000) scale(-1, -1) rotate(-90.000000) translate(-18.000000, -10.000000) translate(8.000000, 0.000000)" fill="url(#linearGradient-2)" stroke="url(#linearGradient-3)">
+                <polygon id="Rectangle" transform="translate(10.000000, 10.000000) scale(-1, 1) rotate(-45.000000) translate(-10.000000, -10.000000) " points="2 7.04213227 10.6867995 7.04213227 10.6867995 4 18 10 10.6867995 16 10.6867995 12.9545549 2 12.9545549"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

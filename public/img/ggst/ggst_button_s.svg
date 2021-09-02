@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="30px" viewBox="0 0 29 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>ggst_button_s</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0.0765413851%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#727272" offset="0.0765413851%"></stop>
+            <stop stop-color="#202020" offset="100%"></stop>
+        </linearGradient>
+        <path d="M14.05,28.1 C6.3,28.1 -4.61852778e-14,21.8 -4.61852778e-14,14.05 C-4.61852778e-14,6.3 6.3,1.0658141e-14 14.05,1.0658141e-14 C21.8,1.0658141e-14 28.1,6.3 28.1,14.05 C28.1,21.8 21.8,28.1 14.05,28.1 Z" id="path-2"></path>
+        <filter x="-2.2%" y="-2.2%" width="108.0%" height="108.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="0.125" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.75" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ggst_button_s">
+            <g id="bg" fill-rule="nonzero">
+                <g id="circle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="#444444" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                </g>
+            </g>
+            <g id="S" transform="translate(8.000000, 6.000000)" stroke-linecap="round">
+                <g id="Border" stroke="#323232" stroke-width="3">
+                    <path d="M13.4461135,3.13050599 C12.1506476,0.280385978 3.06018922,-1.90547906 0.650647558,2.51570926 C-1.75889411,6.93689758 3.06018922,9.22309896 6.35930296,9.22309896 C9.65841669,9.22309896 13.4461135,10.019637 12.1506476,13.9477298 C10.8551816,17.8758226 2.99760955,18.1558731 0.650647558,14.5359555" id="Path-3-Copy-2" transform="translate(6.723057, 8.540852) rotate(-180.000000) translate(-6.723057, -8.540852) "></path>
+                </g>
+                <path d="M13.4461135,3.13050599 C12.1506476,0.280385978 3.06018922,-1.90547906 0.650647558,2.51570926 C-1.75889411,6.93689758 3.06018922,9.22309896 6.35930296,9.22309896 C9.65841669,9.22309896 13.4461135,10.019637 12.1506476,13.9477298 C10.8551816,17.8758226 2.99760955,18.1558731 0.650647558,14.5359555" id="Path-3-Copy-2" stroke="#39E99E" stroke-width="1.5" transform="translate(6.723057, 8.540852) rotate(-180.000000) translate(-6.723057, -8.540852) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
